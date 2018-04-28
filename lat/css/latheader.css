@@ -1,0 +1,108 @@
+
+#latHeader{position: relative;}
+#latHeaderMenu{background:#e6e6e6;width: 98%;
+              position: absolute;
+              top: 5%;
+              left: 1%;
+              z-index: 4;
+              margin: 0 auto;
+              display: block;
+              border: 1px solid #303549;
+              box-shadow: 1px 1px 1px 1px rgba(13, 206, 236, 0.3);
+}
+
+#latHeaderRight{background:#e6e6e6;}
+#latHeaderLeft{background:#e6e6e6;}
+#HeaderLogo{width:60%;
+            display:block;
+            float:right;
+            padding:5px 0px;
+          }
+#Logo{color:#303549;text-align:left;display:block;font-size:43px;cursor:pointer;line-height: 100%}
+#Slogan{color:#303549;text-align:left;display:block;font-size:16px;line-height:150%;}
+
+#HeaderMenu1,#HeaderMenu2,#HeaderMenu3,#HeaderMenu4
+{
+  float:left;
+  display:block;
+  border-left:1px solid #303549;
+  background:#e6e6e6;
+  padding:26px 20px;
+  color:#303549;font-size:16px;}
+#HeaderMenu4{border-right:1px solid #303549;}
+
+#HeaderMenu1:hover,#HeaderMenu2:hover,#HeaderMenu3:hover,#HeaderMenu4:hover
+{  background:#303549;color:white;cursor:pointer;}
+
+#latHeaderTitle{width: 100%;
+                height: 100%;
+                background-color: #ffffff;
+                position: relative;
+                background-attachment:fixed;
+                background-size: cover;
+                background-position: center;
+                overflow: hidden;
+                display:block;  }
+
+#latHeaderTitle_1{ position:absolute;
+                  top: 0;
+                  left: 0;
+                  opacity: 1;
+                  background-attachment:fixed;
+                  background-image:url("https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/31416898_10214524398756283_7410486209731887104_n.png?_nc_cat=0&oh=ab4506c9e14d4aa985af472c04f47250&oe=5B9603D1");
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  width: 100%;
+                  height: 100%;
+                  display:block;}
+
+#latHeaderBlk_1{margin: 260px auto 110px auto;z-index: 2;position: relative;display:block;}
+#latHeaderMsg_1{ margin: 0 auto;
+                display: block;
+                font-size: 55px;
+                margin:50px auto;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                color:#23dfd0;
+                line-height: 150%;
+                text-align: center;
+                display:block;}
+#latHeaderMsg_2{ margin: 0 auto;
+                display: block;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 1.5px;
+                color: #ffffff;
+                line-height: 150%;
+                text-align: center;
+                display:block;}
+#latHeaderMsg_3{ margin: 0 auto;
+                display: block;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 1.5px;
+                color: #ffffff;
+                line-height: 150%;
+                text-align: center;
+                display:block;}
+#latHeaderMsg_4{  margin: 80px auto 33px auto;
+                  display: block;
+                  text-align: center;
+                }
+
+#latAnchorText{ padding: 10px 35px;
+                border: 1px solid #ffffff;
+                color: #ffffff;
+                font-weight: 500;
+                font-size: 18px;
+                width:100px;
+                cursor:pointer;
+                margin:0 auto;
+                }
+                @media only screen and (max-width: 800px){
+                  #latHeaderRight{display:none;}
+
+                #latHeaderleft{width:100%;}
+                #latHeaderMenu{position: static;}
+                                                      }
