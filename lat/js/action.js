@@ -23,5 +23,11 @@ function datacheck()
     theURL= theURL + "&phone=" + theForm.phone.value ;
     theURL= theURL + "&email=" + theForm.email.value ;
     theURL= encodeURI(theURL);
- 	  location.href= theURL;
+    getData(theURL);
+}
+
+function getData(theURL){
+  var req=new XMLHttpRequest();
+  req.open("get","http://localhost:5566/Master-lat/lat/"+theURL);
+  req.send();
 }

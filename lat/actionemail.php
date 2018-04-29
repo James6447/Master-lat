@@ -19,9 +19,11 @@ $query1="SELECT * FROM mail_box";
 if ($con->query($query) == TRUE)
 {
     $msg="Thanks For Comment";
+    echo "yes";
 }
 else{
     $msg="Please Contect Our Service Number";
+    echo "nope";
   }
 
 

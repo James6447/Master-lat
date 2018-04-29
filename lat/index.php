@@ -19,7 +19,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-<body>
+<body id="refresh">
 <div id="latcontainer">
   <div id="latwapper">
 
@@ -192,14 +192,14 @@
               <form>
                 <div id="latFooterMsg_4">
                   <div id="latFooterItem_2">
-                    <div id="latFooterWeform_1"><input type="text" name="company" placeholder="公司名稱"></div>
-                    <div id="latFooterWeform_2"><input type="text" name="username" placeholder="聯絡人姓名"></div>
+                    <div id="latFooterWeform_1"><input id="c1" type="text" name="company" placeholder="公司名稱"></div>
+                    <div id="latFooterWeform_2"><input id="c2" type="text" name="username" placeholder="聯絡人姓名"></div>
                   </div>
               </div>
               <div id="latFooterMsg_5">
                 <div id="latFooterItem_3">
-                  <div id="latFooterWeform_3"><input type="text" name="phone" placeholder="連絡電話"></div>
-                  <div id="latFooterWeform_4"><input type="text" name="email" placeholder="E-mail"></div>
+                  <div id="latFooterWeform_3"><input id="c3" type="text" name="phone" placeholder="連絡電話"></div>
+                  <div id="latFooterWeform_4"><input id="c4 "type="text" name="email" placeholder="E-mail"></div>
                 </div>
             </div>
             <div id="latFooterMsg_6">
