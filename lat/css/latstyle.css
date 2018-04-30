@@ -9,6 +9,9 @@ margin:0; padding:0; height:100%; width:100%;
 a { color:#666666; text-decoration:none; }
 a:hover { color:#ee6622; text-decoration:none; }
 img { vertical-align:middle; width: 100%; }
+.circular--squareP{
+    border-radius:50%;
+}
 /*WTFWTWFWTWTWFWTW全網基本定義結束WTWFWTWFWTWFWTWFWTWFWTW*/
 /*WTFWTWTWTWTWFWTW全網架構定義開始WTWFWTWFWTWFDWFWTWDFWTW*/
 /*最外層區塊*/

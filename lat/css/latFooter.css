@@ -63,10 +63,11 @@
 #latFooterImg1,#latFooterImg2{width:100%;float:left;font-size:12px;color:#ffffff;margin:10px;}
 
 
-#latFooterMsg_4,#latFooterMsg_5,#latFooterMsg_6,#latFooterMsg_7{margin:30px auto 10px auto;}
+#latFooterMsg_4,#latFooterMsg_5,#latFooterMsg_7{margin:30px auto -59px auto;}
+#latFooterMsg_6{margin:61px auto 38px auto;}
 #latFooterMsg_6{width:66%;}
 #latFooterWeform_1,#latFooterWeform_2,#latFooterWeform_3,#latFooterWeform_4
-{float:left;font-size:12px;color:#ffffff;margin:10px;}
+{float:left;font-size:12px;color:#ffffff;}
 
 #latFooterItem_4,#latFooterItem_5,#latFooterItem_6
 {width:33%;float:left;display:block;}
@@ -74,13 +75,13 @@
 #latFooterImg3 img,#latFooterImg4 img,#latFooterImg5 img
 {max-width: 42px;max-height: 50px;float:left;margin:90px 10px;}
 
-#latFooterItem_7{display:block;float:left;width:100%;}
+#latFooterItem_7{display:block;float:left;width:100%;margin-left: -13px;}
 
 #latFooterWeform_5{float:left;font-size:12px;color:#ffffff;margin:10px;width:100%;}
 
 #latFooterItem_8
 { display:block;
-  width:100%;float:right;margin:30px auto 60px auto;
+  width:100%;float:right;margin:106px auto 60px auto;
 }
 #WEFORM
 {font-size:16px;

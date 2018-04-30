@@ -207,6 +207,11 @@ textarea{width:100%;}
  position: absolute;
  top: 0;
 }
+
+.error{
+  margin-top:3px;
+}
+
 @media only screen and (max-width: 1000px){
   #latMainContent_1,#latMainContent_2{width:50%;}
     #latMainContent_3{width:100%;margin:40px auto 100px auto;}

@@ -1,72 +1,110 @@
 window.onload = function() {
 
-    $(".md-content").append("<div></div>");
-    var mailAddress = new Array("ricomassimo@gmail.com", "kimthompson@gmail.com", "ukumason@gmail.com");
-    var phoneNumber = new Array("0907 447 033", "0915 569 126", "0919 566 742");
-    var webSite = new Array("www.ricomassimo.com", "www.kimthompson.com", "www.ukumason.com");
-    var currentPerson, personAddress, personPhoneNumber, personWebSite;
-    $('#amazingTeam  .ch-info-back a').on("click", function() {
-        $('.md-overlay').addClass('md-overlay-show');
-        $('.md-modal').addClass('md-show');
-        $('md-content', '.md-modal').addClass('md-show.md-effect-9 .md-content');
-        var $h3SelectName = $(this).closest('.section4_article').find(this + " > h3").html();
-        var $selectParentContent = $(this).closest('.article_center4').find(".md-content div");
-        $('#appendDiv').remove();
-        currentPerson = $(this).attr('id');
-        switch (currentPerson) {
-            case "idPerson1":
-                personAddress = mailAddress[0];
-                personPhoneNumber = phoneNumber[0];
-                personWebSite = webSite[0];
-                break;
-            case "idPerson2":
-                personAddress = mailAddress[1];
-                personPhoneNumber = phoneNumber[1];
-                personWebSite = webSite[1];
-                break;
-            case "idPerson3":
-                personAddress = mailAddress[2];
-                personPhoneNumber = phoneNumber[2];
-                personWebSite = webSite[2];
-                break;
-        }
-        var textToInsert = [];
-        var i = 0;
-        textToInsert[i++] = '<div id="appendDiv">';
-        textToInsert[i++] = '<p></p>';
-        textToInsert[i++] = '<ul><li><strong>Mail:</strong>';
-        textToInsert[i++] = personAddress + '</li><li><strong>Phone number:</strong>';
-        textToInsert[i++] = personPhoneNumber + '</li><li><strong>Website:</strong><a>';
-        textToInsert[i++] = personWebSite + '</a></li></ul><button class=".md-close">Close me</button><div>';
-        $($selectParentContent).append(textToInsert.join(''));
-        $(".md-content > div p").text($h3SelectName);
-        return false;
-    });
+  //slideshow style interval
+var autoSwap = setInterval( swap,3500);
 
-    $('div', '.md-content').on("click", "button", function() {
-        removeModalViewClass();
-        return false;
-    });
+//pause slideshow and reinstantiate on mouseout
+$('ul, span').hover(
+function () {
+  clearInterval(autoSwap);
+},
+function () {
+ autoSwap = setInterval( swap,3500);
+});
 
-    $('.md-overlay').on("click", function() {
-        removeModalViewClass();
-        return false;
-    });
+//global variables
+var items = [];
+var startItem = 1;
+var position = 0;
+var itemCount = $('.carousel li.items').length;
+var leftpos = itemCount;
+var resetCount = itemCount;
 
-    function removeModalViewClass() {
-        $('.md-overlay').removeClass('md-overlay-show');
-        $('.md-modal').removeClass('md-show');
-        $('.md-modal md-content').removeClass('md-show.md-effect-9 .md-content');
+//unused: gather text inside items class
+$('li.items').each(function(index) {
+  items[index] = $(this).text();
+});
+
+//swap images function
+function swap(action) {
+var direction = action;
+
+//moving carousel backwards
+if(direction == 'counter-clockwise') {
+  var leftitem = $('.left-pos').attr('id') - 1;
+  if(leftitem == 0) {
+    leftitem = itemCount;
+  }
+
+  $('.right-pos').removeClass('right-pos').addClass('back-pos');
+  $('.main-pos').removeClass('main-pos').addClass('right-pos');
+  $('.left-pos').removeClass('left-pos').addClass('main-pos');
+  $('#'+leftitem+'').removeClass('back-pos').addClass('left-pos');
+
+  startItem--;
+  if(startItem < 1) {
+    startItem = itemCount;
+  }
+}
+
+//moving carousel forward
+if(direction == 'clockwise' || direction == '' || direction == null ) {
+  function pos(positionvalue) {
+    if(positionvalue != 'leftposition') {
+      //increment image list id
+      position++;
+
+      //if final result is greater than image count, reset position.
+      if((startItem+position) > resetCount) {
+        position = 1-startItem;
+      }
     }
 
-    /*****************************************************************/
+    //setting the left positioned item
+    if(positionvalue == 'leftposition') {
+      //left positioned image should always be one left than main positioned image.
+      position = startItem - 1;
 
+      //reset last image in list to left position if first image is in main position
+      if(position < 1) {
+        position = itemCount;
+      }
+    }
 
-  	/* AUTHOR LINK */
-     $('.about-me-img').hover(function(){
-            $('.authorWindowWrapper').stop().fadeIn('fast').find('p').addClass('trans');
-        }, function(){
-            $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
-        });
+    return position;
+  }
 
-};
+ $('#'+ startItem +'').removeClass('main-pos').addClass('left-pos');
+ $('#'+ (startItem+pos()) +'').removeClass('right-pos').addClass('main-pos');
+ $('#'+ (startItem+pos()) +'').removeClass('back-pos').addClass('right-pos');
+ $('#'+ pos('leftposition') +'').removeClass('left-pos').addClass('back-pos');
+
+  startItem++;
+  position=0;
+  if(startItem > itemCount) {
+    startItem = 1;
+  }
+}
+}
+
+//next button click function
+$('#next').click(function() {
+swap('clockwise');
+});
+
+//prev button click function
+$('#prev').click(function() {
+swap('counter-clockwise');
+});
+
+//if any visible items are clicked
+$('li').click(function() {
+if($(this).attr('class') == 'items left-pos') {
+   swap('counter-clockwise');
+}
+else {
+  swap('clockwise');
+}
+});
+
+}
