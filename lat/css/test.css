@@ -9,14 +9,14 @@ h2{
   margin-left: 24%;
 }
 
-.carousel-1 ul {
+ul {
   display: table-row;
 }
 
-.carousel-1 li {
+li {
   width: 88%;
   height: 281px;
-  background: #333;
+  /* background: #333; */
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -24,7 +24,7 @@ h2{
   overflow: hidden;
 }
 
-.carousel-1 li p {
+li p {
   color: white;
   font-weight: bold;
   font-size: 5em;
@@ -38,18 +38,18 @@ h2{
   margin-top: -10px;
 }
 
-.items-1 {
+.items {
   position: absolute;
 }
 
-.main-pos-1 {
+.main-pos {
   margin-left: 2em !important;
   z-index: 3000;
   /* margin-left: -40px; */
   /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
 }
 
-.left-pos-1 {
+.left-pos {
   opacity: .3;
   margin-left: -17em !important;
   z-index: 1000;
@@ -58,7 +58,7 @@ h2{
   transform: scale(.75);
 }
 
-.back-pos-1 {
+.back-pos {
   margin-left: 2em !important;
   opacity: .05;
   -webkit-transform: scale(.5);
@@ -66,7 +66,7 @@ h2{
   transform: scale(.5);
 }
 
-.right-pos-1 {
+.right-pos {
   opacity: .3;
   margin-left:  21em !important;
   z-index: 1000;
@@ -75,7 +75,7 @@ h2{
   transform: scale(.75);
 }
 
-.circular--portrait1{
+.circular--portrait{
     position:relative;
     width:45%;
     height:220px;
@@ -84,13 +84,13 @@ h2{
     margin-left: 3%;
 }
 
-.circular--portrait1 img{
+.circular--portrait img{
     width:100%;
     height:auto;
 }
 
 
- span {
+span {
   position: relative;
   margin: 0 auto;
   left: 17em;

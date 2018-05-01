@@ -64,6 +64,13 @@ function isEmptyNum(obj,fldname){
 	}
 }
 
+function change(c,fldname){
+	document.getElementById(c).innerHTML ="【"+fldname+"】欄位不得為空白!!";
+	document.getElementById(c).style.color = "red";
+	document.getElementById(c).style.float = "left";
+	document.getElementById(c).style.fontSize = "xx-small";
+}
+
 //判斷是否皆為空
 function isBothEmpty(obj,fldname, obj2, fldname2,obj3,fldname3,obj4,fldname4) {
 	if( (obj == null && obj2 == null && obj3 == null && obj4 == null) || (Trim(obj.value) == "" && Trim(obj2.value) == "" && Trim(obj3.value) == "" &&Trim(obj4.value) == "" ))
@@ -71,33 +78,15 @@ function isBothEmpty(obj,fldname, obj2, fldname2,obj3,fldname3,obj4,fldname4) {
 		//  alert("【"+fldname+"】【"+fldname2+"】欄位不得均為空白!!");
 		// obj.focus();
 		// return false;
-	 document.getElementById("c1").innerHTML ="【"+fldname+"】欄位不得為空白!!";
-	 document.getElementById("c1").style.color = "red";
-	 document.getElementById("c1").style.float = "left";
-	 document.getElementById("c1").style.fontSize = "xx-small";
-
-
-	 document.getElementById("c2").innerHTML ="【"+fldname2+"】欄位不得為空白!!";
-	 document.getElementById("c2").style.color = "red";
-	 document.getElementById("c2").style.float = "left";
-	 document.getElementById("c2").style.fontSize = "xx-small";
-
-	 document.getElementById("c3").innerHTML ="【"+fldname3+"】欄位不得為空白!!";
-	 document.getElementById("c3").style.color = "red";
-	 document.getElementById("c3").style.float = "left";
-	 document.getElementById("c3").style.fontSize = "xx-small";
-
-	 document.getElementById("c4").innerHTML ="【"+fldname4+"】欄位不得為空白!!";
-	 document.getElementById("c4").style.color = "red";
-	 document.getElementById("c4").style.float = "left";
-	 document.getElementById("c4").style.fontSize = "xx-small";
+	 change("c1",fldname);
+	 change("c2",fldname2);
+	 change("c3",fldname3);
+	 change("c4",fldname4);
 	 return false;
  	}
 
  	return true;
 }
-
-
 
 //判斷是否為電話號碼
 function isTelNo(obj,fldname){

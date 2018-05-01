@@ -123,7 +123,7 @@
                         		<span><img src="http://placehold.it/400x150"></img></span>
                         		<span><img src="http://placehold.it/400x100"></img></span>
                         		<span><img src="http://placehold.it/400x50"></img></span> -->
-                            <ul class="carousel">
+                            <ul  class="carousel">
                               <li class="items main-pos" id="1"><p>1</p></li>
                               <li class="items right-pos" id="2">
                                 <img src="image/1.png" />
@@ -159,7 +159,132 @@
               <div id="latContentBlk_2">
                 <div id="latContentMsg_4" class="ContentTitle4">OURS TEAM</div>
                 <div id="latContentMsg_5" class="ContentTitle5">程式設計團隊 </div>
-                <div id="latContentMsg_6"></div>
+                <div id="latContentMsg_6">
+
+
+                  <div id="slider-container">
+                    <div class="slider">
+                      <ul  class="carousel">
+                        <li class="items main-pos" id="1">
+                          <ul>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                          </ul>
+                      </li>
+                        <li class="items right-pos" id="2">
+                          <ul>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="items back-pos" id="3">
+                          <ul>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="items back-pos" id="4">
+                          <ul>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="items back-pos" id="5">
+                          <ul>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="items back-pos" id="6">
+                          <ul>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="items left-pos" id="7">
+                          <ul>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li class="circular--portrait">
+                              <img src="image/UI1.jpg"/>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                            <li id="name">
+                              <h2>Siow Lee JIng</h2>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+
+                </div>
+                <a class="prev" id="prev1"><img src="image/arrow1.png"></a>
+                <a class="next" id="next1"><img src="image/arrow2.png"></a>
               </div>
       </div>
     </div>

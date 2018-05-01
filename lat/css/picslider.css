@@ -11,6 +11,13 @@
 		flex-flow: row nowrap;
 }
 
+	h2{
+	  margin-left: 24%;
+	}
+
+	ul {
+	  display: table-row;
+	}
 
 	section {
 	  width: 40em;
@@ -21,8 +28,8 @@
 
 	li {
 	  width: 500px;
-	  height: 259px;
-	  background: #333;
+	  height: 265px;
+	  /* background: #333; */
 	  display: inline-block;
 	  -webkit-transition: all .3s ease-in-out;
 	  -moz-transition: all .3s ease-in-out;
@@ -36,6 +43,12 @@
 	  font-size: 5em;
 	  text-align: center;
 	  margin-top: 1.175em;
+	}
+
+	#name{
+	  width: 50%;
+	  height: auto;
+	  margin-top: -10px;
 	}
 
 	.items {
@@ -72,4 +85,25 @@
 	  -webkit-transform: scale(.75);
 	  -moz-transform: scale(.75);
 	  transform: scale(.75);
+	}
+
+	.circular--portrait{
+	    position:relative;
+	    width:45%;
+	    height:220px;
+	    overflow:hidden;
+	    border-radius:50%;
+	    margin-left: 3%;
+	}
+
+	.circular--portrait img{
+	    width:100%;
+	    height:auto;
+	}
+
+	span {
+	  position: relative;
+	  margin: 0 auto;
+	  left: 17em;
+	  top: 20em;
 	}
