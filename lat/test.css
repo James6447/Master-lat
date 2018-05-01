@@ -5,10 +5,18 @@ section {
   position: relative;
 }
 
+h2{
+  margin-left: 24%;
+}
+
+ul {
+  display: table-row;
+}
+
 li {
-  width: 500px;
+  width: 88%;
   height: 281px;
-  background: #333;
+  /* background: #333; */
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -22,6 +30,11 @@ li p {
   font-size: 5em;
   text-align: center;
   margin-top: 1.175em;
+}
+
+#name{
+  width: 50%;
+  height: auto;
 }
 
 .items {
@@ -63,17 +76,18 @@ li p {
 
 .circular--portrait{
     position:relative;
-    width:200px;
-    height:200px;
+    width:45%;
+    height:220px;
     overflow:hidden;
     border-radius:50%;
-
+    margin-left: 3%;
 }
 
 .circular--portrait img{
     width:100%;
     height:auto;
 }
+
 
 span {
   position: relative;

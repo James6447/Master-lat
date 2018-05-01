@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>LAT</title>
-<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="shortcut icon" href="image/logoxs.png" />
 <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="css/latstyle.css"></link>
 <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="css/latheader.css"></link>
 <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="css/latMain.css"></link>

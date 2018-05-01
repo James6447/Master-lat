@@ -19,7 +19,11 @@ function isEmpty(obj,fldname)
 		obj.focus();
 		return false;
  	}
+	else{
+		document.getElementById("c1").innerHTML ="&nbsp&nbsp&nbsp";
+		document.getElementById("c1").style.float = "none";
  	return true;
+	}
 }
 
 
@@ -35,7 +39,11 @@ function isEmptyCo(obj,fldname)
 		 obj.focus();
 		 return false;
  	}
+	else{
+		document.getElementById("c2").innerHTML ="&nbsp&nbsp&nbsp";
+		document.getElementById("c2").style.float = "none";
  	return true;
+	}
 }
 
 function isEmptyNum(obj,fldname){
@@ -49,7 +57,11 @@ function isEmptyNum(obj,fldname){
 		 obj.focus();
 		 return false;
 	}
-return true;
+	else{
+		document.getElementById("c3").innerHTML ="&nbsp&nbsp&nbsp";
+		document.getElementById("c3").style.float = "none";
+	return true;
+	}
 }
 
 //判斷是否皆為空
