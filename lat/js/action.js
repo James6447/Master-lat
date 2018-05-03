@@ -1,7 +1,7 @@
 function datacheck()
 {
      var theForm = document.forms[0];
-     var theURL="" ;
+     var theURL="";
 
      if (! isBothEmpty(theForm.company, "公司名稱",theForm.username, "聯絡人姓名",theForm.phone,"連絡電話",theForm.email,"電子郵件")) return false;
      if (! isEmpty(theForm.company, "公司名稱")) return false;
@@ -13,8 +13,8 @@ function datacheck()
      if (! isTelNo(theForm.phone,"連絡電話")) return false;
      // if(theForm.telno.length <8) return false;
      if (! validateEmail(theForm.email.value)) {
-      document.getElementById("c4").innerHTML ="【主要電子郵件(E-mail)】格式不合!!";
-      document.getElementById("c4").style.marginLeft
+      document.getElementById("c4").innerHTML ="電子郵件(E-mail)格式不合!!";
+      document.getElementById("c4").style.marginLeft;
       document.getElementById("c4").style.color = "red";
       document.getElementById("c4").style.float = "left";
       document.getElementById("c4").style.fontSize = "xx-small";

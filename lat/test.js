@@ -1,108 +1,102 @@
 window.onload = function() {
 //slideshow style interval
-var autoSwap = setInterval( swap,3500);
+var autogo = setInterval( go,3500);
 
 //pause slideshow and reinstantiate on mouseout
-$('.carousel-1 ul,.carousel-1 span').hover(
-function () {
-  clearInterval(autoSwap);
-},
-function () {
- autoSwap = setInterval( swap,3500);
-});
+
 
 //global variables
-var items = [];
-var startItem = 1;
-var position = 0;
-var itemCount = $('.carousel-1 li.items-1').length;
-var leftpos = itemCount;
-var resetCount = itemCount;
+var item = [];
+var startItems = 1;
+var poision = 0;
+var itemsCount = $('.carousel-1 li.gem').length;
+var leftposs = itemsCount;
+var resetCounts = itemsCount;
 
-//unused: gather text inside items class
-$('.carousel-1 li.items-1').each(function(index) {
-    items[index] = $(this).text();
+//unused: gather text inside item class
+$('li.gem').each(function(index) {
+    item[index] = $(this).text();
 });
 
 //swap images functionsss
-function swap(action) {
+function go(action) {
   var direction = action;
 
   //moving carousel backwards
   if(direction == 'counter-clockwise') {
-    var leftitem = $('.left-pos-1').attr('id') - 1;
+    var leftitem = $('.yeah').attr('id') - 1;
     if(leftitem == 0) {
-      leftitem = itemCount;
+      leftitem = itemsCount;
     }
 
-    $('.right-pos-1').removeClass('right-pos-1').addClass('back-pos-1');
-    $('.main-pos-1').removeClass('main-pos-1').addClass('right-pos-1');
-    $('.left-pos-1').removeClass('left-pos-1').addClass('main-pos-1');
-    $('#'+leftitem+'').removeClass('back-pos-1').addClass('left-pos-1');
+    $('.light').removeClass('light').addClass('heave');
+    $('.top').removeClass('top').addClass('light');
+    $('.yeah').removeClass('yeah').addClass('top');
+    $('#'+leftitem+'').removeClass('heave').addClass('yeah');
 
-    startItem--;
-    if(startItem < 1) {
-      startItem = itemCount;
+    startItems--;
+    if(startItems < 1) {
+      startItems = itemsCount;
     }
   }
 
   //moving carousel forward
   if(direction == 'clockwise' || direction == '' || direction == null ) {
-    function pos(positionvalue) {
-      if(positionvalue != 'leftposition') {
+    function pos(poisionvalue) {
+      if(poisionvalue != 'leftpoision') {
         //increment image list id
-        position++;
+        poision++;
 
-        //if final result is greater than image count, reset position.
-        if((startItem+position) > resetCount) {
-          position = 1-startItem;
+        //if final result is greater than image count, reset poision.
+        if((startItems+poision) > resetCounts) {
+          poision = 1-startItems;
         }
       }
 
-      //setting the left positioned item
-      if(positionvalue == 'leftposition') {
-        //left positioned image should always be one left than main positioned image.
-        position = startItem - 1;
+      //setting the left poisioned item
+      if(poisionvalue == 'leftpoision') {
+        //left poisioned image should always be one left than main poisioned image.
+        poision = startItems - 1;
 
-        //reset last image in list to left position if first image is in main position
-        if(position < 1) {
-          position = itemCount;
+        //reset last image in list to left poision if first image is in main poision
+        if(poision < 1) {
+          poision = itemsCount;
         }
       }
 
-      return position;
+      return poision;
     }
 
-   $('#'+ startItem +'').removeClass('main-pos-1').addClass('left-pos-1');
-   $('#'+ (startItem+pos()) +'').removeClass('right-pos-1').addClass('main-pos-1');
-   $('#'+ (startItem+pos()) +'').removeClass('back-pos-1').addClass('right-pos-1');
-   $('#'+ pos('leftposition') +'').removeClass('left-pos-1').addClass('back-pos-1');
+   $('#'+ startItems +'').removeClass('top').addClass('yeah');
+   $('#'+ (startItems+pos()) +'').removeClass('light').addClass('top');
+   $('#'+ (startItems+pos()) +'').removeClass('heave').addClass('light');
+   $('#'+ pos('leftpoision') +'').removeClass('yeah').addClass('heave');
 
-    startItem++;
-    position=0;
-    if(startItem > itemCount) {
-      startItem = 1;
+    startItems++;
+    poision=0;
+    if(startItems > itemsCount) {
+      startItems = 1;
     }
   }
 }
 
 //next button click function
 $('#next').click(function() {
-  swap('clockwise');
+  go('clockwise');
 });
 
 //prev button click function
 $('#prev').click(function() {
-  swap('counter-clockwise');
+  go('counter-clockwise');
 });
 
-//if any visible items are clicked
-$('.carousel-1 li').click(function() {
-  if($(this).attr('class') == 'items1 left-pos-1') {
-     swap('counter-clockwise');
+//if any visible item are clicked
+$('li').click(function() {
+  if($(this).attr('class') == 'gem yeah') {
+     go('counter-clockwise');
   }
   else {
-    swap('clockwise');
+    go('clockwise');
   }
 });
 

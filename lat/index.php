@@ -9,9 +9,8 @@
 <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="css/latContent.css"></link>
 <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="css/latFooter.css"></link>
 <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="css/picslider.css"></link>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="js/utility_utf8.js" type="text/javascript"></script>
 <script src="js/action.js" type="text/javascript"></script>
 <script src="js/slider.js" type="text/javascript"></script>
@@ -19,13 +18,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-<body>
+
+<body >
 <div id="latcontainer">
   <div id="latwapper">
 
       <div id="latHeader">
         <div id="latHeaderMenu">
-          <div id ="latHeaderLeft">
+          <div id="latHeaderLeft">
             <div id="HeaderLogo">
               <div id="Logo">LOGO</div>
               <div id="Slogan">LEARN & TEACH</div>
@@ -58,7 +58,7 @@
       </div>
 
       <div id="latMain">
-        <div id ="latMainR1">
+        <div id="latMainR1">
             <div id="latMainTitle" >
               <div id="latMainTitle_1"></div>
                 <div id="latMainBlk_1">
@@ -109,190 +109,53 @@
             <div id="latContentTitle_1"></div>
                 <div id="latContentBlk_1">
                   <div id="latContentMsg_1" class="ContentTitle1">OURS PROJECTS</div>
-                  <div id="latContentMsg_2"></div>
-                  <div id="latContentMsg_3">
+                  <div class="container">
+                    <section>
+                        <ul class="carousel">
+                          <li class="items main-pos" id="1"><p>1</p></li>
+                          <li class="items right-pos" id="2">
+                            <img src="http://farm9.staticflickr.com/8337/8234123289_2b23aeaf06.jpg" />
+                          </li>
+                          <li class="items back-pos" id="3">
+                            <img src="http://farm9.staticflickr.com/8337/8234711202_831b23a2b7.jpg"/>
+                          </li>
+                          <li class="items back-pos" id="4"><iframe width="500" height="281" src="https://www.youtube.com/embed/szIEr2F61DU" frameborder="0" allowfullscreen></iframe></li>
+                          <li class="items back-pos" id="5">
+                            <iframe src="https://player.vimeo.com/video/19464611" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                          </li>
+                          <li class="items back-pos" id="6">
+                            <img src="http://woofie2.pixiq.com/files/cache/20030323_img_7465_3072_x_2048_619x413.jpg" />
+                          </li>
+                          <li class="items left-pos" id="7"><img src="http://www.mishes.com/wp-content/uploads/2011/12/FlickrMonday07.jpg"/>
+                          </li>
+                        </ul>
 
-                        <!-- Full-width images with number and caption text -->
-                        <div id="slider-container">
-                        	<div class="slider">
-                        		<!-- <span><img src="image/1.jpg"></img></span>
-                        		<span><img src="image/2.jpg"></img></span>
-                        		<span><img src="image/3.jpg"></img></span>
-                        		<span><img src="http://placehold.it/400x250"></img></span>
-                        		<span><img src="http://placehold.it/400x200"></img></span>
-                        		<span><img src="http://placehold.it/400x150"></img></span>
-                        		<span><img src="http://placehold.it/400x100"></img></span>
-                        		<span><img src="http://placehold.it/400x50"></img></span> -->
-                            <ul  class="carousel">
-                              <li class="items main-pos" id="1"><p>1</p></li>
-                              <li class="items right-pos" id="2">
-                                <img src="image/1.png" />
-                              </li>
-                              <li class="items back-pos" id="3">
-                                <img src="image/3.png"/>
-                              </li>
-                              <li class="items back-pos" id="4"><iframe width="500" height="281" src="https://www.youtube.com/embed/szIEr2F61DU" frameborder="0" allowfullscreen></iframe></li>
-                              <li class="items back-pos" id="5">
-                                <iframe src="https://player.vimeo.com/video/19464611" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                              </li>
-                              <li class="items back-pos" id="6">
-                                <img src="image/2.png" />
-                              </li>
-                              <li class="items left-pos" id="7"><img src="image/4.png"/>
-                              </li>
-                            </ul>
 
-                        	</div>
-                        </div>
+                      </section>
+                    </div>
+                            <a class="prev" id="prev"><img src="image/arrow1.png"></a>
+                            <a class="next" id="next"><img src="image/arrow2.png"></a>
                         <!-- Next and previous buttons -->
                     <div id="latContentAnchor_1">LOAD MORE</div>
                   </div>
-                  <a class="prev" id="prev"><img src="image/arrow1.png"></a>
-                  <a class="next" id="next"><img src="image/arrow2.png"></a>
                 </div>
 
         </div>
       </div>
-      <div id ="latContentR2">
-        <div id ="latContentTitle2">
+      <div id="latContentR2">
+        <div id="latContentTitle2">
           <div id="latContentTitle_2"></div>
               <div id="latContentBlk_2">
-                <div id="latContentMsg_4" class="ContentTitle4">OURS TEAM</div>
-                <div id="latContentMsg_5" class="ContentTitle5">程式設計團隊 </div>
-                <div id="latContentMsg_6">
-
-
-                  <div id="slider-container">
-                    <div class="slider">
-                      <ul  class="carousel">
-                        <li class="items main-pos" id="1">
-                          <ul>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                          </ul>
-                      </li>
-                        <li class="items right-pos" id="2">
-                          <ul>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="items back-pos" id="3">
-                          <ul>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="items back-pos" id="4">
-                          <ul>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="items back-pos" id="5">
-                          <ul>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="items back-pos" id="6">
-                          <ul>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="items left-pos" id="7">
-                          <ul>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li class="circular--portrait">
-                              <img src="image/UI1.jpg"/>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                            <li id="name">
-                              <h2>Siow Lee JIng</h2>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-
+                <iframe width="100%" height="600px" src="test.html" frameborder="0"  scrolling="no" allowfullscreen></iframe>
                 </div>
-                <a class="prev" id="prev1"><img src="image/arrow1.png"></a>
-                <a class="next" id="next1"><img src="image/arrow2.png"></a>
               </div>
-      </div>
-    </div>
-  </div>
+            </div>
+          </div>
+        </div>
 
     <div id="latFooter">
-      <div id ="latFooterR1">
-        <div id ="latFooterTitle">
+      <div id="latFooterR1">
+        <div id="latFooterTitle">
           <div id="latFooterTitle_1"></div>
 
               <div id="latFooterBlk_1">

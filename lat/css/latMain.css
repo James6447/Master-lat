@@ -161,16 +161,16 @@ textarea{width:100%;}
 .prev, .next {
  cursor: pointer;
  position: absolute;
- top: 45%;
+ top: 23%;
  width: auto;
- margin-left: -37%;
- margin-right:13%;
  color: white;
  font-weight: bold;
  font-size: 18px;
  transition: 0.6s ease;
  border-radius: 0 3px 3px 0;
+ z-index: 3000;
 }
+
 
 .prev img, .next img{
   width: 20px;

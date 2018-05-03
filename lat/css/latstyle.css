@@ -38,7 +38,7 @@ img { vertical-align:middle; width: 100%; }
 /*content區塊*/
 #latContent{width:100%;background:#c1c1c2;}
 #latContentR1{width:100%;}
-#latContentTitle{width:100%;display:block;text-align:center;transition:all ease .8s;}
+#latContentTitle{width:100%;display:block;transition:all ease .8s;}
 #latContentMsg_1{width:100%;display:block;text-align:center;transition:all ease .8s;}
 #latContentMsg_2{width:70%;display:block;margin:0 auto;transition:all ease .8s;}
 #latContentMsg_3{width:100%;display:block;text-align: center;transition:all ease .8s;}
@@ -47,7 +47,7 @@ img { vertical-align:middle; width: 100%; }
 #latContentTitle2{width:100%;display:block;text-align: center;transition:all ease .8s;}
 #latContentMsg_4{width:100%;display:block;text-align: center;transition:all ease .8s;}
 #latContentMsg_5{width:70%;display:block;text-align: center;margin:0 auto;transition:all ease .8s;}
-#latContentMsg_6{width:70%;display:block;text-align: center;margin:0 auto;transition:all ease .8s;}
+#latContentMsg_6{width:100%;display:block;text-align: center;margin:0 auto;transition:all ease .8s;}
 /*footer區塊*/
 #latFooter{ width:100%; background:#e0e0e0; padding:0px; margin-top: 0;}
 #latFooterR1{width:100%;text-align:left;display:block;margin:0 auto;}

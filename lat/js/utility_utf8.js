@@ -6,15 +6,20 @@ function Trim(str)
    return str.replace(/^\s*|\s*$/g,"");
 }
 
+
+function change(c,fldname){
+	document.getElementById(c).innerHTML ="【"+fldname+"】欄位不得為空白!!";
+	document.getElementById(c).style.color = "red";
+	document.getElementById(c).style.float = "left";
+	document.getElementById(c).style.fontSize = "xx-small";
+}
+
 //判斷是否為空
 function isEmpty(obj,fldname)
 {
 	if( obj == null || Trim(obj.value) == "")
 	{
-		document.getElementById("c1").innerHTML ="【"+fldname+"】欄位不得為空白!!";
-		document.getElementById("c1").style.color = "red";
-		document.getElementById("c1").style.float = "left";
-		document.getElementById("c1").style.fontSize = "xx-small";
+		change("c1,fldname");
 		 // alert("【"+fldname+"】欄位不得為空白!!");
 		obj.focus();
 		return false;
@@ -31,11 +36,7 @@ function isEmptyCo(obj,fldname)
 {
 	if( obj == null || Trim(obj.value) == "")
 	{
-		 document.getElementById("c2").innerHTML ="【"+fldname+"】欄位不得為空白!!";
-		 document.getElementById("c2").style.marginLeft
-		 document.getElementById("c2").style.color = "red";
-		 document.getElementById("c2").style.float = "left";
-		 document.getElementById("c2").style.fontSize = "xx-small";
+		 change("c2,fldname");
 		 obj.focus();
 		 return false;
  	}
@@ -49,11 +50,7 @@ function isEmptyCo(obj,fldname)
 function isEmptyNum(obj,fldname){
 	if( obj == null || Trim(obj.value) == "")
 	{
-		 document.getElementById("c3").innerHTML ="【"+fldname+"】欄位不得為空白!!";
-		 document.getElementById("c3").style.marginLeft
-		 document.getElementById("c3").style.color = "red";
-		 document.getElementById("c3").style.float = "left";
-		 document.getElementById("c3").style.fontSize = "xx-small";
+		 change("c3,fldname");
 		 obj.focus();
 		 return false;
 	}
@@ -62,13 +59,6 @@ function isEmptyNum(obj,fldname){
 		document.getElementById("c3").style.float = "none";
 	return true;
 	}
-}
-
-function change(c,fldname){
-	document.getElementById(c).innerHTML ="【"+fldname+"】欄位不得為空白!!";
-	document.getElementById(c).style.color = "red";
-	document.getElementById(c).style.float = "left";
-	document.getElementById(c).style.fontSize = "xx-small";
 }
 
 //判斷是否皆為空
