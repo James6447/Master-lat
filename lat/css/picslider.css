@@ -15,7 +15,7 @@ section {
 li {
   width: 500px;
   height: 281px;
-  background: #333;
+  
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
