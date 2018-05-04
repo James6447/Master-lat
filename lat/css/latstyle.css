@@ -15,7 +15,7 @@ img { vertical-align:middle; width: 100%; }
 /*WTFWTWFWTWTWFWTW全網基本定義結束WTWFWTWFWTWFWTWFWTWFWTW*/
 /*WTFWTWTWTWTWFWTW全網架構定義開始WTWFWTWFWTWFDWFWTWDFWTW*/
 /*最外層區塊*/
-#latwapper{ width:100%; max-width:100%; text-align:left; border:0px; padding:0px; word-wrap:normal;}
+#latwapper{ width:100%; max-width:100%;  border:0px; padding:0px; word-wrap:normal;}
 /*header區塊*/
 #latHeader{ width:100%; background:#e0e0e0; margin:0px; padding:0px; margin-bottom:0px; }
 #latHeaderLeft{width:40%;background:#e0e0e0;display: block;float:left;}

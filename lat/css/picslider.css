@@ -3,11 +3,14 @@
 }
 
 section {
-  width: 40em;
+  width: 100%;
   height: 25em;
-  margin: 0 auto;
   position: relative;
+	margin-left: -300px;
+	text-align: center;
+
 }
+
 
 li {
   width: 500px;

@@ -109,7 +109,7 @@
             <div id="latContentTitle_1"></div>
                 <div id="latContentBlk_1">
                   <div id="latContentMsg_1" class="ContentTitle1">OURS PROJECTS</div>
-                  <div class="container">
+                  <!-- <div class="container"> -->
                     <section>
                         <ul class="carousel">
                           <li class="items main-pos" id="1"><p>1</p></li>
@@ -128,13 +128,13 @@
                           </li>
                           <li class="items left-pos" id="7"><img src="http://www.mishes.com/wp-content/uploads/2011/12/FlickrMonday07.jpg"/>
                           </li>
+
                         </ul>
-
-
+                        <a class="prev" id="prev"><img src="image/arrow1.png"></a>
+                        <a class="next" id="next"><img src="image/arrow2.png"></a>
                       </section>
-                    </div>
-                            <a class="prev" id="prev"><img src="image/arrow1.png"></a>
-                            <a class="next" id="next"><img src="image/arrow2.png"></a>
+                    <!-- </div> -->
+
                         <!-- Next and previous buttons -->
                     <div id="latContentAnchor_1">LOAD MORE</div>
                   </div>
@@ -146,7 +146,7 @@
         <div id="latContentTitle2">
           <div id="latContentTitle_2"></div>
               <div id="latContentBlk_2">
-                <iframe width="100%" height="600px" src="test.html" frameborder="0"  scrolling="no" allowfullscreen></iframe>
+                <iframe width="100%" height="600px" src="member.html" frameborder="0"  scrolling="no" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
