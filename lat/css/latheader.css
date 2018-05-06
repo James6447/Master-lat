@@ -1,25 +1,28 @@
 
 #latHeader{position: relative;}
-#latHeaderMenu{background:#e6e6e6;width: 98%;
+#latHeaderMenu{background:#e6e6e6;width: 95%;
               position: absolute;
-              top: 5%;
-              left: 1%;
               z-index: 4;
+              top:3%;
+              left:2.5%;
               margin: 0 auto;
               display: block;
-              border: 1px solid #303549;
-              box-shadow: 1px 1px 1px 1px rgba(13, 206, 236, 0.3);
-}
+              box-shadow: 3px 0px 8px 4px rgba(5,233,204,0.3);
+            }
 
-#latHeaderRight{background:#e6e6e6;}
-#latHeaderLeft{background:#e6e6e6;}
-#HeaderLogo{width:60%;
-            display:block;
-            float:right;
-            padding:5px 0px;
-          }
-#Logo{color:#303549;text-align:left;display:block;font-size:43px;cursor:pointer;line-height: 100%}
-#Slogan{color:#303549;text-align:left;display:block;font-size:16px;line-height:150%;}
+.containerheader{width:67.5%;display:table;margin:0 auto;}
+.logo{width:35%;display: inline-table;}
+.list{width:65%;display: inline-table;}
+.logopic img{width:90%;}
+.logothing{display:table;padding:10px 0px;}
+.listtitle{display:inline-table;}
+.listtitle:nth-child(5){border-right:1px solid #303549;}
+.item{ color:#303549;display: inline-table;
+    padding: 33px 20px;font-weight: bold;
+    border-left: 1px solid #303549;font-family: Microsoft JhengHei;
+    }
+.item:hover{color:#ffffff;background: #303549;}
+
 
 #HeaderMenu1,#HeaderMenu2,#HeaderMenu3,#HeaderMenu4
 {
@@ -60,18 +63,19 @@
 #latHeaderBlk_1{margin: 260px auto 110px auto;z-index: 2;position: relative;display:block;}
 #latHeaderMsg_1{ margin: 0 auto;
                 display: block;
-                font-size: 55px;
+                font-size: 50px;
                 margin:50px auto;
                 font-weight: bold;
                 letter-spacing: 1.5px;
                 color:#23dfd0;
                 line-height: 150%;
                 text-align: center;
+                font-family: Verdana,sans-serif;
                 display:block;}
 #latHeaderMsg_2{ margin: 0 auto;
                 display: block;
                 font-size: 20px;
-                font-weight: 500;
+                font-family: Microsoft JhengHei;
                 letter-spacing: 1.5px;
                 color: #ffffff;
                 line-height: 150%;
@@ -80,7 +84,7 @@
 #latHeaderMsg_3{ margin: 0 auto;
                 display: block;
                 font-size: 20px;
-                font-weight: 500;
+                font-family: Microsoft JhengHei;
                 letter-spacing: 1.5px;
                 color: #ffffff;
                 line-height: 150%;
@@ -91,18 +95,25 @@
                   text-align: center;
                 }
 
-#latAnchorText{ padding: 10px 35px;
+/*#latAnchorText{ padding: 10px 35px;
                 border: 1px solid #ffffff;
                 color: #ffffff;
                 font-weight: 500;
-                font-size: 18px;
-                width:100px;
+                font-size: 20px;
+                font-family: Microsoft JhengHei;
+                width:105px;
                 cursor:pointer;
                 margin:0 auto;
-                }
-                @media only screen and (max-width: 800px){
-                  #latHeaderRight{display:none;}
+                }*/
+.anchor{ color:#ffffff;display: inline-table;
+        padding: 10px 35px;font-weight: bold;font-size: 20px;
+        border: 1px solid #ffffff;font-family: Microsoft JhengHei;
+     }
+.anchor:hover{color:#ffffff;}
 
+                @media only screen and (max-width: 800px){
+                #latHeaderRight{display:none;}
                 #latHeaderleft{width:100%;}
                 #latHeaderMenu{position: static;}
-                                                      }
+                #latHeaderTitle_1{background-image:url("image/hpimage1.jpg") }
+                                                  }

@@ -1,16 +1,90 @@
 window.onload = function() {
+
+//nav
+  $("#head").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#latHeaderTitle").offset().top
+      }, 2000);
+  });
+
+
+  $("#main").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#latMain").offset().top
+      }, 2000);
+  });
+
+  $("#project").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#latContent").offset().top
+      }, 2000);
+  });
+
+  $("#member").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#latContentR2").offset().top
+      }, 2000);
+  });
+
+  $("#contact").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#latFooter").offset().top
+      }, 2000);
+  });
+
+
+
+//RWD
+  var windos = $(window).width();
+
+  var latFooter = $('#latFooterTitle_1').width();
+  var FootMsg_4 = $('#latFooterMsg_4').width();
+  var input = $("input").width();
+  var textarea = FootMsg_4+input;
+
+  var lenght = $('#latFooterMsg_3').width() + input + FootMsg_4;
+  var button = latFooter - lenght;
+  $('textarea').css( "width", textarea);
+  if(button<0){
+    $('#latFooterItem_8').css("margin-right","0px");
+    $('#latFooterMsg_8').css("text-align",'center');
+  }
+  else {
+    $('#latFooterItem_8').css("margin-right",button);
+    $('#latFooterMsg_8').css("text-align",'right');
+  }
+
+
+
+
+$( window ).resize(function() {
+  var latFooter = $('#latFooterTitle_1').width();
+  var FootMsg_4 = $('#latFooterMsg_4').width();
+  var input = $("input").width();
+  var textarea = FootMsg_4+input;
+
+  var lenght = $('#latFooterMsg_3').width() + input + FootMsg_4;
+  var button = latFooter - lenght;
+
+  $('textarea').css( "width", textarea);
+  if(button<0){
+    $('#latFooterItem_8').css("margin-right","0px");
+    $('#latFooterMsg_8').css("text-align",'center');
+  }
+  else {
+    $('#latFooterItem_8').css("margin-right",button);
+    $('#latFooterMsg_8').css("text-align",'right');
+  }
+
+});
+
+
 //slideshow style interval
 var autoSwap = setInterval( swap,3500);
 
 //pause slideshow and reinstantiate on mouseout
 
-$('ul, span').hover(
-function () {
-  clearInterval(autoSwap);
-},
-function () {
- autoSwap = setInterval( swap,3500);
-});
+
 //global variables
 var items = [];
 var startItem = 1;

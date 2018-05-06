@@ -1,4 +1,23 @@
 window.onload = function() {
+
+var windos = $('window').width();
+
+if (windos <=375){
+  $('sectsion').css('width','390px');
+}
+else{
+  $('sectsion').css('width','100%');
+}
+
+$( window ).resize(function() {
+  if (windos <=375){
+    $('sectsion').css('width','390px');
+  }
+  else{
+    $('sectsion').css('width','100%');
+  }
+});
+
 //slideshow style interval
 var autogo = setInterval( go,3500);
 

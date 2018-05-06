@@ -36,3 +36,7 @@ function getData(theURL){
   req.open("get","http://localhost:5566/Master-lat/lat/"+theURL);
   req.send();
 }
+
+function test(){
+  alert('fuck');
+}

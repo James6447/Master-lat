@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 //去掉空白
 function Trim(str)
 {
@@ -8,10 +8,10 @@ function Trim(str)
 
 
 function change(c,fldname){
-	document.getElementById(c).innerHTML ="【"+fldname+"】欄位不得為空白!!";
+	document.getElementById(c).innerHTML =""+fldname+"欄位不得為空白!!";
 	document.getElementById(c).style.color = "red";
 	document.getElementById(c).style.float = "left";
-	document.getElementById(c).style.fontSize = "xx-small";
+	document.getElementById(c).style.fontSize = "16px";
 }
 
 //判斷是否為空
@@ -88,7 +88,7 @@ function isTelNo(obj,fldname){
 			tempChar= obj.value.substring(i,i+1);
 			if (strRef.indexOf(tempChar,0)==-1)
 			{
-				 alert("【"+fldname+"】欄位必須為數字!!");
+				 alert(""+fldname+"欄位必須為數字!!");
 				obj.focus();
 	   			return false;
 	  		}
@@ -105,7 +105,7 @@ function isLength(obj,maxlen,fldname)
 	len=obj.value.length;
 	if (len < maxlen)
 	{
-		 alert("【"+fldname+"】欄位長度必須為"+maxlen+"!!");
+		 alert(""+fldname+"欄位長度必須為"+maxlen+"!!");
 		obj.focus();
    		return false;
 	}
@@ -119,7 +119,7 @@ function isLengthOver(obj,maxlen,fldname)
 	len=obj.value.length;
 	if (len > maxlen)
 	{
-		 alert("【"+fldname+"】欄位長度超過"+maxlen+"!!");
+		 alert(""+fldname+"欄位長度超過"+maxlen+"!!");
 		obj.focus();
    		return false;
 	}

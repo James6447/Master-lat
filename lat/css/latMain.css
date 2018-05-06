@@ -26,9 +26,10 @@
 
 #latMainMsg_1{ margin: 50px auto;
                 display: block;
-                font-size: 24px;
-                font-weight: 800;
+                font-size: 30px;
                 letter-spacing: 1.5px;
+                font-weight: bold;
+              font-family: Verdana,sans-serif;
                 color: #312028;
                 line-height: 150%;
                 text-align: center;
@@ -41,23 +42,26 @@
                width:30px;
               background: #312028;
                line-height: 150%;
+               border-radius: 100%;
               text-align: center;
                }
 #latMainContent_1,#latMainContent_2,#latMainContent_3
-                {font-size:14px;
+                {font-size:16px;
                   color:#312028;
+                  font-family: Microsoft JhengHei;
                   line-height: 100%;
                   margin:40px auto 50px auto;}
 
 #latMainContentContent_1,#latMainContentContent_2,#latMainContentContent_3
-            {font-size:14px;
+            {font-size:12px;
               color:#312028;
               line-height: 100%;
+              font-family: Microsoft JhengHei;
               margin:26px auto;
               width: 75%;
               text-align:center;}
 
-#latMainPicTitle_1,#latMainPicTitle_2,#latMainPicTitle_3,#latMainPicTitle_4
+/*#latMainPicTitle_1,#latMainPicTitle_2,#latMainPicTitle_3,#latMainPicTitle_4
 {margin:45px auto 100px auto;
 text-align:center;
 width:60px;
@@ -65,13 +69,19 @@ font-size:12px;
 line-height:100%;
 padding:10px 35px;
 border:1px solid #303549;
-color:#303549;}
+color:#303549;}*/
 
-#latMainPicTitle_1:hover,#latMainPicTitle_2:hover,#latMainPicTitle_3:hover,#latMainPicTitle_4:hover
+/*#latMainPicTitle_1:hover,#latMainPicTitle_2:hover,#latMainPicTitle_3:hover,#latMainPicTitle_4:hover
 {background:#303549;
   color:#ffffff;
   cursor:pointer;
- transition:all ease .2s;}
+ transition:width ease .2s;}*/
+
+ .anchorpic{ color:#303549;display: inline-table;
+         padding: 10px 35px;font-size: 12px;margin:45px auto 100px auto;
+         border: 1px solid #303549;font-family: Microsoft JhengHei;
+      }
+ .anchorpic:hover{color:#ffffff;transition: width ease.2s;background:#303549;}
 
 #latMainPic_1 img,#latMainPic_2 img,#latMainPic_3 img,#latMainPic_4 img{max-width:90%;transition: all ease .8s;}
 
@@ -81,6 +91,8 @@ input{
   color: white;
   width: 222px;
   height: 27px;
+  font-family: Microsoft JhengHei;
+  font-size: 16px;
   background: rgba(192,192,192,33%);
 }
 
@@ -95,8 +107,9 @@ input{
 textarea{
   resize: none;
   border: none;
-  width: 515px;
   height: 80px;
+  font-family: Microsoft JhengHei;
+  font-size: 16px;
   overflow-y:hidden;
   overflow-x:hidden;
   color: white;
@@ -104,6 +117,9 @@ textarea{
 }
 @media only screen and (max-width: 1000px){
 textarea{width:100%;}
+}
+@media only screen and (max-width: 700px){
+textarea{width:222px;}
 }
 
 .fade {
@@ -126,7 +142,8 @@ textarea{width:100%;}
 
 .but_c{
   font-size:16px;
-//  padding:5px 35px;
+  font-family: Microsoft JhengHei;
+ padding:5px 35px;
   color:#ffffff;
   background: rgba(0%,0%,0%,0%);
   border:1px solid #23dfd0;
@@ -160,19 +177,23 @@ textarea{width:100%;}
 /* Next & previous buttons */
 .prev, .next {
  cursor: pointer;
- position: absolute;
- top: 43%;
- width: auto;
+ position: relative;
  color: white;
  font-weight: bold;
  font-size: 18px;
  transition: 0.6s ease;
  border-radius: 0 3px 3px 0;
  z-index: 3000;
- margin-left: -19%;
- margin-right: -15%;
+ top:-269px;
 }
 
+.prev1{
+  left: -506px;
+}
+
+.next1{
+  left: 515px;
+}
 
 .prev img, .next img{
   width: 20px;
@@ -212,20 +233,27 @@ textarea{width:100%;}
 
 .error{
   margin-top:3px;
+  padding-left: 10px;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 800px){
   #latMainContent_1,#latMainContent_2{width:50%;}
     #latMainContent_3{width:100%;margin:40px auto 100px auto;}
+    #latMainPic_1,#latMainPic_2{margin-top:50px;}
     #latMainContentContent_3{width:45%;}
-      #latMainPic_1,#latMainPic_2,#latMainPic_3,#latMainPic_4{width:50%;transition:all ease .8s;}
+      #latMainTitle_1{height:55%;}
+        #latMainTitle{background-image:url("image/hpimage2");}
+      #latMainPic_1,#latMainPic_2,#latMainPic_3,#latMainPic_4{width:50%;transition:width ease .8s;}
         #latMainPic_1 img, #latMainPic_2 img, #latMainPic_3 img, #latMainPic_4 img
-        {max-width:55%;transition:all ease .8s;}
+        {max-width:90%;transition:width ease .8s;}
+          #latMainTitle_1{background-image:url("image/hpimage3.jpg");}
 }
+@media only screen and (max-width: 480px){
+  .anchorpic {padding: 10px 10px;font-size:20px;transition:all linear .5s;}
 
-
-@media only screen and (max-width: 700px){
-        #latMainPic_1,#latMainPic_2,#latMainPic_3,#latMainPic_4{width:100%;transition:all ease .8s;}
+}
+/*@media only screen and (max-width: 700px){
+        #latMainPic_1,#latMainPic_2,#latMainPic_3,#latMainPic_4{width:100%;transition:width ease .8s;}
 #latMainContent_1,#latMainContent_2,#latMainContent_3{width:100%;}
 #latMainContent_3{margin:40px auto 50px auto;}
-#latMainContentContent_3{width:75%;}}
+#latMainContentContent_3{width:75%;}}*/
