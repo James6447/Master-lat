@@ -1,47 +1,58 @@
 window.onload = function() {
 
+  //global variables
+  var items = [];
+  var startItem = 1;
+  var position = 0;
+  var itemCount = $('.carousel li.items').length;
+  var leftpos = itemCount;
+  var resetCount = itemCount;
+  var windos = $(window).width();
+
+  //RWD function
+  var latFooter = $('#latFooterTitle_1').width();
+  var FootMsg_4 = $('#latFooterMsg_4').width();
+  var input = $("input").width();
+  var textarea = FootMsg_4+input;
+
+  //slideshow style interval
+  var autoSwap = setInterval( swap,3500);
+
 //nav
   $("#head").click(function() {
       $('html, body').animate({
           scrollTop: $("#latHeaderTitle").offset().top
-      }, 2000);
+      }, 1000);
   });
 
 
   $("#main").click(function() {
       $('html, body').animate({
           scrollTop: $("#latMain").offset().top
-      }, 2000);
+      }, 1000);
   });
 
   $("#project").click(function() {
       $('html, body').animate({
           scrollTop: $("#latContent").offset().top
-      }, 2000);
+      }, 1000);
   });
 
   $("#member").click(function() {
       $('html, body').animate({
           scrollTop: $("#latContentR2").offset().top
-      }, 2000);
+      }, 1000);
   });
 
   $("#contact").click(function() {
       $('html, body').animate({
           scrollTop: $("#latFooter").offset().top
-      }, 2000);
+      }, 1000);
   });
 
 
 
 //RWD
-  var windos = $(window).width();
-
-  var latFooter = $('#latFooterTitle_1').width();
-  var FootMsg_4 = $('#latFooterMsg_4').width();
-  var input = $("input").width();
-  var textarea = FootMsg_4+input;
-
   var lenght = $('#latFooterMsg_3').width() + input + FootMsg_4;
   var button = latFooter - lenght;
   $('textarea').css( "width", textarea);
@@ -79,19 +90,17 @@ $( window ).resize(function() {
 });
 
 
-//slideshow style interval
-var autoSwap = setInterval( swap,3500);
+
 
 //pause slideshow and reinstantiate on mouseout
+$('ul, span').hover(
+function () {
+  clearInterval(autoSwap);
+},
+function () {
+ autoSwap = setInterval( swap,3500);
+});
 
-
-//global variables
-var items = [];
-var startItem = 1;
-var position = 0;
-var itemCount = $('.carousel li.items').length;
-var leftpos = itemCount;
-var resetCount = itemCount;
 
 //unused: gather text inside items class
 $('li.items').each(function(index) {
