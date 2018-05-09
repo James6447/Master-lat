@@ -88,12 +88,11 @@ color:#303549;}*/
 
 input{
   border:none;
-  color: white;
   width: 222px;
   height: 27px;
   font-family: Microsoft JhengHei;
   font-size: 16px;
-  background: rgba(192,192,192,33%);
+  background: rgba(216,216,216,0.2);
 }
 
 /* input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
@@ -113,7 +112,7 @@ textarea{
   overflow-y:hidden;
   overflow-x:hidden;
   color: white;
-  background: rgba(192,192,192,33%);
+  background: rgba(216,216,216,0.2);
 }
 @media only screen and (max-width: 1000px){
 textarea{width:100%;}
@@ -145,7 +144,7 @@ textarea{width:222px;}
   font-family: Microsoft JhengHei;
  padding:5px 35px;
   color:#ffffff;
-  background: rgba(0%,0%,0%,0%);
+  background: rgba(255,255,255,0);
   border:1px solid #23dfd0;
   cursor:pointer;
   width:100px;
