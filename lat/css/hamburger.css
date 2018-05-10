@@ -55,7 +55,7 @@ body {
 }
 
 /**media query**/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 880px) {
   .navbar__main {
     display: none;
   }
@@ -68,11 +68,11 @@ body {
     padding: 10px;
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 880px) {
   #icon__open {
     display: none !important;
   }
-  
+
 }
 /*originally set the close icon to display none*/
 #icon__close {

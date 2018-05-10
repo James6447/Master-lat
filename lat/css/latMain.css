@@ -241,11 +241,11 @@ textarea{width:222px;}
     #latMainPic_1,#latMainPic_2{margin-top:50px;}
     #latMainContentContent_3{width:45%;}
       #latMainTitle_1{height:55%;}
-        #latMainTitle{background-image:url("image/hpimage2");}
+        #latMainTitle{background-image:url("../image/hpimage2.jpg");}
       #latMainPic_1,#latMainPic_2,#latMainPic_3,#latMainPic_4{width:50%;transition:width ease .8s;}
         #latMainPic_1 img, #latMainPic_2 img, #latMainPic_3 img, #latMainPic_4 img
         {max-width:90%;transition:width ease .8s;}
-          #latMainTitle_1{background-image:url("image/hpimage3.jpg");}
+          #latMainTitle_1{background-image:url("../image/hpimage3.jpg");}
 }
 @media only screen and (max-width: 480px){
   .anchorpic {padding: 10px 10px;font-size:20px;transition:all linear .5s;}
