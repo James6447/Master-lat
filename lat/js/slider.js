@@ -1,15 +1,27 @@
 window.onload = function() {
 
-
+//header fixed
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
+  var top = window.pageYOffset;
   var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
+
       document.getElementById("latHeaderMenu").style.top = "30px";
     } else {
       document.getElementById("latHeaderMenu").style.top = "-100px";
     }
     prevScrollpos = currentScrollPos;
+
+    if (top<10){
+        document.getElementById("latHeaderMenu").style.background = "rgba(216,216,216,0.6)";
+        document.getElementById("latHeaderMenu").style.transition = "1s";
+
+    }
+    else {
+      document.getElementById("latHeaderMenu").style.background = "#e6e6e6";
+    }
+
   }
 
   //global variables

@@ -1,19 +1,28 @@
 
 #latHeader{position: relative;}
-#latHeaderMenu{background:#e6e6e6;width: 96%;
+#latHeaderMenu{background:rgba(216, 216, 216, 0.6);width: 96%;
               z-index: 4;
               top:3%;
               left:2%;
               margin: 0 auto;
               display: block;
-              box-shadow: -1px 1px 15px 15px rgba(5,233,204,0.2);
+              box-shadow: -1px 1px 60px 14px rgba(5,233,204,0.2);
               position: fixed;
               transition: top 0.3s;
-
             }
 
-#latHeaderMenu a:hover {background-color: #303549;}
-.containerheader{width:55%;display:table;margin:0 auto;text-align:center;}
+            @keyframes mymove{
+            from{ background-color:red;}
+            to{background-color:blue;}
+            }
+
+=======
+#latHeaderMenu a:hover {background-color: #ddd;
+                        box-shadow:  -1px 1px 15px 15px rgba(5,233,204,0.1);
+                          }
+
+.containerheader{width:54.5%;display:table;margin:0 auto;text-align:center;}
+
 .logo{width:35%;display: inline-table;}
 .list{width:65%;display: inline-table;}
 .logopic img{width:90%;}
