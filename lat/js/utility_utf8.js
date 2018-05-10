@@ -10,7 +10,6 @@ function Trim(str)
 function change(c,fldname){
 	document.getElementById(c).innerHTML =""+fldname+"欄位不得為空白!!";
 	document.getElementById(c).style.color = "red";
-	document.getElementById(c).style.float = "left";
 	document.getElementById(c).style.fontSize = "16px";
 }
 

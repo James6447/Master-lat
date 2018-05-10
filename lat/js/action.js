@@ -16,7 +16,6 @@ function datacheck()
       document.getElementById("c4").innerHTML ="電子郵件(E-mail)格式不合!!";
       document.getElementById("c4").style.marginLeft;
       document.getElementById("c4").style.color = "red";
-      document.getElementById("c4").style.float = "left";
       document.getElementById("c4").style.fontSize = "xx-small";
       obj.focus();
       return false ;

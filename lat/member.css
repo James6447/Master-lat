@@ -159,22 +159,23 @@ span {
  background-color: rgba(0,0,0,0.8);
 }
 
-#latContentMsg_4{ margin-bottom: 40px;
+#latContentMsg_1{ margin: 0 auto 40px;
                 display: block;
-                font-size: 24px;
-                font-weight: 800;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: Verdana,sans-serif;
                 letter-spacing: 1.5px;
                 color: #312028;
                 line-height: 150%;
                 text-align: center;
                 display:block;}
-
-#latContentMsg_4::after{ content:"";
-                      display: block;
-                      height:1px;
-                      margin:10px auto 0px auto;
-                      width:30px;
-                      background: #312028;
-                      line-height: 150%;
-                      text-align: center;
-                               }
+#latContentMsg_1::after{ content:"";
+                display: block;
+                height:1px;
+                border-radius: 100%;
+                margin:10px auto 0px auto;
+                width:30px;
+                background: #303549;
+                line-height: 150%;
+                text-align: center;
+}

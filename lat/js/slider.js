@@ -1,5 +1,17 @@
 window.onload = function() {
 
+
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("latHeaderMenu").style.top = "30px";
+    } else {
+      document.getElementById("latHeaderMenu").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
   //global variables
   var items = [];
   var startItem = 1;
@@ -199,11 +211,11 @@ $('li').click(function() {
 
 //hamburger
 
-if($(window).width() > 800){
+if($(window).width() > 880){
     $("#test").show();
     $(".icon").hide();
  }
-else if ($(window).width() < 800){
+else if ($(window).width() < 880){
     $("#test").hide();
     $(".icon").show();
     $("#icon__open").show();
@@ -215,6 +227,7 @@ else if ($(window).width() < 800){
     $("#icon__open").hide();
     $("#icon__close").show();
   });
+
   $("#icon__close").click(function() {
     $("#test").hide();
     $("#icon__open").show();
@@ -222,11 +235,11 @@ else if ($(window).width() < 800){
   });
 
   $(window).resize(function(){
-    if($(window).width() > 800){
+    if($(window).width() > 880){
         $("#test").show();
         $(".icon").hide();
      }
-    else if ($(window).width() < 800){
+    else if ($(window).width() < 890){
         $("#test").hide();
         $(".icon").show();
         $("#icon__open").show();
