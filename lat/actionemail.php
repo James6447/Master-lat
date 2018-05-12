@@ -19,17 +19,18 @@ $query1="SELECT * FROM mail_box";
 if ($con->query($query) == TRUE)
 {
     $msg="Thanks For Comment";
-    echo "yes";
+    $status "yes";
 }
 else{
     $msg="Please Contect Our Service Number";
-    echo "nope";
+    $status "nope";
   }
 
+$status = "FUCKKK";
 
-echo "<script>alert('".$msg."');\n";
-echo "location.href='index.php';\n";
-echo "</script>";
+// echo "<script>alert('".$msg."');\n";
+// echo "location.href='index.php';\n";
+// echo "</script>";
 
 
 ?>

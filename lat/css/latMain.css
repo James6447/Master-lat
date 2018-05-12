@@ -251,6 +251,8 @@ textarea{width:222px;}
   .anchorpic {padding: 10px 10px;font-size:20px;transition:all linear .5s;}
 
 }
+
+
 /*@media only screen and (max-width: 700px){
         #latMainPic_1,#latMainPic_2,#latMainPic_3,#latMainPic_4{width:100%;transition:width ease .8s;}
 #latMainContent_1,#latMainContent_2,#latMainContent_3{width:100%;}

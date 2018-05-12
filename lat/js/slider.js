@@ -1,29 +1,5 @@
 window.onload = function() {
 
-//header fixed
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-  var top = window.pageYOffset;
-  var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-
-      document.getElementById("latHeaderMenu").style.top = "30px";
-    } else {
-      document.getElementById("latHeaderMenu").style.top = "-100px";
-    }
-    prevScrollpos = currentScrollPos;
-
-    if (top<10){
-        document.getElementById("latHeaderMenu").style.background = "rgba(216,216,216,0.6)";
-        document.getElementById("latHeaderMenu").style.transition = "1s";
-
-    }
-    else {
-      document.getElementById("latHeaderMenu").style.background = "#e6e6e6";
-    }
-
-  }
-
   //global variables
   var items = [];
   var startItem = 1;
@@ -41,6 +17,39 @@ window.onload = function() {
 
   //slideshow style interval
   var autoSwap = setInterval( swap,3500);
+document.getElementById("latHeaderMenu").style.opacity = "1";
+
+  //header fixed
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var top = window.pageYOffset;
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+
+        document.getElementById("latHeaderMenu").style.top = "30px";
+
+      } else {
+        if(top<10){
+          // document.getElementById("latHeaderMenu").style.position = "fixed";
+          document.getElementById("latHeaderMenu").style.top = "30px";
+        }
+        else{
+        document.getElementById("latHeaderMenu").style.top = "-100px";
+      }
+      }
+      prevScrollpos = currentScrollPos;
+
+      if (top<10){
+          document.getElementById("latHeaderMenu").style.background = "rgba(216,216,216,0.7)";
+          document.getElementById("latHeaderMenu").style.transition = "1s";
+
+      }
+      else {
+        document.getElementById("latHeaderMenu").style.background = "#e6e6e6";
+      }
+
+    }
+
 
 //nav
   $("#head").click(function() {
@@ -48,7 +57,6 @@ window.onload = function() {
           scrollTop: $("#latHeaderTitle").offset().top
       }, 1000);
   });
-
 
   $("#main").click(function() {
       $('html, body').animate({
@@ -88,9 +96,6 @@ window.onload = function() {
     $('#latFooterItem_8').css("margin-right",button);
     $('#latFooterMsg_8').css("text-align",'right');
   }
-
-
-
 
 $( window ).resize(function() {
   var latFooter = $('#latFooterTitle_1').width();
@@ -223,9 +228,12 @@ $('li').click(function() {
 
 //hamburger
 
+
+
 if($(window).width() > 880){
     $("#test").show();
     $(".icon").hide();
+
  }
 else if ($(window).width() < 880){
     $("#test").hide();
