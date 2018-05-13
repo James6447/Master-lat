@@ -1,6 +1,6 @@
 
 #latHeader{position: relative;}
-#latHeaderMenu{background:rgba(216, 216, 216, 0.6);width: 96%;
+#latHeaderMenu{background:rgba(216, 216, 216, 0.7);width: 96%;
               z-index: 4;
               top:3%;
               left:2%;
@@ -9,6 +9,7 @@
               box-shadow: -1px 1px 60px 14px rgba(5,233,204,0.2);
               position: fixed;
               transition: top 0.3s;
+              opacity: 0;
             }
 
             @keyframes mymove{
@@ -16,10 +17,8 @@
             to{background-color:blue;}
             }
 
-=======
-#latHeaderMenu a:hover {background-color: #ddd;
-                        box-shadow:  -1px 1px 15px 15px rgba(5,233,204,0.1);
-                          }
+
+#latHeaderMenu a:hover {box-shadow:  -1px 1px 15px 15px rgba(5,233,204,0.1);}
 
 .containerheader{width:54.5%;display:table;margin:0 auto;text-align:center;}
 
@@ -89,7 +88,7 @@
                 display: block;
                 font-size: 24.5px;
                     text-shadow: 1px 1px 1px #cccccc;
-                font-family: Microsoft JhengHei;
+
                 letter-spacing: 1.5px;
                 color: #ffffff;
                 line-height: 150%;
@@ -99,7 +98,7 @@
                 display: block;
                 font-size: 24.5px;
                     text-shadow: 1px 1px 1px #cccccc;
-                font-family: Microsoft JhengHei;
+
                 letter-spacing: 1.5px;
                 color: #ffffff;
                 line-height: 150%;
@@ -114,7 +113,7 @@
 #latHeaderMsg_5{ margin: 0 auto;
                 display: block;
                 font-size: 24.5px;
-                font-family: Microsoft JhengHei;
+                
                     text-shadow: 1px 1px 1px #cccccc;
                 letter-spacing: 1.5px;
                 color: #ffffff;

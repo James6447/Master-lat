@@ -18,7 +18,7 @@ function isEmpty(obj,fldname)
 {
 	if( obj == null || Trim(obj.value) == "")
 	{
-		change("c1,fldname");
+		change("c1",fldname);
 		 // alert("【"+fldname+"】欄位不得為空白!!");
 		obj.focus();
 		return false;
@@ -35,7 +35,7 @@ function isEmptyCo(obj,fldname)
 {
 	if( obj == null || Trim(obj.value) == "")
 	{
-		 change("c2,fldname");
+		 change("c2",fldname);
 		 obj.focus();
 		 return false;
  	}
@@ -49,7 +49,7 @@ function isEmptyCo(obj,fldname)
 function isEmptyNum(obj,fldname){
 	if( obj == null || Trim(obj.value) == "")
 	{
-		 change("c3,fldname");
+		 change("c3",fldname);
 		 obj.focus();
 		 return false;
 	}
@@ -61,8 +61,8 @@ function isEmptyNum(obj,fldname){
 }
 
 //判斷是否皆為空
-function isBothEmpty(obj,fldname, obj2, fldname2,obj3,fldname3,obj4,fldname4) {
-	if( (obj == null && obj2 == null && obj3 == null && obj4 == null) || (Trim(obj.value) == "" && Trim(obj2.value) == "" && Trim(obj3.value) == "" &&Trim(obj4.value) == "" ))
+function isBothEmpty(obj,fldname, obj2, fldname2,obj3,fldname3,obj4,fldname4,obj5,fldname5) {
+	if( (obj == null && obj2 == null && obj3 == null && obj4 == null  && obj5 == null) || (Trim(obj.value) == "" && Trim(obj2.value) == "" && Trim(obj3.value) == "" && Trim(obj4.value) == "" && Trim(obj5.value) == ""))
 	{
 		//  alert("【"+fldname+"】【"+fldname2+"】欄位不得均為空白!!");
 		// obj.focus();
@@ -71,6 +71,7 @@ function isBothEmpty(obj,fldname, obj2, fldname2,obj3,fldname3,obj4,fldname4) {
 	 change("c2",fldname2);
 	 change("c3",fldname3);
 	 change("c4",fldname4);
+	 change("c5",fldname5);
 	 return false;
  	}
 
@@ -87,7 +88,9 @@ function isTelNo(obj,fldname){
 			tempChar= obj.value.substring(i,i+1);
 			if (strRef.indexOf(tempChar,0)==-1)
 			{
-				 alert(""+fldname+"欄位必須為數字!!");
+				document.getElementById("c3").innerHTML =""+fldname+"必須為數字!!";
+				document.getElementById("c3").style.color = "red";
+				document.getElementById("c3").style.fontSize = "16px";
 				obj.focus();
 	   			return false;
 	  		}
