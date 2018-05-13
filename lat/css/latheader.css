@@ -6,7 +6,7 @@
               left:2%;
               margin: 0 auto;
               display: block;
-              box-shadow: -1px 1px 60px 14px rgba(5,233,204,0.2);
+              box-shadow: -1px 1px 60px 14px rgba(5,233,204,0.6);
               position: fixed;
               transition: top 0.3s;
               opacity: 0;
