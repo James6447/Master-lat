@@ -20,19 +20,25 @@
 
 #latHeaderMenu a:hover {box-shadow:  -1px 1px 15px 15px rgba(5,233,204,0.1);}
 
-.containerheader{width:54.5%;display:table;margin:0 auto;text-align:center;}
+.containerheader{width:67.5%;display:block;margin:0 auto;text-align:center;}
 
-.logo{width:35%;display: inline-table;}
-.list{width:65%;display: inline-table;}
+.logo{width:39%;display: block;float:left;}
+.list{width:61%;display: inline;}
 .logopic img{width:90%;}
-.logothing{display:table;padding:10px 0px;}
-.listtitle{display:inline-table;}
+.logothing{display:inline-block;padding:10px 0px;}
+.listtitle{display:block;float:left;cursor: pointer;}
 .listtitle:nth-child(4){border-right:1px solid #303549;}
-.item{ color:#303549;display: inline-table;
+.item{ color:#303549;display: block;
     padding: 33px 20px;font-weight: bold;
     border-left: 1px solid #303549;font-family: Microsoft JhengHei;
     }
-    @media only screen and (max-width: 880px){.logo{width:90%;}}
+    @media only screen and (max-width: 880px){
+      .logo{width:90%;float:unset;text-align: left;}
+    .logothing{padding: 10px 25px;}
+  .listtitle{width: 100%;}
+  .listtitle:nth-child(4){border-right:0px solid #303549;}
+.item{padding: 20px;border:unset;}}
+
 .item:hover{color:#ffffff;background: #303549;}
 
 
@@ -113,7 +119,7 @@
 #latHeaderMsg_5{ margin: 0 auto;
                 display: block;
                 font-size: 24.5px;
-                
+
                     text-shadow: 1px 1px 1px #cccccc;
                 letter-spacing: 1.5px;
                 color: #ffffff;
@@ -134,7 +140,7 @@
         padding: 10px 35px;font-weight: bold;font-size: 20px;
         border: 1px solid #ffffff;font-family: Microsoft JhengHei;
      }
-.anchor:hover{color:#ffffff;}
+.anchor:hover{color:#ffffff;cursor:pointer;}
 
                 @media only screen and (max-width: 700px){
 
