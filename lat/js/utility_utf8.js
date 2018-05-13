@@ -30,6 +30,22 @@ function isEmpty(obj,fldname)
 	}
 }
 
+function isEmptyDES(obj,fldname)
+{
+	if( obj == null || Trim(obj.value) == "")
+	{
+		change("c5",fldname);
+		 // alert("【"+fldname+"】欄位不得為空白!!");
+		obj.focus();
+		return false;
+ 	}
+	else{
+		document.getElementById("c5").innerHTML ="&nbsp&nbsp&nbsp";
+		document.getElementById("c5").style.float = "none";
+ 	return true;
+	}
+}
+
 
 function isEmptyCo(obj,fldname)
 {
@@ -121,7 +137,9 @@ function isLengthOver(obj,maxlen,fldname)
 	len=obj.value.length;
 	if (len > maxlen)
 	{
-		 alert(""+fldname+"欄位長度超過"+maxlen+"!!");
+		document.getElementById("c2").innerHTML =""+fldname+"超過欄位長度"+ maxlen;
+		document.getElementById("c2").style.color = "red";
+		document.getElementById("c2").style.fontSize = "16px";
 		obj.focus();
    		return false;
 	}

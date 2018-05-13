@@ -20,6 +20,8 @@ function datacheck()
       obj.focus();
       return false ;
     }
+     if (! isEmptyDES(theForm.description, "詢問內容")) return false;
+
     theURL="sendemail.php?company="+theForm.company.value ;
     theURL= theURL + "&username=" + theForm.username.value ;
     theURL= theURL + "&phone=" + theForm.phone.value ;
@@ -37,8 +39,25 @@ function datacheck()
 // }
 
 function getData(theURL){
-  $.post(theURL,
-    function(status){
-      alert(status);
+  $.get(theURL,
+    function($status){
+      alert("感謝您的留言，您的建議是我們前進的動力!");
+      location.href = "index.html";
     });
 }
+
+// $.ajax({
+//   function getData(theURL){
+//     $.ajax({
+//       url: theURL,
+//       type: "GET",
+//       dataType: "json",
+//       success: function(Jdata) {
+//         alert(Jdata);
+//       },
+//
+//       error: function() {
+//         alert("ERROR!!!");
+//       }
+//     });
+//   }
