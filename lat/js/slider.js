@@ -83,7 +83,11 @@ document.getElementById("latHeaderMenu").style.opacity = "1";
   });
 
 
-
+  $("#anchor1").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#latMain").offset().top
+      }, 1000);
+  });
 //RWD
   var lenght = $('#latFooterMsg_3').width() + input + FootMsg_4;
   var button = latFooter - lenght;
@@ -243,13 +247,13 @@ else if ($(window).width() < 880){
  }
 
   $("#icon__open").click(function() {
-    $("#test").show();
+    $("#test").slideDown();
     $("#icon__open").hide();
     $("#icon__close").show();
   });
 
   $("#icon__close").click(function() {
-    $("#test").hide();
+    $("#test").slideUp();
     $("#icon__open").show();
     $("#icon__close").hide();
   });

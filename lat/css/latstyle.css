@@ -17,10 +17,7 @@ img { vertical-align:middle; width: 100%; }
 /*最外層區塊*/
 #latwapper{ width:100%; max-width:100%; text-align:left; border:0px; padding:0px; word-wrap:normal;}
 /*header區塊*/
-#latHeader{ width:100%; background:#e0e0e0; margin:0px; padding:0px; margin-bottom:0px; height: 750px;}
-#latHeaderLeft{width:40%;background:#e0e0e0;display: block;float:left;}
-#latHeaderRight{width:60%;background:#c1c1c2;display: block;float:left;}
-#latHeaderTitle{width:100%;background:lightblue;display:block;text-align: center;}
+#latHeader{ width:100%; background:#e0e0e0; margin:0px; padding:0px; margin-bottom:0px; }
 /*main區塊*/
 #latMain{width:100%;}
 #latMainR1{width:100%;background:#c1c1c2;}

@@ -13,7 +13,7 @@ body {
   /* background-color: rgba(50, 135, 191, 0.8); */
   background-color: #3287bf;
   overflow: hidden;
-  padding: 30px;
+  /*padding: 30px;*/
   height: auto;
   /*height fit according to ope or close navigation*/
   position: fixed;

@@ -11,7 +11,7 @@ boxweight1=boxweight1+(boxweight-boxweight1)
 var calcpx=((boxweight/boxweight1)*100);
 var i=100-calcpx;
 
-var k=55+i;
+var k=67.5+i;
 if(k<100){
     $(".containerheader").css({"width":k+'%'});}
     else if(k>100){$(".containerheader").css({"width":'100%'});}
@@ -32,7 +32,7 @@ if(boxweight>boxweight1)
     var calcpx=((boxweight/boxweight1)*100);
     var i=100-calcpx;
 
-    var k=55+i;
+    var k=67.5+i;
 if(k<100){
     $(".containerheader").css({"width":k+'%'});}
     else if(k>100){$(".containerheader").css({"width":'100%'});}
