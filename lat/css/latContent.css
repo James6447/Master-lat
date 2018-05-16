@@ -1,7 +1,7 @@
 
 
 #latContentTitle{  width: 100%;
-                height: 100%;
+                height: 115%;
                 position: relative;
                 background:#ffffff;
                 background-size: cover;
@@ -19,7 +19,7 @@
                  background-position: center;
                  background-repeat: no-repeat;
                  width: 100%;
-                 height: 101%;
+                 height: 115%;
                  display:block;}
 
 #latContentBlk_1{margin: 100px auto 60px auto;z-index: 2;position: relative;display:block;}
@@ -62,7 +62,7 @@
 .anchor1:hover{color:#ffffff;}
 
 #latContentTitle2{  width: 100%;
-                    height: 100%;
+                    height: 110%;
                     position: relative;
                     background:#ffffff;
                       background-attachment:fixed;
@@ -81,7 +81,7 @@
                     background-repeat: no-repeat;
                     width: 100%;
                     background-attachment:fixed;
-                    height: 100%;
+                    height: 110%;
                     display:block;}
 #latContentBlk_2{margin: 100px auto 60px auto;z-index: 2;position: relative;display:block;}
 #latContentMsg_4{ margin: 50px auto;

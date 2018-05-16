@@ -1,5 +1,5 @@
 #latMainTitle{  width: 100%;
-                height: 100%;
+                height: 125%;
                 position: relative;
                 background-image:url("https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/31326831_10214524407916512_393764680461451264_n.png?_nc_cat=0&oh=feee2793f09de809f86933b02919ffe8&oe=5B53F708");
                 background-size: cover;
@@ -18,7 +18,7 @@
                   background-position: center;
                   background-repeat: no-repeat;
                   width: 100%;
-                  height: 35%;
+                  height: 300px;
                   display:block;}
 
 

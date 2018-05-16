@@ -6,7 +6,7 @@
               left:2%;
               margin: 0 auto;
               display: block;
-              box-shadow: -1px 1px 60px 14px rgba(5,233,204,0.6);
+              box-shadow: -1px 1px 60px 14px rgba(5,233,204,0.5);
               position: fixed;
               transition: top 0.3s;
               opacity: 0;
@@ -78,7 +78,7 @@
                   height: 100%;
                   display:block;}
 
-#latHeaderBlk_1{margin: 305px auto 110px auto;z-index: 2;position: relative;display:block;}
+#latHeaderBlk_1{margin: 305px auto 170px auto;z-index: 2;position: relative;display:block;}
 #latHeaderMsg_1{ margin: 0 auto;
                 display: block;
                 font-size: 50px;
@@ -93,7 +93,7 @@
 #latHeaderMsg_2{ margin: 0 auto;
                 display: block;
                 font-size: 24.5px;
-                    text-shadow: 1px 1px 1px #cccccc;
+                text-shadow: 1px 1px 1px #cccccc;
 
                 letter-spacing: 1.5px;
                 color: #ffffff;
@@ -103,7 +103,7 @@
 #latHeaderMsg_3{ margin: 0 auto;
                 display: block;
                 font-size: 24.5px;
-                    text-shadow: 1px 1px 1px #cccccc;
+                text-shadow: 1px 1px 1px #cccccc;
 
                 letter-spacing: 1.5px;
                 color: #ffffff;
