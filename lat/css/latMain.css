@@ -48,6 +48,7 @@
 #latMainContent_1,#latMainContent_2,#latMainContent_3
                 {font-size:16px;
                   color:#312028;
+                  height:160px;
                   font-family: Microsoft JhengHei;
                   line-height: 100%;
                   margin:40px auto 50px auto;}
@@ -240,7 +241,7 @@ textarea{width:222px;}
     #latMainContent_3{width:100%;margin:40px auto 100px auto;}
     #latMainPic_1,#latMainPic_2{margin-top:50px;}
     #latMainContentContent_3{width:45%;}
-      #latMainTitle_1{height:55%;}
+      #latMainTitle_1{height:50%;}
         #latMainTitle{background-image:url("../image/hpimage2.jpg");}
       #latMainPic_1,#latMainPic_2,#latMainPic_3,#latMainPic_4{width:50%;transition:width ease .8s;}
         #latMainPic_1 img, #latMainPic_2 img, #latMainPic_3 img, #latMainPic_4 img
@@ -249,6 +250,8 @@ textarea{width:222px;}
 }
 @media only screen and (max-width: 480px){
   .anchorpic {padding: 10px 10px;font-size:20px;transition:all linear .5s;}
+#latMainContent_1, #latMainContent_2, #latMainContent_3{width:100%;height: 50px;}
+#latMainContentContent_1, #latMainContentContent_2, #latMainContentContent_3{width:100%;}
 
 }
 
