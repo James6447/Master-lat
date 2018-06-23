@@ -9,7 +9,7 @@
                 overflow: hidden;
                 display:block;}
 
-#latContentTitle_1{ position:absolute;
+#latContentTitle_1{
                  top: 0;
                  left: 0;
                  opacity: 1;
@@ -22,9 +22,9 @@
                  height: 115%;
                  display:block;}
 
-#latContentBlk_1{margin: 100px auto 60px auto;z-index: 2;position: relative;display:block;}
+#latContentBlk_1{z-index: 2;position: relative;display:block;}
 
-#latContentMsg_1{ margin: 83px auto 100px;
+#latContentMsg_1{
                 display: block;
                 font-size: 30px;
                 font-weight: bold;

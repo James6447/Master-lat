@@ -1,6 +1,6 @@
 var boxweight1=screen.width;
 var boxweight=window.innerWidth;//100%當著減少67.5增加
-var dom=$(".containerheader").width()//67.5%
+var dom=$(".containerheader").width();//67.5%
 var dom2=$("#latHeaderMenu").width();
 ///裡面
 //  console.log(dom2);

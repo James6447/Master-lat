@@ -27,7 +27,7 @@ img { vertical-align:middle; width: 100%; }
 #latMainContent_2{width:33%;display:block;vertical-align: middle;float:left;}
 #latMainContent_3{width:33%;display:block;vertical-align: middle;float:left;}
 /*mainpic區塊*/
-#latMainMsg_3{width:70%;display:block;text-align: center;margin:0 auto;transition:widthease .8s;}
+#latMainMsg_3{padding: 0 9%;display:block;text-align: center;margin:0 auto;transition:padding ease .8s;}
 #latMainPic_1{width:25%;vertical-align: middle;float:left;transition:width ease .8s;}
 #latMainPic_2{width:25%;vertical-align: middle;float:left;transition:width ease .8s;}
 #latMainPic_3{width:25%;vertical-align: middle;float:left;transition:width ease .8s;}

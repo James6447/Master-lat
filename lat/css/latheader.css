@@ -1,5 +1,9 @@
+@keyframes mymove{
+from{ background-color:red;}
+to{background-color:blue;}
+}
 
-#latHeader{position: relative;}
+#latHeader{position: relative;height: 100vh;}
 #latHeaderMenu{background:rgba(216, 216, 216, 0.7);width: 96%;
               z-index: 4;
               top:3%;
@@ -11,12 +15,6 @@
               transition: top 0.3s;
               opacity: 0;
             }
-
-            @keyframes mymove{
-            from{ background-color:red;}
-            to{background-color:blue;}
-            }
-
 
 #latHeaderMenu a:hover {box-shadow:  -1px 1px 15px 15px rgba(5,233,204,0.1);}
 
@@ -32,9 +30,10 @@
     padding: 33px 20px;font-weight: bold;
     border-left: 1px solid #303549;font-family: Microsoft JhengHei;
     }
-    @media only screen and (max-width: 880px){
-      .logo{width:90%;float:unset;text-align: left;}
-    .logothing{padding: 10px 25px;}
+
+@media only screen and (max-width: 880px){
+  .logo{width:90%;float:unset;text-align: left;}
+  .logothing{padding: 10px 25px;}
   .listtitle{width: 100%;}
   .listtitle:nth-child(4){border-right:0px solid #303549;}
 .item{padding: 20px;border:unset;}}
@@ -78,26 +77,14 @@
                   height: 100%;
                   display:block;}
 
-#latHeaderBlk_1{margin: 305px auto 170px auto;z-index: 2;position: relative;display:block;}
-#latHeaderMsg_1{ margin: 0 auto;
-                display: block;
-                font-size: 50px;
-                margin:50px auto;
-                font-weight: bold;
-                letter-spacing: 1.5px;
-                color:#23dfd0;
-                line-height: 150%;
-                text-align: center;
-                font-family: Verdana,sans-serif;
-                display:block;}
-#latHeaderMsg_2{ margin: 0 auto;
+#latHeaderBlk_1{height:100%;z-index: 2;position: relative;display:flex;justify-content: center;align-items: center;}
+#latHeaderMsg_2{ margin-top:80px;
                 display: block;
                 font-size: 24.5px;
                 text-shadow: 1px 1px 1px #cccccc;
-
                 letter-spacing: 1.5px;
                 color: #ffffff;
-                line-height: 150%;
+                line-height:180%;
                 text-align: center;
                 display:block;}
 #latHeaderMsg_3{ margin: 0 auto;
@@ -107,11 +94,11 @@
 
                 letter-spacing: 1.5px;
                 color: #ffffff;
-                line-height: 150%;
+                line-height: 180%;
                 text-align: center;
                 display:block;}
-#latHeaderMsg_4{  margin: 80px auto 33px auto;
-
+#latHeaderMsg_4{
+                  margin: 80px auto 0px auto;
                   display: block;
                   text-align: center;
                 }
@@ -119,34 +106,38 @@
 #latHeaderMsg_5{ margin: 0 auto;
                 display: block;
                 font-size: 24.5px;
-
-                    text-shadow: 1px 1px 1px #cccccc;
+                text-shadow: 1px 1px 1px #cccccc;
                 letter-spacing: 1.5px;
                 color: #ffffff;
-                line-height: 150%;
+                line-height: 180%;
                 text-align: center;
                 display:block;}
-/*#latAnchorText{ padding: 10px 35px;
-                border: 1px solid #ffffff;
-                color: #ffffff;
-                font-weight: 500;
-                font-size: 20px;
-                font-family: Microsoft JhengHei;
-                width:105px;
-                cursor:pointer;
-                margin:0 auto;
-                }*/
-.anchor{ color:#ffffff;display: inline-table;
-        padding: 10px 35px;font-weight: bold;font-size: 20px;
-        border: 1px solid #ffffff;font-family: Microsoft JhengHei;
-     }
+
+.anchor{ color:#ffffff;
+         display: inline-table;
+         padding: 10px 35px;
+         font-weight: bold;
+         font-size: 20px;
+         border: 1px solid #ffffff;
+         font-family: Microsoft JhengHei;
+      }
+
 .anchor:hover{color:#ffffff;cursor:pointer;}
-
-                @media only screen and (max-width: 700px){
-
+@media only screen and (min-width: 2560px){
+#latHeaderMsg_2,#latHeaderMsg_3,#latHeaderMsg_5{font-size: 36.5px;}
+.anchor{font-size: 24.5px;}
+}
+@media only screen and (min-width: 1960px){
+#latHeaderMsg_2,#latHeaderMsg_3,#latHeaderMsg_5{font-size: 32.5px;}
+.anchor{font-size: 32.5px;}
+}
+@media only screen and (min-width: 1440px){
+#latHeaderMsg_2,#latHeaderMsg_3,#latHeaderMsg_5{font-size: 28.5px;}
+.anchor{font-size: 24.5px;}
+}
+@media only screen and (max-width: 700px){
           #latHeaderMsg_2{font-size:20px;margin: 0 auto;width:96%;}
           #latHeaderMsg_3{font-size:20px;margin: 0 auto;width:96%;}
           #latHeaderMsg_5{font-size:20px;margin: 0 auto;width:96%;}
-                /*#latHeaderMenu{position: static;}
-                /* #latHeaderTitle_1{background-image:url("image/hpimage1.jpg") } */
-                                                  }
+          .anchor{font-size:17.5px;}
+}
