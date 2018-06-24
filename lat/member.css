@@ -3,12 +3,20 @@ section {
   height: 25em;
   margin: 0 auto;
   position: relative;
-  max-width: 45em;
+  max-width: 100%;
 }
 
 h2{
   margin-left: 5%;
+    font-weight: 500;
+    font-size: 24px;
+  font-family: Microsoft JhengHei;
 }
+h3{margin:30px 0;
+  font-size: 30px;
+  font-weight: 800;
+
+  font-family: Microsoft JhengHei;}
 
  ul {
   display: table-row;
@@ -40,10 +48,10 @@ h2{
 
 .onepic{
   position:relative;
-  width:45%;
+  width:35%;
   overflow:hidden;
   border-radius:50%;
-  margin-left: 27%;
+  margin-left: 32%;
 }
 
 .onepic img{
@@ -63,7 +71,7 @@ h2{
 #name{
   width: 50%;
   height: auto;
-  margin-top: -10px;
+  margin-top: -5px;
 }
 
 .gem {
@@ -71,7 +79,7 @@ h2{
 }
 
 .top {
-  margin-left: 2em !important;
+  padding-left: 7.5% !important;
   z-index: 3000;
   /* margin-left: -40px; */
   /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
@@ -79,7 +87,7 @@ h2{
 
 .yeah {
   opacity: .3;
-  margin-left: -17em !important;
+  margin-left: -40% !important;
   z-index: 1000;
   -webkit-transform: scale(.75);
   -moz-transform: scale(.75);
@@ -87,7 +95,7 @@ h2{
 }
 
 .heave {
-  margin-left: 2em !important;
+  margin-left: 7.5% !important;
   opacity: .05;
   -webkit-transform: scale(.5);
   -moz-transform: scale(.5);
@@ -96,7 +104,7 @@ h2{
 
 .light {
   opacity: .3;
-  margin-left:  21em !important;
+  margin-left:  51% !important;
   z-index: 1000;
   -webkit-transform: scale(.75);
   -moz-transform: scale(.75);
@@ -105,10 +113,11 @@ h2{
 
 .circular{
     position:relative;
-    width:45%;
+    width:35%;
     overflow:hidden;
     border-radius:50%;
-    margin-left: 3%;
+    margin-left: 5%;
+      margin-right: 5%;
 }
 
 .circular img{
@@ -129,7 +138,7 @@ span {
 .prev, .next {
  cursor: pointer;
  position: absolute;
- top: 45%;
+ top: 15%;
  width: auto;
  margin-left: -25%;
  margin-right:-24%;
@@ -157,25 +166,4 @@ span {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
  background-color: rgba(0,0,0,0.8);
-}
-
-#latContentMsg_1{ margin: 0 auto 40px;
-                display: block;
-                font-size: 30px;
-                font-weight: bold;
-                font-family: Verdana,sans-serif;
-                letter-spacing: 1.5px;
-                color: #312028;
-                line-height: 150%;
-                text-align: center;
-                display:block;}
-#latContentMsg_1::after{ content:"";
-                display: block;
-                height:1px;
-                border-radius: 100%;
-                margin:10px auto 0px auto;
-                width:30px;
-                background: #303549;
-                line-height: 150%;
-                text-align: center;
 }

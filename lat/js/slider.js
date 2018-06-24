@@ -1,4 +1,24 @@
 window.onload = function() {
+  /*$( window ).resize(function() {
+    var latFooter = $('#latFooterR1').width();
+    var FootMsg_4 = $('#latFooterMsg_4').width();
+    var input = $("input").width();
+    var textarea = FootMsg_4+input;
+
+    var lenght = $('#latFooterMsg_3').width() + input + FootMsg_4;
+    var button = latFooter - lenght;
+
+    $('textarea').css( "width", textarea);
+    if(button<0){
+      $('#latFooterItem_8').css("margin-right","0px");
+      $('#latFooterMsg_8').css("text-align",'right');
+    }
+    else {
+      $('#latFooterItem_8').css("margin-right",button);
+      $('#latFooterMsg_8').css("text-align",'right');
+    }
+
+  });*/
 
   //global variables
   var items = [];
@@ -89,7 +109,7 @@ document.getElementById("latHeaderMenu").style.opacity = "1";
       }, 1000);
   });
 //RWD
-  var lenght = $('#latFooterMsg_3').width() + input + FootMsg_4;
+  /*var lenght = $('#latFooterMsg_3').width() + input + FootMsg_4;
   var button = latFooter - lenght;
   $('textarea').css( "width", textarea);
   if(button<0){
@@ -99,10 +119,8 @@ document.getElementById("latHeaderMenu").style.opacity = "1";
   else {
     $('#latFooterItem_8').css("margin-right",button);
     $('#latFooterMsg_8').css("text-align",'right');
-  }
-
-$( window ).resize(function() {
-  var latFooter = $('#latFooterTitle_1').width();
+  }*/
+/*  var latFooter = $('#latFooterTitle_1').width();
   var FootMsg_4 = $('#latFooterMsg_4').width();
   var input = $("input").width();
   var textarea = FootMsg_4+input;
@@ -119,10 +137,7 @@ $( window ).resize(function() {
     $('#latFooterItem_8').css("margin-right",button);
     $('#latFooterMsg_8').css("text-align",'right');
   }
-
-});
-
-
+*/
 
 
 //pause slideshow and reinstantiate on mouseout

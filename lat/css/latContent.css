@@ -1,31 +1,14 @@
-
-
-#latContentTitle{  width: 100%;
-                height: 115%;
-                position: relative;
-                background:#ffffff;
-                background-size: cover;
-                background-position: center;
-                overflow: hidden;
-                display:block;}
-
 #latContentTitle_1{
-                 top: 0;
-                 left: 0;
-                 opacity: 1;
                  background-image:url("https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/31369780_10214524408356523_2945181631758991360_n.png?_nc_cat=0&oh=e40b2a6cf4035ff8cdfa76e1783c8240&oe=5B6952A4");
                  background-size: cover;
                  background-attachment:fixed;
                  background-position: center;
                  background-repeat: no-repeat;
                  width: 100%;
-                 height: 115%;
+                 overflow: hidden;
+                 height: 100vh;
                  display:block;}
-
-#latContentBlk_1{z-index: 2;position: relative;display:block;}
-
 #latContentMsg_1{
-                display: block;
                 font-size: 30px;
                 font-weight: bold;
                 font-family: Verdana,sans-serif;
@@ -33,7 +16,12 @@
                 color: #312028;
                 line-height: 150%;
                 text-align: center;
-                display:block;}
+                justify-content: center;
+                text-align: center;
+                display: flex;
+                height:25%;
+                flex-flow: column;
+                align-items: center;}
 
 #latContentMsg_1::after{ content:"";
                       display: block;
@@ -70,11 +58,8 @@
                     background-position: center;
                     overflow: hidden;
                     display:block;}
-
-#latContentTitle_2{ position:absolute;
-                    top: 0;
-                    left: 0;
-                    opacity: 1;
+#latContentR2{height:100vh;}
+#latContentTitle_2{
                     background-image:url("https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/31435171_10214524408156518_8858727269019942912_n.png?_nc_cat=0&oh=002411efc12a9ceecbfb7acc81525e9a&oe=5B53EEEF");
                     background-size: cover;
                     background-position: center;
@@ -83,7 +68,7 @@
                     background-attachment:fixed;
                     height: 110%;
                     display:block;}
-#latContentBlk_2{margin: 100px auto 60px auto;z-index: 2;position: relative;display:block;}
+#latContentBlk_2{z-index: 2;position: relative;display:block;}
 #latContentMsg_4{ margin: 50px auto;
                 display: block;
                 font-family: Verdana,sans-serif;
@@ -107,3 +92,45 @@
                                }
 
  #latContentMsg_5{font-size: 20px;font-family: Microsoft JhengHei;}
+ #latContentMsg_6{ font-size: 30px;
+                   font-weight: bold;
+                   font-family: Verdana,sans-serif;
+                   letter-spacing: 1.5px;
+                   color: #312028;
+                   line-height: 150%;
+                   text-align: center;
+                   justify-content: center;
+                   text-align: center;
+                   display: flex;
+                   height:25%;
+                   flex-flow: column;
+                   align-items: center;}
+ #latContentMsg_6::after{ content:"";
+                 display: block;
+                 height:1px;
+                 border-radius: 100%;
+                 margin:10px auto 0px auto;
+                 width:30px;
+                 background: #303549;
+                 line-height: 150%;
+                 text-align: center;
+ }
+ @media only screen and (min-width: 2560px){
+ #latContentMsg_6{font-size: 42px;}
+ #latContentMsg_1{font-size:42px;}
+ #latContentAnchor_1{font-size:28px;width:162px;}
+ }
+ @media only screen and (min-width: 1960px){
+ #latContentMsg_6{font-size: 38px;}
+ #latContentMsg_1{font-size:38px;}
+ #latContentAnchor_1{font-size:24px;width:158px;}
+ }
+@media only screen and (min-width: 1440px){
+#latContentMsg_6{font-size: 34px;}
+#latContentMsg_1{font-size:34px;}
+#latContentAnchor_1{font-size:20px;width:154px;}
+}
+@media only screen and (max-width: 700px){
+   #latContentMsg_6{height: 20%;}
+    #latContentMsg_1{height:20%;}
+}

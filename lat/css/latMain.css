@@ -23,7 +23,7 @@
 #latMainMsg_1{    display: inline-flex;
                   justify-content: center;
                   align-items: center;
-                  height: 30%;
+                  height: 25%;
                   flex-flow: column;
                 font-size: 30px;
                 letter-spacing: 1.5px;
@@ -52,7 +52,7 @@
               text-align: center;
                }
 #latMainContent_1,#latMainContent_2,#latMainContent_3
-                {font-size:18px;
+                {font-size:20px;
                   color:#312028;
                   height:160px;
                   font-family: Microsoft JhengHei;
@@ -69,30 +69,54 @@
               text-align:center;}
 
 .anchorpic{ color:#303549;display: inline-table;
-            padding: 10px 35px;font-size: 12px;margin:45px auto 100px auto;
+            padding: 10px 35px;font-size: 12px;margin:45px auto 0px auto;
             border: 1px solid #303549;font-family: Microsoft JhengHei;
       }
 
 .anchorpic:hover{color:#ffffff;transition: width ease.2s;background:#303549;}
 #latMainPic_1,#latMainPic_2,#latMainPic_3,#latMainPic_4{transform:translateY(-25%);}
 #latMainPic_1 img,#latMainPic_2 img,#latMainPic_3 img,#latMainPic_4 img{max-width:90%;transition: all ease .8s;}
+@media only screen and (min-width: 2560px){
+.anchorpic{font-size:22px;}
+#latMainMsg_1{font-size:42px;}
+#latMainContentContent_1,#latMainContentContent_2,#latMainContentContent_3{font-size:26px;}
+#latMainContent_1,#latMainContent_2,#latMainContent_3{font-size:34px;}
+}
+@media only screen and (min-width: 1960px){
+.anchorpic{font-size:18px;}
+#latMainMsg_1{font-size:38px;}
+#latMainContentContent_1,#latMainContentContent_2,#latMainContentContent_3{font-size:22px;}
+#latMainContent_1,#latMainContent_2,#latMainContent_3{font-size:28px;}
+}
+
+@media only screen and (min-width: 1440px){
+.anchorpic{font-size:14px;}
+#latMainMsg_1{font-size:34px;}
+#latMainContentContent_1,#latMainContentContent_2,#latMainContentContent_3{font-size:18px;}
+#latMainContent_1,#latMainContent_2,#latMainContent_3{font-size:24px;}
+}
+@media only screen and (min-width: 1200px){
+#latMainTitle_1{height:49vh;}
+}
 @media only screen and (max-width: 700px){
 .flexalign{display:block;height:80%;}
 #latMainMsg_1{height: 20%;}
+.anchorpic:nth-child(1),.anchorpic:nth-child(2){margin:45px auto 50px auto;}
 #latMainContent_1,#latMainContent_2{width:50%;}
 #latMainContent_3{width:100%;}
 #latMainContent_1m#latMainContent_2,#latMainContent_3{margin:60px auto 60px auto;}
 #latMainTitle{height:100vh;}
 #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{width: 50%;}
 #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{transform: translateY(10%);}
-#latMainTitle_1{height:100%;background-image:url("../image/hpimage3.jpg")}
+#latMainTitle_1{height:115vh;background-image:url("../image/hpimage3.jpg")}
 }
 @media only screen and (max-width: 480px){
-#latMainContent_1{margin:10px auto 60px auto;}
+  #latMainTitle_1{height:100vh;}
+#latMainContent_1, #latMainContent_2, #latMainContent_3{margin:0px auto 0px auto;height: 200px;}
 }
 input{
   border:none;
-  width: 222px;
+  width: 75%;
   height: 27px;
   font-family: Microsoft JhengHei;
   font-size: 16px;
@@ -111,6 +135,7 @@ textarea{
   resize: none;
   border: none;
   height: 80px;
+  width: 88%;
   font-family: Microsoft JhengHei;
   font-size: 16px;
   overflow-y:hidden;
@@ -119,10 +144,11 @@ textarea{
   background: rgba(216,216,216,0.2);
 }
 @media only screen and (max-width: 1000px){
-textarea{width:100%;}
+textarea{width:88%;}
 }
 @media only screen and (max-width: 700px){
-textarea{width:222px;}
+textarea{width:100%;}
+input{width:100%;}
 }
 
 .fade {
@@ -252,8 +278,8 @@ textarea{width:222px;}
           #latMainTitle_1{background-image:url("../image/hpimage3.jpg");}
 }*/
 @media only screen and (max-width: 480px){
-  .anchorpic {padding: 10px 10px;font-size:20px;transition:all linear .5s;}
-#latMainContent_1, #latMainContent_2, #latMainContent_3{width:100%;height: 50px;}
+.anchorpic {padding: 10px 10px;font-size:20px;transition:all linear .5s;}
+#latMainContent_1, #latMainContent_2, #latMainContent_3{width:100%;}
 #latMainContentContent_1, #latMainContentContent_2, #latMainContentContent_3{width:100%;}
 
 }
