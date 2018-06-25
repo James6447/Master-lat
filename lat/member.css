@@ -1,5 +1,5 @@
 section {
-  width: 57%;
+  width: 50%;
   height: 25em;
   margin: 0 auto;
   position: relative;
@@ -8,13 +8,13 @@ section {
 
 h2{
   margin-left: 5%;
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 300;
+    font-size: 16px;
   font-family: Microsoft JhengHei;
 }
 h3{margin:30px 0;
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 500;
 
   font-family: Microsoft JhengHei;}
 
@@ -48,10 +48,10 @@ h3{margin:30px 0;
 
 .onepic{
   position:relative;
-  width:35%;
+  width:40%;
   overflow:hidden;
   border-radius:50%;
-  margin-left: 32%;
+  margin-left: 29.5%;
 }
 
 .onepic img{
@@ -79,7 +79,7 @@ h3{margin:30px 0;
 }
 
 .top {
-  padding-left: 7.5% !important;
+  padding-left: 7% !important;
   z-index: 3000;
   /* margin-left: -40px; */
   /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
@@ -95,7 +95,7 @@ h3{margin:30px 0;
 }
 
 .heave {
-  margin-left: 7.5% !important;
+  margin-left: 7% !important;
   opacity: .05;
   -webkit-transform: scale(.5);
   -moz-transform: scale(.5);
@@ -113,11 +113,11 @@ h3{margin:30px 0;
 
 .circular{
     position:relative;
-    width:35%;
+    width:40%;
     overflow:hidden;
     border-radius:50%;
     margin-left: 5%;
-      margin-right: 5%;
+    margin-right: 5%;
 }
 
 .circular img{
@@ -141,7 +141,7 @@ span {
  top: 15%;
  width: auto;
  margin-left: -25%;
- margin-right:-24%;
+ margin-right:-25%;
  margin-top: 100px;
  color: white;
  font-weight: bold;
@@ -166,4 +166,38 @@ span {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
  background-color: rgba(0,0,0,0.8);
+}
+@media only screen and (min-width: 2560px){
+  h3{font-size: 32px;}
+  h2{font-size: 28px;}
+  .prev, .next{top:55%;}
+  .prev img, .next img{
+    width: 34px;
+    height: 44px;
+  }
+}
+@media only screen and  (max-width: 2559px) and (min-width: 1960px){
+  h3{font-size: 28px;}
+  h2{font-size: 24px;}
+  .prev, .next {top:45%;}
+  .prev img, .next img{
+    width: 30px;
+    height: 40px;
+  }
+}
+@media only screen and  (max-width: 1959px) and (min-width: 1440px){
+  h3{font-size: 24px;}
+  h2{font-size: 20px;}
+  .prev, .next {top:35%;}
+  .prev img, .next img{
+    width: 26px;
+    height: 36px;
+  }
+}
+@media only screen and (max-width: 700px){
+section{height: 70%;width:100%;}
+.circular{width: 40%;}
+.onepic{width:45%;margin-left: 27%;}
+.light{opacity: 0;}
+.yeah{opacity: 0;}
 }

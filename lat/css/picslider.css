@@ -3,19 +3,17 @@
 }
 
 section {
-  width: 100%;
+  width: 50%;
   height: 25em;
   position: relative;
-	margin-left: -300px;
+	max-width: 100%;
 	text-align: center;
 
 }
 
 
 li {
-  width: 500px;
-  height: 281px;
-
+  width: 88%;
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -36,14 +34,14 @@ li p {
 }
 
 .main-pos {
-  margin-left: 2em !important;
+  margin-left: 5.5% !important;
   z-index: 3000;
   /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
 }
 
 .left-pos {
   opacity: .3;
-  margin-left: -17em !important;
+  margin-left: -35% !important;
   z-index: 1000;
   -webkit-transform: scale(.75);
   -moz-transform: scale(.75);
@@ -51,7 +49,7 @@ li p {
 }
 
 .back-pos {
-  margin-left: 2em !important;
+  margin-left: 5% !important;
   opacity: .05;
   -webkit-transform: scale(.5);
   -moz-transform: scale(.5);
@@ -60,7 +58,7 @@ li p {
 
 .right-pos {
   opacity: .3;
-  margin-left:  21em !important;
+  margin-left:  46% !important;
   z-index: 1000;
   -webkit-transform: scale(.75);
   -moz-transform: scale(.75);

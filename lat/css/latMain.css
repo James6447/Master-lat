@@ -36,7 +36,7 @@
 .flexalign{
     height: 70%;
     display: flex;
-    padding: 0 9%;
+   width:82%;
     margin: 0 auto;
     justify-content: center;
     align-items: top;
@@ -82,25 +82,26 @@
 #latMainContentContent_1,#latMainContentContent_2,#latMainContentContent_3{font-size:26px;}
 #latMainContent_1,#latMainContent_2,#latMainContent_3{font-size:34px;}
 }
-@media only screen and (min-width: 1960px){
+@media only screen and  (max-width: 2559px) and (min-width: 1960px){
 .anchorpic{font-size:18px;}
 #latMainMsg_1{font-size:38px;}
 #latMainContentContent_1,#latMainContentContent_2,#latMainContentContent_3{font-size:22px;}
 #latMainContent_1,#latMainContent_2,#latMainContent_3{font-size:28px;}
 }
 
-@media only screen and (min-width: 1440px){
+@media only screen and  (max-width: 1959px) and (min-width: 1440px){
 .anchorpic{font-size:14px;}
 #latMainMsg_1{font-size:34px;}
 #latMainContentContent_1,#latMainContentContent_2,#latMainContentContent_3{font-size:18px;}
 #latMainContent_1,#latMainContent_2,#latMainContent_3{font-size:24px;}
 }
-@media only screen and (min-width: 1200px){
+@media only screen and  (max-width: 1439px) and (min-width: 1200px){
 #latMainTitle_1{height:49vh;}
 }
 @media only screen and (max-width: 700px){
-.flexalign{display:block;height:80%;}
+.flexalign{display:block;height:80%;width:100%;padding:0 25px;}
 #latMainMsg_1{height: 20%;}
+#latMainMsg_3{padding: 0 25px;width: 100%;}
 .anchorpic:nth-child(1),.anchorpic:nth-child(2){margin:45px auto 50px auto;}
 #latMainContent_1,#latMainContent_2{width:50%;}
 #latMainContent_3{width:100%;}
@@ -112,6 +113,7 @@
 }
 @media only screen and (max-width: 480px){
   #latMainTitle_1{height:100vh;}
+  #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{transform: translateY(15vh);}
 #latMainContent_1, #latMainContent_2, #latMainContent_3{margin:0px auto 0px auto;height: 200px;}
 }
 input{
@@ -213,15 +215,15 @@ input{width:100%;}
  transition: 0.6s ease;
  border-radius: 0 3px 3px 0;
  z-index: 3000;
- top:-269px;
+ top:-280px;
 }
 
 .prev1{
-  left: -506px;
+  left: 13%;
 }
 
 .next1{
-  left: 515px;
+  left:84.5%;
 }
 
 .prev img, .next img{

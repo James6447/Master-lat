@@ -92,7 +92,7 @@ input{font-size: 28px;height: 39px;}
 #latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img{max-width:54px;max-height:62px;}
 #latFooterImg1 img, #latFooterImg2 img{max-width: 42px;max-height: 32px;}
 }
-@media only screen and (min-width: 1960px){
+@media only screen and  (max-width: 2559px) and (min-width: 1960px){
 #latFooterMsg_1{font-size: 58px;}
 #latFooterMsg_2{font-size: 29px;}
 .but_c{width: 108px;
@@ -105,7 +105,7 @@ input{font-size: 24px;height: 35px;}
 #latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img{max-width:50px;max-height:58px;}
 #latFooterImg1 img, #latFooterImg2 img{max-width: 38px;max-height: 28px;}
 }
-@media only screen and (min-width: 1440px){
+@media only screen and  (max-width: 1959px) and (min-width: 1440px){
 #latFooterMsg_1{font-size: 54px;}
 #latFooterMsg_2{font-size: 25px;}
 .but_c{width: 104px;
@@ -145,6 +145,7 @@ input{font-size: 20px;height: 31px;}
 #latFooterMsg_2{font-size: 16px;}
 #latFooterImg1, #latFooterImg2{width:100%;margin: 0px auto 20px auto;text-align:left;}
 #latFooterItem_1{float:unset;}
+#latFooterR1{width:100%;padding: 0 25px;}
 #latFooterImg1 img, #latFooterImg2 img{float:unset;}
 #latFooterImg3 img, #latFooterImg4 img,#latFooterImg5 img{margin: 10px auto 0px auto;;}
 #latFooterImg3,#latFooterImg4,#latFooterImg5{ width: 33%;
