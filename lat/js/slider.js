@@ -286,6 +286,23 @@ else if ($(window).width() < 880){
      }
   });
 
+  $(window).resize(function(){
+    if($(window).width() < 350){
+      $('section').css("margin-left","-48%");
+      $('section').css("padding-top","19%");
+      $('section').css("width","100%");
+      $('.next1').css("left","76.5%");
+    }
+    else{
+      $('section').css("margin-left","0");
+      $('section').css("padding-top","30px");
+      $('section').css("width","50%");
+      $('.next1').css("left","84.5%");
+    }
+
+
+  });
+
   (function() {
     $('.hamburger').on('click', function(e) {
       e.preventDefault();
