@@ -25,7 +25,7 @@ h3{margin:30px 0;
 }
 
  li {
-  width: 100%;
+  width: 88%;
   /* background: #333; */
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
@@ -80,7 +80,7 @@ h3{margin:30px 0;
 }
 
 .top {
-  padding-left: 0% !important;
+  padding-left: 5% !important;
   z-index: 3000;
   /* margin-left: -40px; */
   /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
@@ -201,4 +201,8 @@ section{height: 70%;width:100%;}
 .onepic{width:45%;margin-left: 27%;}
 .light{opacity: 0;}
 .yeah{opacity: 0;}
+}
+
+@media only screen and (min-width: 2560px){
+.prev img, .next img {width: 65px;height: 80px;}
 }

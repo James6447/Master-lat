@@ -129,16 +129,17 @@ to{background-color:blue;}
 
 .anchor:hover{color:#ffffff;cursor:pointer;}
 @media only screen and (min-width: 2560px){
-#latHeaderMsg_2,#latHeaderMsg_3,#latHeaderMsg_5{font-size: 36.5px;}
-.anchor{font-size: 24.5px;}
+#latHeaderMsg_2,#latHeaderMsg_3,#latHeaderMsg_5{font-size: 54.5px;}
+.anchor{font-size: 45px;}
 .logopic img{width:158px;}
   .item{padding:51px 34px;font-size: 30px;}
 }
 @media only screen and  (max-width: 2559px) and (min-width: 1960px){
-#latHeaderMsg_2,#latHeaderMsg_3,#latHeaderMsg_5{font-size: 32.5px;}
+#latHeaderMsg_2,#latHeaderMsg_3,#latHeaderMsg_5{font-size: 41px;}
 .anchor{font-size: 32.5px;}
-.logopic img{width:154px;}
-.item{padding:47px 30px;font-size: 26px;}
+.logopic img{width:184px;}
+.item {padding: 55px 30px;font-size: 26px;}
+
 }
 @media only screen and  (max-width: 1959px) and (min-width: 1440px){
 #latHeaderMsg_2,#latHeaderMsg_3,#latHeaderMsg_5{font-size: 28.5px;}

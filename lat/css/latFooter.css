@@ -79,44 +79,107 @@
   width:45px;
   text-align:center;
 }
-@media only screen and (min-width: 2560px){
-#latFooterMsg_1{font-size: 62px;}
-#latFooterMsg_2{font-size: 33px;}
-.but_c{width: 112px;
-       height: 47px;
-       padding: 5px 23px;
-       font-size: 28px;}
-textarea{font-size: 28px;height:92px;}
-input{font-size: 28px;height: 39px;}
-#latFooterImg1, #latFooterImg2{font-size: 28px;}
-#latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img{max-width:54px;max-height:62px;}
-#latFooterImg1 img, #latFooterImg2 img{max-width: 42px;max-height: 32px;}
-}
 @media only screen and  (max-width: 2559px) and (min-width: 1960px){
-#latFooterMsg_1{font-size: 58px;}
+#latFooterMsg_1{font-size: 66px;height:23%;}
+#latFooterMsg_3{margin:46px auto 26px auto;}
+#latFooterMsg_2{font-size:36px;}
+.but_c{width: 154px;height: 59px;padding: 5px 19px;font-size: 34px;}
+textarea{font-size: 34px;height:99px;}
+input{font-size: 34px;height: 46px;}
+#latFooterImg1, #latFooterImg2{font-size: 34px;margin:26px 10px 26px 10px;}
+#latFooterMsg_4, #latFooterMsg_5{margin:70px auto;}
+#latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img{max-width:53px;max-height:61px;}
+#latFooterImg1 img, #latFooterImg2 img{max-width: 41px;max-height:31px;}
+}
+@media only screen and  (max-width: 1959px) and (min-width: 1440px){
+#latFooterMsg_1{font-size: 58px;height:22%;}
 #latFooterMsg_2{font-size: 29px;}
-.but_c{width: 108px;
-       height: 43px;
-       padding: 5px 27px;
+.but_c{width: 116px;
+       height: 51px;
+       padding: 9px 27px;
        font-size: 24px;}
 textarea{font-size: 24px;height:88px;}
+#latFooterMsg_3{margin:38px auto 18px auto;}
 input{font-size: 24px;height: 35px;}
-#latFooterImg1, #latFooterImg2{font-size: 24px;}
+#latFooterMsg_4, #latFooterMsg_5{margin:54px auto; }
+#latFooterImg1, #latFooterImg2{font-size: 24px;margin: 18px 10px 18px 10px;}
 #latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img{max-width:50px;max-height:58px;}
 #latFooterImg1 img, #latFooterImg2 img{max-width: 38px;max-height: 28px;}
 }
-@media only screen and  (max-width: 1959px) and (min-width: 1440px){
-#latFooterMsg_1{font-size: 54px;}
-#latFooterMsg_2{font-size: 25px;}
-.but_c{width: 104px;
-       height: 39px;
-       padding: 5px 31px;
-       font-size: 20px;}
-textarea{font-size: 20px;height:84px;}
-input{font-size: 20px;height: 31px;}
-#latFooterImg1, #latFooterImg2{font-size: 20px;}
+
+@media only screen and (max-width: 2560px) and (min-height:1440px){
+#latFooterMsg_1{font-size: 74px;}
+#latFooterMsg_2{font-size: 45px;}
+#latFooterMsg_3{margin:54px auto 34px auto;}
+.error{margin-top:22px;}
+.but_c{width: 232px;
+       height: 80px;
+       padding: 5px 23px;
+       font-size: 45px;}
+textarea{font-size: 45px;height:182px;}
+input{font-size: 45px;height: 59px;}
+#latFooterItem_8{margin:34px auto 60px auto;}
+#latFooterMsg_4, #latFooterMsg_5{margin:78px auto;}
+#latFooterImg1, #latFooterImg2{font-size: 45px;margin:34px 10px 34px 10px;}
+#latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img{max-width:74px;max-height:82px;}
+#latFooterImg1 img, #latFooterImg2 img{max-width: 54px;max-height: 44px;}
+}
+@media only screen and  (max-width: 2559px) and (min-width: 1960px) and (min-height:1440px){
+#latFooterMsg_1{font-size: 66px;height:23%;}
+#latFooterMsg_3{margin:46px auto 26px auto;}
+#latFooterMsg_2{font-size:36px;}
+.but_c{width: 154px;height: 59px;padding: 5px 19px;font-size: 34px;}
+textarea{font-size: 34px;height:99px;}
+input{font-size: 34px;height: 46px;}
+#latFooterImg1, #latFooterImg2{font-size: 34px;margin:26px 10px 26px 10px;}
+#latFooterMsg_4, #latFooterMsg_5{margin:70px auto;}
+#latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img{max-width:53px;max-height:61px;}
+#latFooterImg1 img, #latFooterImg2 img{max-width: 41px;max-height:31px;}
+}
+@media only screen and  (max-width: 1959px) and (min-width: 1440px)and (min-height:1440px){
+#latFooterMsg_1{font-size: 62px;height:22%;}
+#latFooterMsg_2{font-size: 32px;}
+.but_c{width: 150px;height: 63px;padding: 5px 15px;font-size: 30px;}
+textarea{font-size: 30px;height:95px;}
+#latFooterMsg_3{margin:42px auto 22px auto;}
+input{font-size:30px;height: 42px;}
+#latFooterMsg_4, #latFooterMsg_5{margin:54px auto; }
+#latFooterImg1, #latFooterImg2{font-size: 30px;margin: 22px 10px 22px 10px;}
+#latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img{max-width:50px;max-height:58px;}
+#latFooterImg1 img, #latFooterImg2 img{max-width: 38px;max-height: 28px;}
+}
+
+@media only screen and  (max-width:1440px)and (min-height:1440px){
+#latFooterMsg_1{font-size: 58px;height:22%;}
+#latFooterMsg_2{font-size: 28px;}
+.but_c{width: 146px;height: 55px;padding: 5px 19px;font-size: 26px;}
+textarea{font-size: 26px;height:91px;}
+#latFooterMsg_3{margin:38px auto 18px auto;}
+input{font-size:26px;height:38px;}
+#latFooterMsg_4, #latFooterMsg_5{margin:50px auto; }
+#latFooterImg1, #latFooterImg2{font-size: 26px;margin:18px 10px 18px 10px;}
 #latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img{max-width:46px;max-height:54px;}
 #latFooterImg1 img, #latFooterImg2 img{max-width: 34px;max-height: 24px;}
+}
+@media only screen and  (max-width:1200px)and (min-height:1440px){
+  #latFooterTitle{padding:0 10px;}
+  #latFooterMsg_3{width:100%;padding:0 3px;}
+  #latFooterImg1, #latFooterImg2{width:50%;margin:0px auto;}
+  #latFooterImg3,#latFooterImg4,#latFooterImg5{
+    width: 33%;
+    float: left;
+    margin: 0 auto;
+    display: block;
+    }
+  #latFooterItem_8{padding-right: 12%;}
+  #latFooterImg3 img,#latFooterImg4 img,#latFooterImg5 img{margin:30px auto 0px auto;width:33%;}
+  #latFooterMsg_4, #latFooterMsg_5{width:50%;margin:0 auto;}
+  #latFooterMsg_6,#latFooterMsg_7{margin:0 auto;}
+  #latFooterWeform_1, #latFooterWeform_3{margin:30px auto 10px auto;}
+  #latFooterWeform_2, #latFooterWeform_4{margin:10px auto 30px auto;}
+  #latFooterWeform_5{margin:0px auto;}
+  #latFooterMsg_6,#latFooterMsg_7{width:100%;}
+
 }
 @media only screen and (max-width: 1000px){
   #latFooterTitle{padding:0 10px;}
@@ -138,7 +201,6 @@ input{font-size: 20px;height: 31px;}
   #latFooterMsg_6,#latFooterMsg_7{width:100%;}
 
 }
-
 @media only screen and (max-width: 700px){
 #latFooterMsg_1,#latFooterMsg_2{text-align:left;}
 #latFooterMsg_1{font-size: 35px;height: 11%;}
