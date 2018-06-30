@@ -13,7 +13,7 @@ section {
 
 
 li {
-  width: 88%;
+  width: 100%;
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -34,7 +34,7 @@ li p {
 }
 
 .main-pos {
-  margin-left: 5.5% !important;
+  margin-left: 0% !important;
   z-index: 3000;
   /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
 }
@@ -58,7 +58,7 @@ li p {
 
 .right-pos {
   opacity: .3;
-  margin-left:  46% !important;
+  margin-left:  40.5% !important;
   z-index: 1000;
   -webkit-transform: scale(.75);
   -moz-transform: scale(.75);
@@ -70,4 +70,8 @@ span {
   margin: 0 auto;
   left: 17em;
   top: 20em;
+}
+@media only screen and (max-width: 700px){
+.right-pos {opacity: 0;}
+.left-pos{opacity:0;}
 }

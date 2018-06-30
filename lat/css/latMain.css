@@ -109,7 +109,10 @@
 #latMainTitle{height:100vh;}
 #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{width: 50%;}
 #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{transform: translateY(10%);}
-#latMainTitle_1{height:115vh;background-image:url("../image/hpimage3.jpg")}
+#latMainTitle_1{height:130vh;background-image:url("../image/hpimage3.jpg")}
+}
+@media only screen and (max-width: 600px){
+#latMainTitle_1{height:115vh;}
 }
 @media only screen and (max-width: 480px){
   #latMainTitle_1{height:110vh;}

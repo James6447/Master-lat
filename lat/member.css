@@ -25,7 +25,7 @@ h3{margin:30px 0;
 }
 
  li {
-  width: 88%;
+  width: 100%;
   /* background: #333; */
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
@@ -80,7 +80,7 @@ h3{margin:30px 0;
 }
 
 .top {
-  padding-left: 7% !important;
+  padding-left: 0% !important;
   z-index: 3000;
   /* margin-left: -40px; */
   /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
@@ -105,7 +105,7 @@ h3{margin:30px 0;
 
 .light {
   opacity: .3;
-  margin-left:  51% !important;
+  margin-left:  41% !important;
   z-index: 1000;
   -webkit-transform: scale(.75);
   -moz-transform: scale(.75);
