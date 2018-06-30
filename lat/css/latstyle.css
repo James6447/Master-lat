@@ -15,6 +15,7 @@ img { vertical-align:middle; width: 100%; }
 /*WTFWTWFWTWTWFWTW全網基本定義結束WTWFWTWFWTWFWTWFWTWFWTW*/
 /*WTFWTWTWTWTWFWTW全網架構定義開始WTWFWTWFWTWFDWFWTWDFWTW*/
 /*最外層區塊*/
+
 #latwapper{ width:100%; max-width:100%; text-align:left; border:0px; padding:0px; word-wrap:normal;}
 /*header區塊*/
 #latHeader{ width:100%; background:#e0e0e0; margin:0px; padding:0px; margin-bottom:0px; }
@@ -49,7 +50,7 @@ img { vertical-align:middle; width: 100%; }
 #latFooter{ width:100%; background:#e0e0e0; padding:0px; margin-top: 0; min-height: 745px;}
 #latFooterR1{width:100%;text-align:left;display:block;margin:0 auto;}
 #latFooterTitle{width:100%;display:block;}
-#latFooterMsg_1{width:100%;display:block;}
+#latFooterMsg_1{width:100%;display:block;height: 18%;}
 #latFooterMsg_2{width:100%;display:block;}
 #latFooterMsg_3{width:33%;float:left;display:block;transition:width ease .8s;}
 #latFooterMsg_4{width:33%;float:left;display:block;transition:width ease .8s;}

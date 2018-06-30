@@ -34,7 +34,7 @@
                 text-align: center;
                 }
 .flexalign{
-    height: 70%;
+    height: 75%;
     display: flex;
    width:82%;
     margin: 0 auto;
@@ -112,7 +112,8 @@
 #latMainTitle_1{height:115vh;background-image:url("../image/hpimage3.jpg")}
 }
 @media only screen and (max-width: 480px){
-  #latMainTitle_1{height:100vh;}
+  #latMainTitle_1{height:110vh;}
+  #latMainTitle{height:115vh;}
   #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{transform: translateY(15vh);}
 #latMainContent_1, #latMainContent_2, #latMainContent_3{margin:0px auto 0px auto;height: 200px;}
 }
@@ -280,6 +281,13 @@ input{width:100%;}
           #latMainTitle_1{background-image:url("../image/hpimage3.jpg");}
 }*/
 @media only screen and (max-width: 480px){
+  .prev1{
+    left: 5.5%;
+  }
+
+  .next1{
+    left:94.5%;
+  }
 .anchorpic {padding: 10px 10px;font-size:20px;transition:all linear .5s;}
 #latMainContent_1, #latMainContent_2, #latMainContent_3{width:100%;}
 #latMainContentContent_1, #latMainContentContent_2, #latMainContentContent_3{width:100%;}

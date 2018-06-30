@@ -150,7 +150,7 @@ to{background-color:blue;}
   .item{padding:39px 22px;font-size: 18px;}
 }
 @media only screen and (max-width: 700px){
-          #latHeaderMsg_2{font-size:20px;margin: 0 auto;width:96%;}
+          #latHeaderMsg_2{font-size:20px;margin: 80px auto 0 auto;width:96%;}
           #latHeaderMsg_3{font-size:20px;margin: 0 auto;width:96%;}
           #latHeaderMsg_5{font-size:20px;margin: 0 auto;width:96%;}
           .anchor{font-size:17.5px;}
