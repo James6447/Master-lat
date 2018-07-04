@@ -53,12 +53,14 @@
                     height: 110%;
                     position: relative;
                     background:#ffffff;
-                      background-attachment:fixed;
+                    background-attachment:fixed;
                     background-size: cover;
                     background-position: center;
                     overflow: hidden;
                     display:block;}
-#latContentR2{height:100vh;}
+
+#latContentR2{height:100vh;overflow:hidden;}
+
 #latContentTitle_2{
                     background-image:url("https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/31435171_10214524408156518_8858727269019942912_n.png?_nc_cat=0&oh=002411efc12a9ceecbfb7acc81525e9a&oe=5B53EEEF");
                     background-size: cover;
