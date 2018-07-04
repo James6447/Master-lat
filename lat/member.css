@@ -1,31 +1,41 @@
-section {
+.fgg {
   width: 50%;
   height: 25em;
   margin: 0 auto;
   position: relative;
   max-width: 100%;
 }
-body{margin: 0;}
+/*body{margin: 0;}*/
 
-h2{
+.carousel-1{
+  display: flex;
+  padding-left: unset;
+  height: 90%;
+  margin-top: unset;
+  justify-content: center;
+  align-items: center;
+}
+
+.fgg h2{
+  margin: 30px 0;
   margin-left: 5%;
-    font-weight: 300;
-    font-size: 16px;
+  font-weight: 300;
+  font-size: 16px;
   font-family: Microsoft JhengHei;
 }
-h3{margin:30px 0;
+.fgg h3{
   font-size: 20px;
   font-weight: 500;
 
   font-family: Microsoft JhengHei;}
 
- ul {
+ .fgg ul {
   display: table-row;
   text-align: center;
 }
 
- li {
-  width: 88%;
+ .fgg li {
+  width: 100%;
   /* background: #333; */
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
@@ -39,7 +49,7 @@ h3{margin:30px 0;
   text-align: center;
 }
 
- li p {
+ .fgg li p {
   color: white;
   font-weight: bold;
   font-size: 5em;
@@ -80,7 +90,6 @@ h3{margin:30px 0;
 }
 
 .top {
-  padding-left: 5% !important;
   z-index: 3000;
   /* margin-left: -40px; */
   /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
@@ -96,7 +105,7 @@ h3{margin:30px 0;
 }
 
 .heave {
-  margin-left: 7% !important;
+  margin-left: 0% !important;
   opacity: .05;
   -webkit-transform: scale(.5);
   -moz-transform: scale(.5);
@@ -112,7 +121,7 @@ h3{margin:30px 0;
   transform: scale(.75);
 }
 
-.circular{
+.fgg .circular{
     position:relative;
     width:40%;
     overflow:hidden;
@@ -121,13 +130,13 @@ h3{margin:30px 0;
     margin-right: 5%;
 }
 
-.circular img{
+.fgg .circular img{
     width:100%;
     height:auto;
 }
 
 
-span {
+.fgg span {
   position: relative;
   margin: 0 auto;
   left: 17em;
@@ -136,13 +145,11 @@ span {
 
 
 /* Next & previous buttons */
-.prev, .next {
+.fgg .prev2,.fgg .next2 {
  cursor: pointer;
  position: absolute;
  top: 15%;
  width: auto;
- margin-left: -25%;
- margin-right:-25%;
  margin-top: 100px;
  color: white;
  font-weight: bold;
@@ -153,56 +160,36 @@ span {
 }
 
 
-.prev img, .next img{
+.fgg .prev2 img, .fgg .next2 img{
   width: 20px;
   height: 30px;
 }
 
 /* Position the "next button" to the right */
-.next {
- right: 0;
- border-radius: 3px 0 0 3px;
+.fgg .next2 {
+  left:125%;
+  border-radius: 3px 0 0 3px;
 }
+.fgg .prev2{left:-30%}
+
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.fgg .prev2:hover, .fgg .next2:hover {
  background-color: rgba(0,0,0,0.8);
 }
-@media only screen and (min-width: 2560px){
-  h3{font-size: 32px;}
-  h2{font-size: 28px;}
-  .prev, .next{top:55%;}
-  .prev img, .next img{
-    width: 34px;
-    height: 44px;
-  }
-}
-@media only screen and  (max-width: 2559px) and (min-width: 1960px){
-  h3{font-size: 28px;}
-  h2{font-size: 24px;}
-  .prev, .next {top:45%;}
-  .prev img, .next img{
-    width: 30px;
-    height: 40px;
-  }
-}
-@media only screen and  (max-width: 1959px) and (min-width: 1440px){
-  h3{font-size: 24px;}
-  h2{font-size: 20px;}
-  .prev, .next {top:35%;}
-  .prev img, .next img{
-    width: 26px;
-    height: 36px;
-  }
+@media only screen and (max-width:768.98px) and (min-height:1023.98px){
+  .fgg{width:90%;}
+  .yeah{opacity:0;}
+  .light{opacity:0;}
 }
 @media only screen and (max-width: 700px){
-section{height: 70%;width:100%;}
-.circular{width: 40%;}
-.onepic{width:45%;margin-left: 27%;}
-.light{opacity: 0;}
-.yeah{opacity: 0;}
+  .yeah {opacity: 0;}
+  .light{opacity:0;}
+  .fgg{width:75%;}
+  .fgg .carousel-1{height:100%;}
 }
 
-@media only screen and (min-width: 2560px){
-.prev img, .next img {width: 65px;height: 80px;}
+@media only screen and (max-width: 480px){
+  .fgg{width:90%;}
+
 }

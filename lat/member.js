@@ -2,21 +2,8 @@ window.onload = function() {
 
 var windos = $('window').width();
 
-if (windos <=375){
-  $('sectsion').css('width','390px');
-}
-else{
-  $('sectsion').css('width','100%');
-}
 
-$( window ).resize(function() {
-  if (windos <=375){
-    $('sectsion').css('width','390px');
-  }
-  else{
-    $('sectsion').css('width','100%');
-  }
-});
+
 
 //slideshow style interval
 var autogo = setInterval( go,3500);
@@ -100,17 +87,17 @@ function go(action) {
 }
 
 //next button click function
-$('#next').click(function() {
+$('#next2').click(function() {
   go('clockwise');
 });
 
 //prev button click function
-$('#prev').click(function() {
+$('#prev2').click(function() {
   go('counter-clockwise');
 });
 
 //if any visible item are clicked
-$('li').click(function() {
+$('.gem').click(function() {
   if($(this).attr('class') == 'gem yeah') {
      go('counter-clockwise');
   }

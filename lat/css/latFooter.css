@@ -107,7 +107,7 @@ input{font-size: 24px;height: 35px;}
 #latFooterImg1 img, #latFooterImg2 img{max-width: 38px;max-height: 28px;}
 }
 
-@media only screen and (max-width: 2560px) and (min-height:1440px){
+@media only screen and (max-width: 2880px) and (min-height:1440px){
 #latFooterMsg_1{font-size: 74px;}
 #latFooterMsg_2{font-size: 45px;}
 #latFooterMsg_3{margin:54px auto 34px auto;}

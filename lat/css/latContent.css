@@ -33,7 +33,7 @@
                       line-height: 150%;
                       text-align: center;
                                }
-#latContentAnchor_1{margin:-35px auto 100px auto;
+#latContentAnchor_1{margin:5% auto 0px auto;
                     text-align:center;
                     width:150px;
                     background:#303549;
@@ -115,22 +115,3 @@
                  line-height: 150%;
                  text-align: center;
  }
- @media only screen and (min-width: 2560px){
- #latContentMsg_6{font-size: 42px;}
- #latContentMsg_1{font-size:74px;}
- #latContentAnchor_1{font-size:28px;width:162px;}
- }
- @media only screen and  (max-width: 2559px) and (min-width: 1960px){
- #latContentMsg_6{font-size: 38px;}
- #latContentMsg_1{font-size:54px;}
- #latContentAnchor_1{font-size:24px;width:158px;}
- }
-@media only screen and  (max-width: 1959px) and (min-width: 1440px){
-#latContentMsg_6{font-size: 34px;}
-#latContentMsg_1{font-size:34px;}
-#latContentAnchor_1{font-size:20px;width:154px;}
-}
-@media only screen and (max-width: 700px){
-   #latContentMsg_6{height: 20%;}
-    #latContentMsg_1{height:20%;}
-}

@@ -76,52 +76,7 @@
 .anchorpic:hover{color:#ffffff;transition: width ease.2s;background:#303549;}
 #latMainPic_1,#latMainPic_2,#latMainPic_3,#latMainPic_4{transform:translateY(-25%);}
 #latMainPic_1 img,#latMainPic_2 img,#latMainPic_3 img,#latMainPic_4 img{max-width:90%;transition: all ease .8s;}
-@media only screen and (min-width: 2560px){
-.logopic img{width:238px;}
-.item {padding: 78px 34px;font-size: 36px;}
-.anchorpic{font-size:35px;padding: 30px 35px}
-#latMainMsg_1{font-size:74px;}
-#latMainContentContent_1,#latMainContentContent_2,#latMainContentContent_3{font-size:32px;}
-#latMainContent_1,#latMainContent_2,#latMainContent_3{font-size:54px;}
-}
-@media only screen and  (max-width: 2559px) and (min-width: 1960px){
-.anchorpic{font-size:27px;padding: 26px 35px}
-#latMainMsg_1{font-size:54px;}
-#latMainContentContent_1,#latMainContentContent_2,#latMainContentContent_3{font-size:26px;}
-#latMainContent_1,#latMainContent_2,#latMainContent_3{font-size:41px;}
-}
 
-@media only screen and  (max-width: 1959px) and (min-width: 1440px){
-.anchorpic{font-size:14px;}
-#latMainMsg_1{font-size:34px;}
-#latMainContentContent_1,#latMainContentContent_2,#latMainContentContent_3{font-size:18px;}
-#latMainContent_1,#latMainContent_2,#latMainContent_3{font-size:24px;}
-}
-@media only screen and  (max-width: 1439px) and (min-width: 1200px){
-#latMainTitle_1{height:49vh;}
-}
-@media only screen and (max-width: 700px){
-.flexalign{display:block;height:80%;width:100%;padding:0 25px;}
-#latMainMsg_1{height: 20%;}
-#latMainMsg_3{padding: 0 25px;width: 100%;}
-.anchorpic:nth-child(1),.anchorpic:nth-child(2){margin:45px auto 50px auto;}
-#latMainContent_1,#latMainContent_2{width:50%;}
-#latMainContent_3{width:100%;}
-#latMainContent_1m#latMainContent_2,#latMainContent_3{margin:60px auto 60px auto;}
-#latMainTitle{height:100vh;}
-#latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{width: 50%;}
-#latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{transform: translateY(10%);}
-#latMainTitle_1{height:130vh;background-image:url("../image/hpimage3.jpg")}
-}
-@media only screen and (max-width: 600px){
-#latMainTitle_1{height:115vh;}
-}
-@media only screen and (max-width: 480px){
-  #latMainTitle_1{height:110vh;}
-  #latMainTitle{height:115vh;}
-  #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{transform: translateY(15vh);}
-#latMainContent_1, #latMainContent_2, #latMainContent_3{margin:0px auto 0px auto;height: 200px;}
-}
 input{
   border:none;
   width: 75%;
@@ -150,13 +105,6 @@ textarea{
   overflow-x:hidden;
   color: white;
   background: rgba(216,216,216,0.2);
-}
-@media only screen and (max-width: 1000px){
-textarea{width:88%;}
-}
-@media only screen and (max-width: 700px){
-textarea{width:100%;}
-input{width:100%;}
 }
 
 .fade {
@@ -212,7 +160,7 @@ input{width:100%;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.fss .prev,.fss .next {
  cursor: pointer;
  position: relative;
  color: white;
@@ -221,30 +169,30 @@ input{width:100%;}
  transition: 0.6s ease;
  border-radius: 0 3px 3px 0;
  z-index: 3000;
- top:-280px;
+ top:-200px;
 }
 
-.prev1{
-  left: 13%;
+.fss .prev1{
+  left: -75%;
 }
 
-.next1{
-  left:84.5%;
+.fss .next1{
+  left:75%;
 }
 
-.prev img, .next img{
+.fss .prev img, .fss .next img{
   width: 20px;
   height: 30px;
 }
 
 /* Position the "next button" to the right */
-.next {
+.fss .next {
  right: 0;
  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.fss .prev:hover,.fss .next:hover {
  background-color: rgba(0,0,0,0.8);
 }
 
@@ -272,41 +220,3 @@ input{width:100%;}
   margin-top:3px;
   padding-left: 10px;
 }
-
-/*@media only screen and (max-width: 800px){
-  #latMainContent_1,#latMainContent_2{width:50%;}
-    #latMainContent_3{width:100%;margin:40px auto 100px auto;}
-    #latMainPic_1,#latMainPic_2{margin-top:50px;}
-    #latMainContentContent_3{width:45%;}
-      #latMainTitle_1{height:50%;}
-        #latMainTitle{background-image:url("../image/hpimage2.jpg");}
-      #latMainPic_1,#latMainPic_2,#latMainPic_3,#latMainPic_4{width:50%;transition:width ease .8s;}
-        #latMainPic_1 img, #latMainPic_2 img, #latMainPic_3 img, #latMainPic_4 img
-        {max-width:90%;transition:width ease .8s;}
-          #latMainTitle_1{background-image:url("../image/hpimage3.jpg");}
-}*/
-@media only screen and (max-width: 480px){
-  .prev1{
-    left: 5.5%;
-  }
-
-  .next1{
-    left:94.5%;
-  }
-.anchorpic {padding: 10px 10px;font-size:20px;transition:all linear .5s;}
-#latMainContent_1, #latMainContent_2, #latMainContent_3{width:100%;}
-#latMainContentContent_1, #latMainContentContent_2, #latMainContentContent_3{width:100%;}
-
-}
-
-@media only screen and (min-width: 2560px){
-.prev img, .next img {width: 65px;height: 80px;}
-}
-@media only screen and  (max-width: 2559px) and (min-width: 1960px){
-.prev img, .next img{width: 30px;height: 40px;}
-}
-/*@media only screen and (max-width: 700px){
-        #latMainPic_1,#latMainPic_2,#latMainPic_3,#latMainPic_4{width:100%;transition:width ease .8s;}
-#latMainContent_1,#latMainContent_2,#latMainContent_3{width:100%;}
-#latMainContent_3{margin:40px auto 50px auto;}
-#latMainContentContent_3{width:75%;}}*/

@@ -1,0 +1,292 @@
+@media only screen and (min-width: 1015.98px) and (min-height:1392px){
+  /*---第一塊---*/
+#latHeaderMsg_2{font-size: 44px;margin-top:170px;}
+#latHeaderMsg_3{font-size:44px;}
+.listtitle{font-size:26px;}
+.item{padding:40px 20px;}
+#latHeaderMsg_5{font-size:44px;}
+.anchor{font-size: 30px;padding:5px 35px;}
+/*---第二塊---*/
+#latMainTitle{height: 70vh;}
+#latMainMsg_1{font-size:45px;}
+#latMainContent_1, #latMainContent_2, #latMainContent_3{font-size: 38px;}
+#latMainContentContent_1, #latMainContentContent_2, #latMainContentContent_3{font-size: 28px;}
+.anchorpic{padding: 10px 25px;font-size: 20px;}
+#latMainTitle_1{height:45vh;}
+/*---第三塊---*/
+#latContentMsg_1{font-size: 48px;}
+.fss{width:50%;margin: 5% auto 0 auto}
+.right-pos {opacity: 0;}
+.left-pos{opacity:0;}
+.next1{left:55%;}
+.prev1{left:-55%;}
+#latContentAnchor_1{padding: 18px 20px; width: 162px;font-size:20px;margin:15% auto 0 auto;}
+/*---第四塊不知道---*/
+
+}
+@media only screen and (max-width:2049.98px) and (min-width: 1200.98px) and (max-height:1344.98px) and (min-height:898px){
+    /*---第一塊---*/
+  #latHeaderMsg_2{font-size: 32px;margin-top:130px;}
+  #latHeaderMsg_3{font-size:32px;}
+  .listtitle{font-size:22px;}
+  .item{padding:40px 20px;}
+  #latHeaderMsg_5{font-size:32px;}
+  .anchor{font-size: 26px;padding:5px 35px;}
+  /*---第二塊---*/
+  #latMainTitle{height: 70vh;}
+  #latMainMsg_1{font-size:40px;}
+  #latMainContent_1, #latMainContent_2, #latMainContent_3{font-size: 28px;}
+  #latMainContentContent_1, #latMainContentContent_2, #latMainContentContent_3{font-size: 20px;}
+  .anchorpic{padding: 10px 25px;font-size: 16px;}
+  #latMainTitle_1{height:45vh;}
+  /*---第三塊---*/
+  #latContentMsg_1{font-size: 40px;}
+  .fss{width:50%;margin: 5% auto 0 auto}
+  .right-pos {opacity: 0;}
+  .left-pos{opacity:0;}
+  .next1{left:55%;}
+  .prev1{left:-55%;}
+  #latContentAnchor_1{padding: 18px 20px; width: 162px;font-size:20px;margin:15% auto 0 auto;}
+  /*---第四塊不知道---*/
+  #latFooterMsg_1{font-size: 58px;height:22%;}
+  #latFooterMsg_2{font-size: 29px;}
+  .but_c{width: 116px;
+         height: 51px;
+         padding: 9px 27px;
+         font-size: 24px;}
+  textarea{font-size: 24px;height:88px;}
+  #latFooterMsg_3{margin:38px auto 18px auto;}
+  input{font-size: 24px;height: 35px;}
+  #latFooterMsg_4, #latFooterMsg_5{margin:54px auto; }
+  #latFooterImg1, #latFooterImg2{font-size: 24px;margin: 18px 10px 18px 10px;}
+  #latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img{max-width:50px;max-height:58px;}
+  #latFooterImg1 img, #latFooterImg2 img{max-width: 38px;max-height: 28px;}
+}
+
+/*---header---*/
+@media only screen and (max-width: 880px){
+  .containerheader{width:100%;}
+  .logo img{width:90%;}
+  .logo{width:90%;float:unset;text-align: left;padding-left:19px;}
+  .logothing{padding: 10px 25px;}
+  .listtitle{width: 100%;}
+  .list{float:unset;}
+  .icon{padding-right: 19px;}
+  .listtitle:nth-child(4){border-right:0px solid #303549;}
+  .item{padding: 20px;border:unset;}
+}
+/*---平板----*/
+/*---ipadpro--*/
+@media only screen and (max-width:1024.98px) and (min-height:1365.98px) {
+  /*---第一塊---*/
+  #latHeaderMsg_2{font-size: 32px;margin-top:130px;}
+  #latHeaderMsg_3{font-size:32px;}
+  .listtitle{font-size:22px;}
+  .item{padding:40px 20px;}
+  #latHeaderMsg_5{font-size:32px;}
+  .anchor{font-size: 26px;padding:5px 35px;}
+  /*---第二塊---*/
+  #latMainTitle{height: 70vh;}
+  #latMainMsg_1{font-size:40px;}
+  #latMainContent_1, #latMainContent_2, #latMainContent_3{font-size: 32px;}
+  #latMainContentContent_1, #latMainContentContent_2, #latMainContentContent_3{font-size: 22px;}
+  .anchorpic{padding: 10px 25px;font-size: 18px;}
+  #latMainTitle_1{height:30vh;}
+  /*---第三塊---*/
+  #latContentMsg_1{font-size: 40px;}
+  .fss{width:75%;margin: 15% auto 0 auto}
+  .right-pos {opacity: 0;}
+  .left-pos{opacity:0;}
+  .next1{left:55%;}
+  .prev1{left:-55%;}
+  #latContentAnchor_1{padding: 18px 20px; width: 162px;font-size:20px;margin:15% auto 0 auto;}
+  /*---第四塊不知道---*/
+  /*---第五塊----*/
+  #latFooterMsg_1{font-size: 54px;}
+  #latFooterMsg_2{font-size: 28px;}
+  #latFooterMsg_3{margin:20px auto 10px auto;width: 100%;}
+  #latFooterImg1, #latFooterImg2{font-size: 24px;width: 50%;margin:0 auto}
+  #latFooterImg1 img, #latFooterImg2 img{max-width: 34px;max-height: 24px;}
+  #latFooterImg3, #latFooterImg4, #latFooterImg5{margin:0px auto 20px auto;width:33%;float:left;}
+  #latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img {max-width: 46px;max-height: 54px;margin:40px auto 10px auto;}
+  #latFooterWeform_1, #latFooterWeform_3{margin:15px auto 15px auto;}
+  #latFooterMsg_4, #latFooterMsg_5{width:100%;margin:0px auto;}
+  #latFooterWeform_1, #latFooterWeform_2, #latFooterWeform_3, #latFooterWeform_4{font-size: 24px;}
+  input{height:38px;font-size: 24px;width:100%}
+  #latFooterWeform_5{margin:20px auto;}
+  #latFooterMsg_7{width:100%;}
+  textarea{height:92px;font-size:24px;width:100%}
+  #latFooterItem_8{margin:20px auto 60px auto;padding-right: 0px;}
+  .but_c{    font-size: 24px;padding: 5px 26px;height: 54px;width:112px;}
+}
+/*---一般--*/
+@media only screen and (max-width: 1000px){
+  #latFooterTitle{padding:0 10px;}
+  #latFooterMsg_3{width:100%;padding:0 3px;}
+  #latFooterImg1, #latFooterImg2{width:50%;margin:0px auto;}
+  #latFooterImg3,#latFooterImg4,#latFooterImg5{
+    width: 33%;
+    float: left;
+    margin: 0 auto;
+    display: block;
+    }
+  #latFooterItem_8{padding-right: 12%;}
+  #latFooterImg3 img,#latFooterImg4 img,#latFooterImg5 img{margin:30px auto 0px auto;width:33%;}
+  #latFooterMsg_4, #latFooterMsg_5{width:50%;margin:0 auto;}
+  #latFooterMsg_6,#latFooterMsg_7{margin:0 auto;}
+  #latFooterWeform_1, #latFooterWeform_3{margin:30px auto 10px auto;}
+  #latFooterWeform_2, #latFooterWeform_4{margin:10px auto 30px auto;}
+  #latFooterWeform_5{margin:0px auto;}
+  #latFooterMsg_6,#latFooterMsg_7{width:100%;}
+
+}
+@media only screen and (max-width: 1000px){
+textarea{width:88%;}
+}
+/*---ipad----*/
+@media only screen and (max-width:768.98px) and (max-height:1365.97px) and (min-height:1023.98px){
+/*---第一塊---*/
+  #latHeaderMsg_2{font-size: 28px;margin-top:120px;}
+  #latHeaderMsg_3{font-size:28px;}
+  .listtitle{font-size:20px;}
+  .item{padding:30px 20px;}
+  #latHeaderMsg_5{font-size:28px;}
+  .anchor{font-size: 24px;padding:5px 35px;}
+/*---第二塊---*/
+  #latMainTitle{height: 70vh;}
+  #latMainMsg_1{font-size:38px;}
+  #latMainContent_1, #latMainContent_2, #latMainContent_3{font-size: 28px;}
+  #latMainContentContent_1, #latMainContentContent_2, #latMainContentContent_3{font-size: 18px;}
+  .anchorpic{padding: 10px 25px;font-size: 16px;}
+  #latMainTitle_1{height:30vh;}
+/*---第三塊---*/
+  #latContentMsg_1{font-size: 38px;}
+  .fss{width:75%;}
+  .right-pos {opacity: 0;}
+	.left-pos{opacity:0;}
+  .next1{left:55%;}
+  .prev1{left:-55%;}
+  #latContentAnchor_1{padding: 18px 20px; width: 162px;font-size:20px;margin:15% auto 0 auto;}
+/*---第四塊不知道---*/
+/*---第五塊----*/
+  #latFooterMsg_1{font-size: 54px;}
+  #latFooterMsg_2{font-size: 25px;}
+  #latFooterMsg_3{margin:34px auto 10px auto;}
+  #latFooterImg1, #latFooterImg2{font-size: 20px;}
+  #latFooterImg1 img, #latFooterImg2 img{max-width: 34px;max-height: 24px;}
+  #latFooterImg3, #latFooterImg4, #latFooterImg5{margin:4px auto;}
+  #latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img {max-width: 46px;max-height: 54px;}
+  #latFooterWeform_1, #latFooterWeform_3{margin:34px auto 14px auto;}
+  #latFooterWeform_1, #latFooterWeform_2, #latFooterWeform_3, #latFooterWeform_4{font-size: 20px;}
+  input{height:31px;font-size: 20px;}
+  #latFooterWeform_5{margin:4px auto;}
+  textarea{height:84px;font-size:20px;}
+  #latFooterItem_8{margin:14px auto 60px auto;}
+  .but_c{font-size: 20px;padding: 5px 30px; height: 40px;}
+}
+/*--一般---*/
+@media only screen and (max-width: 768.98px){
+  #latHeaderMsg_2{font-size:20px;margin: 80px auto 0 auto;width:96%;}
+  #latHeaderMsg_3{font-size:20px;margin: 0 auto;width:96%;}
+  #latHeaderMsg_5{font-size:20px;margin: 0 auto;width:96%;}
+  .anchor{font-size:16px;}
+}
+@media only screen and (max-width: 768.98px){
+  .flexalign{display:block;height:80%;width:100%;padding:0 25px;}
+  #latMainMsg_1{height: 20%;}
+  #latMainMsg_3{padding: 0 25px;width: 100%;}
+  .anchorpic:nth-child(1),.anchorpic:nth-child(2){margin:45px auto 50px auto;}
+  #latMainContent_1,#latMainContent_2{width:50%;}
+  #latMainContent_3{width:100%;}
+  #latMainContent_1m#latMainContent_2,#latMainContent_3{margin:60px auto 60px auto;}
+  #latMainTitle{height:100vh;}
+  #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{width: 50%;}
+  #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{transform: translateY(10%);}
+  #latMainTitle_1{height:130vh;background-image:url("../image/hpimage3.jpg")}
+}
+
+@media only screen and (max-width: 768.98px){
+  #latFooterMsg_1,#latFooterMsg_2{text-align:left;}
+  #latFooterMsg_1{font-size: 35px;height: 11%;}
+  #latFooterMsg_2{font-size: 16px;}
+  #latFooterImg1, #latFooterImg2{width:100%;margin: 0px auto 20px auto;text-align:left;}
+  #latFooterItem_1{float:unset;}
+  #latFooterR1{width:100%;padding: 0 25px;}
+  #latFooterImg1 img, #latFooterImg2 img{float:unset;}
+  #latFooterImg3 img, #latFooterImg4 img,#latFooterImg5 img{margin: 10px auto 0px auto;;}
+  #latFooterImg3,#latFooterImg4,#latFooterImg5{ width: 33%;
+    float: left;
+    margin: 0 auto;
+    align-items: center;}
+  #latFooterWeform_5{text-align: left;}
+  #latFooterItem_8{margin:30px auto 0px auto;padding-right: unset;}
+  #latFooter{height: 125vh;}
+  #latFooterMsg_4, #latFooterMsg_5{width:100%;margin:0 auto;}
+  #latFooterWeform_3{text-align: center;float:unset;margin:0px auto 10px auto;text-align: left;}
+  #latFooterWeform_1{margin:30px auto 10px auto;text-align: center;float:unset;text-align: left;}
+  #latFooterWeform_2{text-align: center;float:unset;margin:10px auto 10px auto;text-align: left;}
+  #latFooterWeform_4{text-align: center;float:unset;margin:10px auto 10px auto;text-align: left;}
+}
+@media only screen and (max-width: 768.98px){
+  textarea{width:100%;}
+  input{width:100%;}
+  .fss .prev{left:-100%;}
+  .fss .next{left:-100%;}
+}
+@media only screen and (max-width: 480px){
+  #latMainTitle_1{height:110vh;}
+  #latMainTitle{height:115vh;}
+  .anchorpic {padding: 10px 10px;font-size:20px;transition:all linear .5s;}
+  #latMainContent_1, #latMainContent_2, #latMainContent_3{width:100%;}
+  #latMainContentContent_1, #latMainContentContent_2, #latMainContentContent_3{width:100%;}
+  #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{transform: translateY(15vh);}
+  #latMainContent_1, #latMainContent_2, #latMainContent_3{margin:0px auto 0px auto;height: 200px;}
+}
+/*<-----手機版滿版調整---->*/
+@media only screen and (max-width: 700px) and (max-height:899.98px){
+#latMainContent_1, #latMainContent_2, #latMainContent_3{height: 215px;}
+#latFooter {height: 108vh;}
+#latMainTitle {height: 105vh;}
+#latMainTitle_1{height:105vh;}
+}
+@media only screen and (max-width:700px) and (max-height:1023.97) and (min-height:823.98px){
+  #latFooter {height: 108vh;}
+  #latMainTitle {height: 105vh;}
+  #latMainTitle_1{height:105vh;}
+}
+/*iphoneplus*/
+@media only screen and (max-width:700px) and (max-height:736.98px){
+  #latFooter {height: 118vh;}
+}
+/*pixel*/
+@media only screen and (max-width:700px) and (max-height:731.98px){
+  #latFooter {height: 118vh;}
+  #latMainTitle {height: 110vh;}
+}
+/*iphone*/
+@media only screen and (max-width:700px) and (max-height:667.98px){
+  #latFooter {height: 128vh;}
+}
+/*galaxy*/
+@media only screen and (max-width:700px) and (max-height:640.98px){
+  #latFooter {height: 130vh;}
+  #latMainTitle {height: 125vh;}
+}
+/*iphonese*/
+@media only screen and (max-width:700px) and (max-height:568.98px){
+  #latFooter {height: 145vh;}
+  .carousel{margin:0 auto;}
+  #latContentAnchor_1{margin:0 auto;}
+  #latMainTitle_1 {height: 115vh;}
+  #latMainTitle {height: 140vh;}
+}
+@media only screen and (max-width: 600px) and (max-height:823.98px){
+  #latMainTitle_1{height:115vh;}
+}
+
+@media only screen and (max-width:480px) and (min-height:899.99px){
+  #latMainTitle_1{height:100vh;}
+  #latMainTitle{height:100vh;}
+  #latFooter{height:100vh;}
+
+}

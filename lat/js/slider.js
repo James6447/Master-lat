@@ -141,7 +141,7 @@ document.getElementById("latHeaderMenu").style.opacity = "1";
 
 
 //pause slideshow and reinstantiate on mouseout
-$('ul, span').hover(
+$('.fss ul, .fss span').hover(
 function () {
   clearInterval(autoSwap);
 },
@@ -151,7 +151,7 @@ function () {
 
 
 //unused: gather text inside items class
-$('li.items').each(function(index) {
+$('.fss li.items').each(function(index) {
     items[index] = $(this).text();
 });
 
@@ -286,18 +286,21 @@ else if ($(window).width() < 880){
      }
   });
 
-  $(window).resize(function(){
-    if($(window).width() < 350){
-      $('section').css("margin-left","-48%");
-      $('section').css("padding-top","19%");
-      $('section').css("width","100%");
-      $('.next1').css("left","76.5%");
+  /*$(window).resize(function(){
+    if($(window).width() < 480){
+      //$('section').css("margin-left","-48%");
+      //$('section').css("padding-top","19%");
+      $('section').css("width","300px");
+      //$('.next1').css("left","76.5%");
     }
-    else{
-      $('section').css("margin-left","0");
-      $('section').css("padding-top","30px");
+    else if($(window).width()<700){
+      $('section').css("width","450px");
+
+    }else{
+      //$('section').css("margin-left","0");
+      //$('section').css("padding-top","30px");
       $('section').css("width","50%");
-      $('.next1').css("left","84.5%");
+    //  $('.next1').css("left","84.5%");
     }
 
 
@@ -312,18 +315,23 @@ else if ($(window).width() < 880){
 
   }).call(this);
 
-  if($(window).width() < 350){
-    $('section').css("margin-left","-48%");
-    $('section').css("padding-top","19%");
-    $('section').css("width","100%");
-    $('.next1').css("left","76.5%");
+  if($(window).width() < 480){
+    //$('section').css("margin-left","-48%");
+    //$('section').css("padding-top","19%");
+    $('section').css("width","300px");
+    //$('.next1').css("left","76.5%");
   }
-  else{
-    $('section').css("margin-left","0");
-    $('section').css("padding-top","30px");
+  else if($(window).width()<700){
+    $('section').css("width","450px");
+
+  }else{
+    //$('section').css("margin-left","0");
+    //$('section').css("padding-top","30px");
     $('section').css("width","50%");
-    $('.next1').css("left","84.5%");
-  }
-
-
+  //  $('.next1').css("left","84.5%");
+}*/
+/*function resize() {
+       parent.document.getElementById("ifarmid").height = document.body.scrollHeight; //將子頁面高度傳到父頁面框架
+   }
+resize();*/
 }

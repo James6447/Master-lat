@@ -2,17 +2,25 @@
 	width: 100%;
 }
 
-section {
+.fss {
   width: 50%;
   height: 25em;
   position: relative;
 	max-width: 100%;
+	margin:2% auto 0 auto;
 	text-align: center;
-
 }
 
+.fss .carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    margin: 0 auto 5% auto;
+    width: 100%;}
 
-li {
+
+.fss li {
   width: 100%;
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
@@ -21,7 +29,7 @@ li {
   overflow: hidden;
 }
 
-li p {
+.fss li p {
   color: white;
   font-weight: bold;
   font-size: 5em;
@@ -29,7 +37,7 @@ li p {
   margin-top: 1.175em;
 }
 
-.items {
+.fss .items {
   position: absolute;
 }
 
@@ -41,7 +49,7 @@ li p {
 
 .left-pos {
   opacity: .3;
-  margin-left: -35% !important;
+  margin-left: -40.5% !important;
   z-index: 1000;
   -webkit-transform: scale(.75);
   -moz-transform: scale(.75);
@@ -65,13 +73,17 @@ li p {
   transform: scale(.75);
 }
 
-span {
+.fss span {
   position: relative;
   margin: 0 auto;
   left: 17em;
   top: 20em;
 }
 @media only screen and (max-width: 700px){
-.right-pos {opacity: 0;}
-.left-pos{opacity:0;}
+	.right-pos {opacity: 0;}
+	.left-pos{opacity:0;}
+	.fss{width:450px;}
+}
+@media only screen and (max-width: 480px){
+	.fss{width:300px;}
 }
