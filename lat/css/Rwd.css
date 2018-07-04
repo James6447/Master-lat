@@ -185,13 +185,13 @@ textarea{width:88%;}
   .but_c{font-size: 20px;padding: 5px 30px; height: 40px;}
 }
 /*--一般---*/
-@media only screen and (max-width: 768.98px){
+@media only screen and (max-width: 700px){
   #latHeaderMsg_2{font-size:20px;margin: 80px auto 0 auto;width:96%;}
   #latHeaderMsg_3{font-size:20px;margin: 0 auto;width:96%;}
   #latHeaderMsg_5{font-size:20px;margin: 0 auto;width:96%;}
   .anchor{font-size:16px;}
 }
-@media only screen and (max-width: 768.98px){
+@media only screen and (max-width: 700px){
   .flexalign{display:block;height:80%;width:100%;padding:0 25px;}
   #latMainMsg_1{height: 20%;}
   #latMainMsg_3{padding: 0 25px;width: 100%;}
@@ -205,7 +205,7 @@ textarea{width:88%;}
   #latMainTitle_1{height:130vh;background-image:url("../image/hpimage3.jpg")}
 }
 
-@media only screen and (max-width: 768.98px){
+@media only screen and (max-width: 700px){
   #latFooterMsg_1,#latFooterMsg_2{text-align:left;}
   #latFooterMsg_1{font-size: 35px;height: 11%;}
   #latFooterMsg_2{font-size: 16px;}
@@ -227,7 +227,7 @@ textarea{width:88%;}
   #latFooterWeform_2{text-align: center;float:unset;margin:10px auto 10px auto;text-align: left;}
   #latFooterWeform_4{text-align: center;float:unset;margin:10px auto 10px auto;text-align: left;}
 }
-@media only screen and (max-width: 768.98px){
+@media only screen and (max-width: 700px){
   textarea{width:100%;}
   input{width:100%;}
   .fss .prev{left:-100%;}
