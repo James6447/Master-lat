@@ -1,10 +1,19 @@
 window.onload = function() {
+
   /*$( window ).resize(function() {
     var latFooter = $('#latFooterR1').width();
     var FootMsg_4 = $('#latFooterMsg_4').width();
     var input = $("input").width();
     var textarea = FootMsg_4+input;
+    window.addEventListener("orientationchange",onOrientationchange ,false);
+     function onOrientationchange() {
+        if (window.orientation === 180 || window.orientation === 0) {
+                //直式
+        }
+        if (window.orientation === 90 || window.orientation === -90 ){
 
+        }
+     }
     var lenght = $('#latFooterMsg_3').width() + input + FootMsg_4;
     var button = latFooter - lenght;
 

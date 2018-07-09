@@ -4,7 +4,6 @@
   margin: 0 auto;
   position: relative;
   max-width: 100%;
-  overflow:hidden;
 }
 /*body{margin: 0;}*/
 
@@ -191,6 +190,7 @@
 }
 
 @media only screen and (max-width: 480px){
-  .fgg{width:90%;}
+  .fgg{width:90%;  overflow:hidden;}
+
 
 }

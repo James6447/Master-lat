@@ -34,7 +34,7 @@ img { vertical-align:middle; width: 100%; }
 #latMainPic_3{width:25%;vertical-align: middle;float:left;transition:width ease .8s;}
 #latMainPic_4{width:25%;vertical-align: middle;float:left;transition:width ease .8s;}
 /*content區塊*/
-#latContent{width:100%;background:#c1c1c2;}
+#latContent{width:100%;background:#ffffff;}
 #latContentR1{width:100%;}
 #latContentTitle{width:100%;display:block;text-align:center;transition:width ease .8s;}
 #latContentMsg_1{width:100%;display:block;text-align:center;transition:width ease .8s;}
@@ -47,7 +47,7 @@ img { vertical-align:middle; width: 100%; }
 #latContentMsg_5{width:70%;display:block;text-align: center;margin:0 auto;transition:width ease .8s;}
 #latContentMsg_6{width:70%;display:block;text-align: center;margin:0 auto;transition:width ease .8s;}
 /*footer區塊*/
-#latFooter{ width:100%; background:#e0e0e0; padding:0px; margin-top: 0; min-height: 745px;}
+#latFooter{ width:100%; background:#e0e0e0; padding:0px; margin-top: 0;}
 #latFooterR1{width:100%;text-align:left;display:block;margin:0 auto;}
 #latFooterTitle{width:100%;display:block;}
 #latFooterMsg_1{width:100%;display:block;height: 18%;}
