@@ -59,7 +59,7 @@
 
 .onepic{
   position:relative;
-  width:40%;
+  width:43%;
   overflow:hidden;
   border-radius:50%;
   margin-left: 29.5%;
@@ -123,11 +123,11 @@
 
 .fgg .circular{
     position:relative;
-    width:40%;
+    width:43%;
     overflow:hidden;
     border-radius:50%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .fgg .circular img{
