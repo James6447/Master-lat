@@ -74,13 +74,13 @@ input{font-size: 24px;height: 35px;}
   #latFooterImg3 img, #latFooterImg4 img, #latFooterImg5 img{max-width:50px;max-height:58px;}
   #latFooterImg1 img, #latFooterImg2 img{max-width: 38px;max-height: 28px;}
 }
-@media only screen and (max-width:1000px)
-{
+@media only screen and (max-width:1000px){
 #latContent{display:block;height:100%;}
 #latContentR2{height:100%;}
 #latContentMsg_1::after{margin-bottom:50px;}
 #latContentTitle_1{padding-top:50px;padding-bottom: 50px;height:100%;display:block;box-sizing: border-box;}
-#latContentTitle_2{padding-top:50px;padding-bottom:50px;}
+#latContentTitle_2{padding-top:50px;padding-bottom:50px;margin-bottom:-280px;}
+
 }
 /*--
 /*---header---*/
@@ -136,19 +136,14 @@ input{font-size: 24px;height: 35px;}
   #latFooterMsg_7{width:100%;}
   textarea{height:92px;font-size:24px;width:100%}
   #latFooterItem_8{margin:20px auto 60px auto;padding-right: 0px;}
-  .but_c{    font-size: 24px;padding: 5px 26px;height: 54px;width:112px;}
+  .but_c{font-size: 24px;padding: 5px 26px;height: 54px;width:112px;}
 }
 /*---一般--*/
 @media only screen and (max-width: 1000px){
   #latFooterTitle{padding:0 10px;}
   #latFooterMsg_3{width:100%;padding:0 3px;}
   #latFooterImg1, #latFooterImg2{width:50%;margin:0px auto;}
-  #latFooterImg3,#latFooterImg4,#latFooterImg5{
-    width: 33%;
-    float: left;
-    margin: 0 auto;
-    display: block;
-    }
+  #latFooterImg3,#latFooterImg4,#latFooterImg5{width: 33%;float: left;margin: 0 auto;display: block;}
   #latFooterItem_8{padding-right: 12%;}
   #latFooterImg3 img,#latFooterImg4 img,#latFooterImg5 img{margin:30px auto 0px auto;width:33%;}
   #latFooterMsg_4, #latFooterMsg_5{width:50%;margin:0 auto;}
@@ -165,7 +160,6 @@ textarea{width:88%;}
 
 /*--一般---*/
 @media only screen and (max-width: 700px){
-
   #latHeaderMsg_2{font-size:20px;margin: 80px auto 0 auto;width:96%;}
   #latHeaderMsg_3{font-size:20px;margin: 0 auto;width:96%;}
   #latHeaderMsg_5{font-size:20px;margin: 0 auto;width:96%;}
@@ -262,5 +256,5 @@ textarea{width:88%;}
   #latFooterMsg_7{width:100%;}
   textarea{height:92px;font-size:24px;width:100%}
   #latFooterItem_8{margin:20px auto 60px auto;padding-right: 0px;}
-  .but_c{    font-size: 24px;padding: 5px 26px;height: 54px;width:112px;}
+  .but_c{font-size: 24px;padding: 5px 26px;height: 54px;width:112px;}
 }
