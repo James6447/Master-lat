@@ -152,6 +152,7 @@ input{font-size: 24px;height: 35px;}
   #latFooterWeform_2, #latFooterWeform_4{margin:10px auto 30px auto;}
   #latFooterWeform_5{margin:0px auto;}
   #latFooterMsg_6,#latFooterMsg_7{width:100%;}
+  #latFooter{height:100%; }
 
 }
 @media only screen and (max-width: 1000px){
@@ -182,6 +183,7 @@ textarea{width:88%;}
 }
 
 @media only screen and (max-width: 700px){
+
   #latFooterMsg_1,#latFooterMsg_2{text-align:left;}
   #latFooterMsg_1{font-size: 35px;height: 11%;}
   #latFooterMsg_2{font-size: 16px;}
