@@ -175,7 +175,8 @@
 
 /* On hover, add a black background color with a little bit see-through */
 .fgg .prev2:hover, .fgg .next2:hover {
- background-color: rgba(0,0,0,0.8);
+ transform:scale(1.4);
+
 }
 @media only screen and (max-width:768.98px) and (min-height:1023.98px){
   .fgg{width:90%;}

@@ -59,7 +59,8 @@
                   height:160px;
                   font-family: Microsoft JhengHei;
                   line-height: 150%;
-                  margin:40px auto 50px auto;}
+                  margin:40px auto 50px auto;
+                  font-weight:bolder;}
 
 #latMainContentContent_1,#latMainContentContent_2,#latMainContentContent_3
             {font-size:14px;
@@ -68,7 +69,9 @@
               font-family: Microsoft JhengHei;
               margin:26px auto;
               width: 75%;
-              text-align:center;}
+              text-align:center;
+              letter-spacing:0.8px;
+              font-weight:500;}
 
 .anchorpic{ color:#303549;display: inline-table;
             padding: 10px 35px;font-size: 12px;margin:45px auto 0px auto;
@@ -194,8 +197,8 @@ textarea{
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.fss .prev:hover,.fss .next:hover {
- background-color: rgba(0,0,0,0.8);
+.fss .prev img:hover,.fss .next img:hover {
+ transform:scale(1.4);
 }
 
 /* Caption text */
