@@ -1,4 +1,3 @@
-<!--
 //去掉空白
 function Trim(str)
 {
@@ -151,4 +150,3 @@ function validateEmail(elementValue, fldname){
    return emailPattern.test(elementValue);
 }
 
--->

@@ -40,12 +40,18 @@
 .fss .items {
   position: absolute;
 }
-
-
+#imgMain,#imgLeft,#imgRight,#imgBack{
+}
 
 .main-pos {
   margin-left: 0% !important;
   z-index: 3000;
+  /* background-image: url("../image/home_cover.jpg");
+  opacity: 1;
+  width: 100%;
+  height: 550px;
+  background-size: 100% 550px;
+  background-repeat:no-repeat; */
   /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
 }
 

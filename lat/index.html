@@ -10,11 +10,13 @@
 <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="css/latFooter.css"></link>
 <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="css/picslider.css"></link>
 <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="css/hamburger.css"></link>
+<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="css/clickModal.css"></link>
 <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="css/Rwd.css"></link>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/utility_utf8.js" type="text/javascript"></script>
 <script src="js/action.js" type="text/javascript"></script>
 <script src="js/slider.js" type="text/javascript"></script>
+<script src="js/clickModal.js" type="text/javascript"></script>
 
 
 <META NAME="Author" CONTENT="LAT">
@@ -126,24 +128,61 @@
                 <div id="latMainTitle_1">
                 <div id="latMainMsg_3">
                   <div id="latMainPic_1"><img src="image/service1.png" alt="service">
-                    <div id="latMainPicTitle_1"><a class="anchorpic" href="#">SERVICE 1</a></div>
+                    <div id="latMainPicTitle_1"><a class="anchorpic"  >網站客製化</a></div>
                   </div>
 
                   <div id="latMainPic_2"><img src="image/service2.png" alt="service">
-                    <div id="latMainPicTitle_2"><a class="anchorpic" href="#">SERVICE 2</a></div>
+                    <div id="latMainPicTitle_2"><a class="anchorpic" >Android (App)</a></div>
                   </div>
 
                   <div id="latMainPic_3"><img src="image/service3.png" alt="service">
-                    <div id="latMainPicTitle_3"><a class="anchorpic" href="#">SERVICE 3</a></div>
+                    <div id="latMainPicTitle_3"><a class="anchorpic" >IOS (App)</a></div>
                   </div>
 
                   <div id="latMainPic_4"><img src="image/service4.png" alt="service">
-                    <div id="latMainPicTitle_4"><a class="anchorpic" href="#">SERVICE 4</a></div>
+                    <div id="latMainPicTitle_4"><a class="anchorpic" >網站模板化</a></div>
                   </div>
                 </div>
               </div>
 
             </div>
+
+                  <!-- The 客製化Modal -->
+                  <div id="myCMSModal" class="modal1">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>請填寫表單方便了解你的需求！</p>
+                  </div>
+                  </div>
+
+                  <!-- The Android Modal -->
+                  <div id="myAndroidModal" class="modal2">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>請填寫表單方便了解你的需求！
+                    </p>
+                  </div>
+                  </div>
+
+                  <!-- The IOS Modal -->
+                  <div id="myIOSModal" class="modal3">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>請填寫表單方便了解你的需求！</p>
+                  </div>
+                  </div>
+
+                  <!-- The 模板化Modal -->
+                  <div id="myModelModal" class="modal4">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>請填寫表單方便了解你的需求！</p>
+                    </div>
+                  </div>
 
 
       <div id="latContent">
@@ -152,22 +191,25 @@
                   <!-- <div class="container"> -->
                     <section class="fss">
                         <ul class="carousel">
-                          <li class="items main-pos" id="1">
-                            <img src="image/1.png"></img>
-                          <li class="items right-pos" id="2">
-                            <img src="image/2.png"></img>
+                          <!-- <div id="main-posId"> -->
+                            <li class="items main-pos" id="1" style=" ">
+                              <img src="image/1.png" id="imgMain"></img>
+                            </li>
+                          <!-- </div> -->
+                          <li class="items right-pos" id="2" >
+                            <img src="image/2.jpg" id="imgMain"></img>
                           </li>
-                          <li class="items back-pos" id="4">
-                            <img src="image/4.png"></img>
+                          <li class="items back-pos" id="3" >
+                            <img src="image/3.jpg" id="imgMain"></img>
                           </li>
-                          <li class="items left-pos" id="5">
-                            <img src="image/3.png"></img>
+                          <li class="items left-pos" id="4" >
+                            <img src="image/4.jpg" id="imgMain"></img>
                           </li>
                         </ul>
                         <a class="prev prev1" id="prev"><img src="image/arrow1.png"></a>
                         <a class="next next1" id="next"><img src="image/arrow2.png"></a>
                             <!-- Next and previous buttons -->
-                        <div id="latContentAnchor_1">LOAD MORE</div>
+                        <div id="latContentAnchor_1" >LOAD MORE</div>
                       </section>
                     <!-- </div> -->
 

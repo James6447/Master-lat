@@ -21,7 +21,7 @@
 .left-pos{opacity:0;}
 .next1{left:55%;}
 .prev1{left:-55%;}
-#latContentAnchor_1{padding: 18px 20px; width: 162px;font-size:20px;margin:15% auto 0 auto;}
+#latContentAnchor_1{padding: 18px 20px; width:200px;font-size:20px;margin:15% auto 0 auto;}
 /*---第四塊不知道---*/
 #latFooterMsg_1{font-size: 58px;height:22%;}
 #latFooterMsg_2{font-size: 29px;}
@@ -180,6 +180,7 @@ textarea{width:88%;}
   #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{width: 50%;}
   #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{transform: translateY(10%);}
   #latMainTitle_1{background-image:url("../image/hpimage3.jpg");}
+
 }
 
 @media only screen and (max-width: 700px){
@@ -212,7 +213,7 @@ textarea{width:88%;}
 }
 @media only screen and (max-width: 480px){
   #latMainContent_1{margin-top:50px;}
-  .anchorpic {padding: 10px 10px;font-size:20px;transition:all linear .5s;}
+  .anchorpic {padding: 10px 10px;font-size:18px;transition:all linear .5s;}
   #latMainContent_1, #latMainContent_2, #latMainContent_3{width:100%;}
   #latMainContentContent_1, #latMainContentContent_2, #latMainContentContent_3{width:100%;}
   #latMainPic_1, #latMainPic_2, #latMainPic_3, #latMainPic_4{transform: translateY(0%);}
