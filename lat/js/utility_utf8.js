@@ -1,4 +1,3 @@
-
 //去掉空白
 function Trim(str)
 {

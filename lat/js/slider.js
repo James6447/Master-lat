@@ -1,7 +1,9 @@
 window.onload = function() {
-      setTimeout(function(){
-      $(".page-loading").fadeOut('slow/1000/fast', function() {});//使用渐隐的方法淡出loading page
-    },2000)//强制显示loading page 1s
+    //强制显示loading page 1s
+
+    setTimeout(function(){
+    $(".page-loading").fadeOut('slow/1000/fast', function() {});//使用渐隐的方法淡出loading page
+  },1500)
 
   /*$( window ).resize(function() {
     var latFooter = $('#latFooterR1').width();
@@ -52,37 +54,6 @@ window.onload = function() {
 document.getElementById("latHeaderMenu").style.opacity = "1";
 
   //header fixed
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    var top = window.pageYOffset;
-    var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-
-        document.getElementById("latHeaderMenu").style.top = "30px";
-
-      } else {
-        if(top<10){
-          // document.getElementById("latHeaderMenu").style.position = "fixed";
-          document.getElementById("latHeaderMenu").style.top = "30px";
-        }
-        else{
-        document.getElementById("latHeaderMenu").style.top = "-100px";
-      }
-      }
-      prevScrollpos = currentScrollPos;
-
-      if (top<10){
-          document.getElementById("latHeaderMenu").style.background = "rgba(216,216,216,0.7)";
-          document.getElementById("latHeaderMenu").style.transition = "1s";
-
-      }
-      else {
-        document.getElementById("latHeaderMenu").style.background = "#e6e6e6";
-      }
-
-    }
-
-
 //nav
   $("#head").click(function() {
       $('html, body').animate({
@@ -297,6 +268,40 @@ else if ($(window).width() < 880){
         $("#icon__close").hide();
      }
   });
+
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var top = window.pageYOffset;
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+
+      document.getElementById("latHeaderMenu").style.top = "30px";
+
+    } else {
+      if(top<10){
+        // document.getElementById("latHeaderMenu").style.position = "fixed";
+        document.getElementById("latHeaderMenu").style.top = "30px";
+      }
+      else{
+        $("#test").slideUp();
+        $("#icon__open").show();
+        $("#icon__close").hide();
+      document.getElementById("latHeaderMenu").style.top = "-100px";
+    }
+    }
+    prevScrollpos = currentScrollPos;
+
+    if (top<10){
+        document.getElementById("latHeaderMenu").style.background = "rgba(216,216,216,0.7)";
+        document.getElementById("latHeaderMenu").style.transition = "1s";
+
+    }
+    else {
+      document.getElementById("latHeaderMenu").style.background = "#e6e6e6";
+    }
+
+  }
+
 
   /*$(window).resize(function(){
     if($(window).width() < 480){
