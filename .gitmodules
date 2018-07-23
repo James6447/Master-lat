@@ -1,0 +1,3 @@
+[submodule "lat/vendor/plugins/open_flash_chart_2"]
+	path = lat/vendor/plugins/open_flash_chart_2
+	url = git://github.com/korin/open_flash_chart_2_plugin.git
