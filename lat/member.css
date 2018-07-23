@@ -44,6 +44,8 @@
   overflow: hidden;
 }
 
+.fgg .circular:hover{transform: scale(1.1);}
+
 .title{
   width: 100%;
   text-align: center;
@@ -128,6 +130,7 @@
     border-radius:50%;
     margin-left: 3%;
     margin-right: 3%;
+    cursor:zoom-in;
 }
 
 .fgg .circular img{

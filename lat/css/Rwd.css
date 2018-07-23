@@ -1,3 +1,136 @@
+.positon1{position: relative;}
+.page-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99999999;
+  transition: background 0.4s linear;
+  background-color: #F5F5F5;
+}
+
+.three-balls {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45%;
+}
+
+.three-balls .ball {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  font-size: 75px;
+  margin:0 20px;
+  font-weight:500;
+  vertical-align: middle;
+  font-family: Verdana,sans-serif;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 3.0s infinite cubic-bezier(.62, .28, .23, .99) both;
+  animation: bouncedelay 3.0s infinite cubic-bezier(.62, .28, .23, .99) both;
+}
+
+.three-balls .ball1 {
+  -webkit-animation-delay: -.16s;
+  animation-delay: -.16s;
+}
+
+.three-balls .ball2 {
+  -webkit-animation-delay: -.08s;
+  animation-delay: -.08s;
+}
+
+@keyframes bouncedelay {
+  0% {
+    bottom: 0;
+    background-color: #2d3243;
+    color:#52bcb5;
+  }
+  16.66% {
+    bottom: 50px;
+    background-color: #52bcb5;
+    color:#dedfdf;
+  }
+  33.33% {
+    bottom: 0px;
+    background-color: #52bcb5;
+    color:#dedfdf;
+  }
+  50% {
+    bottom: 50px;
+    background-color: #dedfdf;
+    color:#2d3243;
+  }
+  66.66% {
+    bottom: 0px;
+    background-color: #dedfdf;
+    color:#2d3243;
+  }
+  83.33% {
+    bottom: 50px;
+    background-color: #2d3243;
+    color:#52bcb5;
+  }
+  100% {
+    bottom: 0;
+    background-color: #2d3243;
+    color:#52bcb5;
+
+  }
+}
+
+@-webkit-keyframes bouncedelay {
+  0% {
+    bottom: 0;
+    background-color: #2d3243;
+    color:#52bcb5;
+  }
+  16.66% {
+    bottom: 50px;
+    background-color: #52bcb5;
+    color:#dedfdf;
+  }
+  33.33% {
+    bottom: 0px;
+    background-color: #52bcb5;
+    color:#dedfdf;
+  }
+  50% {
+    bottom: 50px;
+    background-color: #dedfdf;
+    color:#2d3243;
+  }
+  66.66% {
+    bottom: 0px;
+    background-color: #dedfdf;
+    color:#2d3243;
+  }
+  83.33% {
+    bottom: 50px;
+    background-color: #2d3243;
+    color:#52bcb5;
+  }
+  100% {
+    bottom: 0;
+    background-color: #2d3243;
+    color:#52bcb5;
+  }
+}
+footer{ background-image:url("../image/background5.png");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: bottom;}
+footer p{ font-size:16px;
+          padding: 15px;
+          line-height: 150%;
+          color:#ffffff;
+          text-align: center;
+          font-family: Verdana,sans-serif;}
 @media only screen and (min-width: 1015.98px) and (min-height:1365.99px){
   /*---第一塊---*/
 #latHeaderMsg_2{font-size: 44px;margin-top:170px;}

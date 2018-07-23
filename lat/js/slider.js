@@ -1,4 +1,7 @@
 window.onload = function() {
+      setTimeout(function(){
+      $(".page-loading").fadeOut('slow/1000/fast', function() {});//使用渐隐的方法淡出loading page
+    },2000)//强制显示loading page 1s
 
   /*$( window ).resize(function() {
     var latFooter = $('#latFooterR1').width();
@@ -95,7 +98,7 @@ document.getElementById("latHeaderMenu").style.opacity = "1";
 
   $("#project").click(function() {
       $('html, body').animate({
-          scrollTop: $("#latContent").offset().top
+          scrollTop: $("#latContentTitle_1").offset().top
       }, 1000);
   });
 
