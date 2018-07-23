@@ -5,6 +5,9 @@ margin:0; padding:0; height:100%; width:100%;
 -webkit-font-smoothing: antialiased;
 }
 
+p{
+  margin-bottom: 0 !important;
+}
 
 a { color:#666666; text-decoration:none; }
 a:hover { color:#ee6622; text-decoration:none; }
