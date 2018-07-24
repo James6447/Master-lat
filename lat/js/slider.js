@@ -3,7 +3,7 @@ window.onload = function() {
 
     setTimeout(function(){
     $(".page-loading").fadeOut('slow/1000/fast', function() {});//使用渐隐的方法淡出loading page
-  },1500)
+  },1000)
 
   /*$( window ).resize(function() {
     var latFooter = $('#latFooterR1').width();
@@ -232,42 +232,7 @@ $('li').click(function() {
 
 
 
-if($(window).width() > 880){
-    $("#test").show();
-    $(".icon").hide();
 
- }
-else if ($(window).width() < 880){
-    $("#test").hide();
-    $(".icon").show();
-    $("#icon__open").show();
-    $("#icon__close").hide();
- }
-
-  $("#icon__open").click(function() {
-    $("#test").slideDown();
-    $("#icon__open").hide();
-    $("#icon__close").show();
-  });
-
-  $("#icon__close").click(function() {
-    $("#test").slideUp();
-    $("#icon__open").show();
-    $("#icon__close").hide();
-  });
-
-  $(window).resize(function(){
-    if($(window).width() > 880){
-        $("#test").show();
-        $(".icon").hide();
-     }
-    else if ($(window).width() < 890){
-        $("#test").hide();
-        $(".icon").show();
-        $("#icon__open").show();
-        $("#icon__close").hide();
-     }
-  });
 
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
@@ -283,10 +248,15 @@ else if ($(window).width() < 880){
         document.getElementById("latHeaderMenu").style.top = "30px";
       }
       else{
-        $("#test").slideUp();
-        $("#icon__open").show();
-        $("#icon__close").hide();
       document.getElementById("latHeaderMenu").style.top = "-100px";
+      if($(window).width() < 880){
+        $("#test").slideUp();
+      }
+      $(window).resize(function(){
+        if($(window).width() < 880){
+          $("#test").slideUp();
+        }
+      });
     }
     }
     prevScrollpos = currentScrollPos;
@@ -302,7 +272,42 @@ else if ($(window).width() < 880){
 
   }
 
+  if($(window).width() > 880){
+      $("#test").show();
+      $(".icon").hide();
 
+   }
+  else if ($(window).width() < 880){
+      $("#test").hide();
+      $(".icon").show();
+      $("#icon__open").show();
+      $("#icon__close").hide();
+   }
+
+    $("#icon__open").click(function() {
+      $("#test").slideDown();
+      $("#icon__open").hide();
+      $("#icon__close").show();
+    });
+
+    $("#icon__close").click(function() {
+      $("#test").slideUp();
+      $("#icon__open").show();
+      $("#icon__close").hide();
+    });
+
+    $(window).resize(function(){
+      if($(window).width() > 880){
+          $("#test").show();
+          $(".icon").hide();
+       }
+      else if ($(window).width() < 890){
+          $("#test").hide();
+          $(".icon").show();
+          $("#icon__open").show();
+          $("#icon__close").hide();
+       }
+    });
   /*$(window).resize(function(){
     if($(window).width() < 480){
       //$('section').css("margin-left","-48%");
