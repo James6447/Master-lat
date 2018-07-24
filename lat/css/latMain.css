@@ -198,17 +198,18 @@ textarea{
  top:-200px;
 }
 
-.fss .prev1{
+.fss .prev{
   left: -75%;
 }
 
-.fss .next1{
+.fss .next{
   left:75%;
 }
 
 .fss .prev img, .fss .next img{
   width: 20px;
   height: 30px;
+  transition: all 0.4s linear;
 }
 
 /* Position the "next button" to the right */
