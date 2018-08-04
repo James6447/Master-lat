@@ -38,11 +38,15 @@ function datacheck()
 //   req.send();
 // }
 
-function getData(theURL){
-  $.get(theURL,
-    function($status){
-      bootbox.alert("感謝您的留言，您的建議是我們前進的動力!");
-    });
+// function getData(theURL){
+//   $.get(theURL,
+//     function($status){
+//       bootbox.alert("感謝您的留言，您的建議是我們前進的動力!");
+//     });
+// }
+
+function getData(){
+  bootbox.alert("感謝您的留言，您的建議是我們前進的動力!");
 }
 
 // $.ajax({
