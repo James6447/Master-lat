@@ -1,5 +1,5 @@
 #latFooter {
-  background-image: url("../image/background5.png");
+  background-image: url("../image/background5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,8 +14,9 @@
   height: 100%;
   display: block;
 }
+
 #latFooterMsg_1 {
-  height: 20%;
+  height: 20%;
   font-size: 50px;
   font-family: Verdana, sans-serif;
   font-weight: bold;
