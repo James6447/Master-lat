@@ -136,3 +136,6 @@
   width: 45px;
   text-align: center;
 }
+latFooterImg3 img {
+  cursor: pointer;
+}
