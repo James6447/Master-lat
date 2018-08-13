@@ -7,7 +7,7 @@
 }
 /*body{margin: 0;}*/
 
-.carousel-1{
+.carousel-1 {
   display: flex;
   padding-left: unset;
   height: 90%;
@@ -16,43 +16,48 @@
   align-items: center;
 }
 
-.fgg h2{
+.fgg h2 {
   margin: 30px 0;
   margin-left: 5%;
   font-weight: 300;
   font-size: 16px;
   font-family: Microsoft JhengHei;
 }
-.fgg h3{
+.fgg h3 {
   font-size: 20px;
   font-weight: 500;
 
-  font-family: Microsoft JhengHei;}
+  font-family: Microsoft JhengHei;
+}
 
- .fgg ul {
+.fgg ul {
   display: table-row;
   text-align: center;
 }
 
- .fgg li {
+.fgg li {
   width: 100%;
   /* background: #333; */
   display: inline-block;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   overflow: hidden;
 }
 
-.fgg .circular:hover{transform: scale(1.1);}
-.onepic:hover{transform:scale(1.1);}
+.fgg .circular:hover {
+  transform: scale(1.1);
+}
+.onepic:hover {
+  transform: scale(1.1);
+}
 
-.title{
+.title {
   width: 100%;
   text-align: center;
 }
 
- .fgg li p {
+.fgg li p {
   color: white;
   font-weight: bold;
   font-size: 5em;
@@ -60,30 +65,30 @@
   margin-top: 1.175em;
 }
 
-.onepic{
-  position:relative;
-  width:43%;
-  overflow:hidden;
-  border-radius:50%;
+.onepic {
+  position: relative;
+  width: 43%;
+  overflow: hidden;
+  border-radius: 50%;
   margin-left: 29.5%;
-  cursor:zoom-in;
+  cursor: zoom-in;
 }
 
-.onepic img{
-    width:100%;
-    height:auto;
-}
-
-#onename{
+.onepic img {
   width: 100%;
   height: auto;
 }
 
-#onename h2{
+#onename {
+  width: 100%;
+  height: auto;
+}
+
+#onename h2 {
   margin-left: unset;
 }
 
-#name{
+#name {
   width: 50%;
   height: auto;
   margin-top: -5px;
@@ -100,46 +105,45 @@
 }
 
 .yeah {
-  opacity: .3;
+  opacity: 0.3;
   margin-left: -40% !important;
   z-index: 1000;
-  -webkit-transform: scale(.75);
-  -moz-transform: scale(.75);
-  transform: scale(.75);
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
 }
 
 .heave {
   margin-left: 0% !important;
-  opacity: .05;
-  -webkit-transform: scale(.5);
-  -moz-transform: scale(.5);
-  transform: scale(.5);
+  opacity: 0.05;
+  -webkit-transform: scale(0.5);
+  -moz-transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 .light {
-  opacity: .3;
-  margin-left:  41% !important;
+  opacity: 0.3;
+  margin-left: 41% !important;
   z-index: 1000;
-  -webkit-transform: scale(.75);
-  -moz-transform: scale(.75);
-  transform: scale(.75);
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
 }
 
-.fgg .circular{
-    position:relative;
-    width:43%;
-    overflow:hidden;
-    border-radius:50%;
-    margin-left: 3%;
-    margin-right: 3%;
-    cursor:zoom-in;
+.fgg .circular {
+  position: relative;
+  width: 43%;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 3%;
+  margin-right: 3%;
+  cursor: zoom-in;
 }
 
-.fgg .circular img{
-    width:100%;
-    height:auto;
+.fgg .circular img {
+  width: 100%;
+  height: auto;
 }
-
 
 .fgg span {
   position: relative;
@@ -148,55 +152,71 @@
   top: 20em;
 }
 
-
 /* Next & previous buttons */
-.fgg .prev2,.fgg .next2 {
- cursor: pointer;
- position: absolute;
- top: 15%;
- width: auto;
- margin-top: 100px;
- color: white;
- font-weight: bold;
- font-size: 18px;
- transition: 0.6s ease;
- border-radius: 0 3px 3px 0;
- z-index: 3000;
+.fgg .prev2,
+.fgg .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 15%;
+  width: auto;
+  margin-top: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  z-index: 3000;
 }
 
-
-.fgg .prev2 img, .fgg .next2 img{
+.fgg .prev2 img,
+.fgg .next2 img {
   width: 20px;
   height: 30px;
 }
 
 /* Position the "next button" to the right */
 .fgg .next2 {
-  left:125%;
+  left: 125%;
   border-radius: 3px 0 0 3px;
 }
-.fgg .prev2{left:-30%}
-
+.fgg .prev2 {
+  left: -30%;
+}
 
 /* On hover, add a black background color with a little bit see-through */
-.fgg .prev2:hover, .fgg .next2:hover {
- transform:scale(1.4);
-
+.fgg .prev2:hover,
+.fgg .next2:hover {
+  transform: scale(1.4);
 }
-@media only screen and (max-width:768.98px) and (min-height:1023.98px){
-  .fgg{width:90%;}
-  .yeah{opacity:0;}
-  .light{opacity:0;}
+@media only screen and (max-width: 768.98px) and (min-height: 1023.98px) {
+  .fgg {
+    width: 90%;
+  }
+  .yeah {
+    opacity: 0;
+  }
+  .light {
+    opacity: 0;
+  }
 }
-@media only screen and (max-width: 700px){
-  .yeah {opacity: 0;}
-  .light{opacity:0;}
-  .fgg{width:75%;}
-  .fgg .carousel-1{height:100%;}
+@media only screen and (max-width: 700px) {
+  .yeah {
+    opacity: 0;
+  }
+  .light {
+    opacity: 0;
+  }
+  .fgg {
+    width: 75%;
+  }
+  .fgg .carousel-1 {
+    height: 100%;
+  }
 }
 
-@media only screen and (max-width: 480px){
-  .fgg{width:90%;  overflow:hidden;}
-
-
+@media only screen and (max-width: 480px) {
+  .fgg {
+    width: 90%;
+    overflow: hidden;
+  }
 }
