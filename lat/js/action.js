@@ -1,7 +1,7 @@
 function datacheck() {
   var theForm = document.forms[0];
   var theURL = "";
-
+  var theURL1 = "";
   if (
     !isBothEmpty(
       theForm.company,
@@ -47,8 +47,8 @@ function datacheck() {
 
 function getData(theURL) {
   var req = new XMLHttpRequest();
-  console.log(theURL);
-  req.open("get", "http://localhost:8888/Master-lat/lat/" + theURL);
+  // req.open("get", "http://localhost:8888/Master-lat/lat/" + theURL);
+  req.open("get", "http://www.lat.tw/" + theURL);
   req.send();
   bootbox.alert("感謝您的留言，您的建議是我們前進的動力!");
   $("input[type=text], textarea").val("");

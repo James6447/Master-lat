@@ -1,6 +1,9 @@
 a:not([href]):not([tabindex]):hover {
   color: #ffffff !important;
 }
+input[type="text"] {
+  color: #ffffff !important;
+}
 .page-loading {
   position: fixed;
   top: 0;

@@ -22,14 +22,15 @@ require 'PHPMailer/vendor/autoload.php';
     $mail->Port = 465;                                 //Gamil的SMTP主機的埠號(Gmail為587)。
     $mail->CharSet = "utf-8";                       //郵件編碼
     $mail->Username = "zhijian090195@gmail.com";       //Gamil帳號
-    $mail->Password = "a34561524";                 //Gmail密碼
+    $mail->Password = "a34561524";         //Gmail密碼
     $mail->From = "malaysiaboyboy@gmail.com";        //寄件者信箱
     $mail->FromName = "LAT FACTORY";                  //寄件者姓名
     $mail->Subject ="感謝您的留言，您的建議是我們前進的動力!"; //郵件標題
     $mail->Body = "親愛的 ".$C_name."(".$C_email.")，您好：<br />公司：".$C_company."<br />電話:".$C_tel."<br />回應內容:".$C_message; //郵件內容
     // $mail->addAttachment('../uploadfile/file/dirname.png','new.jpg'); //附件，改以新的檔名寄出
-    $mail->IsHTML(true);                             //郵件內容為html
-    $mail->AddAddress("malaysiaboyboy@gmail.com");            //收件者郵件及名稱
+    $mail->IsHTML();                             //郵件內容為html
+    $mail->AddAddress("$C_email");    
+         //收件者郵件及名稱
 
     if(!$mail->Send()){
         // echo "Error: " . $mail->ErrorInfo;
