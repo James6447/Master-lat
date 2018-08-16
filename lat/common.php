@@ -1,7 +1,7 @@
 <?php
-$servername = "35.201.207.53";
+$servername = "10.140.0.2";
 $username = "mysia";
-$password = "anupymuga";
+$password = "M59udygFw";
 $dbname = "zadmin_lat";
 
 // $servername = "172.17.0.1";
