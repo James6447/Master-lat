@@ -21,8 +21,8 @@ require 'PHPMailer/vendor/autoload.php';
     $mail->Host = "smtp.gmail.com";             //Gamil的SMTP主機
     $mail->Port = 465;                                 //Gamil的SMTP主機的埠號(Gmail為587)。
     $mail->CharSet = "utf-8";                       //郵件編碼
-    $mail->Username = "zhijian090195@gmail.com";       //Gamil帳號
-    $mail->Password = "a34561524";         //Gmail密碼
+    $mail->Username = "";       //Gamil帳號
+    $mail->Password = "";         //Gmail密碼
     $mail->From = "malaysiaboyboy@gmail.com";        //寄件者信箱
     $mail->FromName = "LAT FACTORY";                  //寄件者姓名
     $mail->Subject ="感謝您的留言，您的建議是我們前進的動力!"; //郵件標題

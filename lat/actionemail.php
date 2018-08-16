@@ -13,6 +13,7 @@ $text = $_GET['description'];
 
 
 $con = new mysqli($servername, $username, $password, $dbname);
+mysql_query("SET NAMES 'utf8'");
 
 if ($con->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -21,10 +22,10 @@ if ($con->connect_error) {
      $query="INSERT INTO inbox(company1,username1,phone1,email1,description1)
              VALUES('$company','$name',$phone,'$email','$text') ";
 
-     $query1= "SELECT * FROM inbox(company1)";
+    //  $query1= "SELECT * FROM inbox(company1)";
 
-     $con->query($query);
-     $con->query($query1);
+     
+    //  $con->query($query1);
 
  }
 
@@ -59,7 +60,7 @@ if ($con->query($query1) ===TRUE)
         $mail->Body = "親愛的 ".$C_name."(".$C_email.")，您好：<br />公司：".$C_company."<br />電話:".$C_tel."<br />回應內容:".$C_message; //郵件內容
         // $mail->addAttachment('../uploadfile/file/dirname.png','new.jpg'); //附件，改以新的檔名寄出
         $mail->IsHTML();                             //郵件內容為html
-        $mail->AddAddress("$C_email");
+        $mail->AddAddress("malaysiaboyboy@gmail.com");
              //收件者郵件及名稱
 
         if(!$mail->Send()){
