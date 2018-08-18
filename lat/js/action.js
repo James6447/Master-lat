@@ -48,7 +48,7 @@ function datacheck() {
 function getData(theURL) {
   var req = new XMLHttpRequest();
   // req.open("get", "http://localhost:8888/Master-lat/lat/" + theURL);
-  req.open("get", "35.201.207.53/lat_tw/" + theURL);
+  req.open("get",theURL);
   req.send();
   bootbox.alert("感謝您的留言，您的建議是我們前進的動力!");
   $("input[type=text], textarea").val("");

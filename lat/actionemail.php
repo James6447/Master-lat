@@ -13,12 +13,14 @@ $text = $_GET['description'];
 
 
 $con = new mysqli($servername, $username, $password, $dbname);
+
 // mysql_query("SET NAMES 'utf8'");
 if (!mysqli_set_charset($con, "utf8")) {
     printf("Error loading character set utf8: %s\n", mysqli_error($con));
     exit();
 } else {
-    printf("Current character set: %s\n", mysqli_character_set_name($con));
+    // printf("Current character set: %s\n", mysqli_character_set_name($con));
+    mysqli_character_set_name($con);
 }
 
 if ($con->connect_error) {
@@ -27,14 +29,9 @@ if ($con->connect_error) {
  else{
      $query="INSERT INTO inbox(company1,username1,phone1,email1,description1)
              VALUES('$company','$name',$phone,'$email','$text') ";
-
-    //  $query1= "SELECT * FROM inbox(company1)";
-
-     
-//    $con->query($query1);
-
+   $con->query($query);
  }
-
+// 这里一下会喷500error
 
 if ($con->query($query) ===TRUE)
 {
