@@ -101,7 +101,7 @@
   background:#303549;
 }
 #latMainPic_1,#latMainPic_2,#latMainPic_3,#latMainPic_4{transform:translateY(-25%);}
-#latMainPic_1 img,#latMainPic_2 img,#latMainPic_3 img,#latMainPic_4 img{max-width:90%;transition: all ease .8s;}
+#latMainPic_1 img,#latMainPic_2 img,#latMainPic_3 img,#latMainPic_4 img{border-radius: 50%;border: 1px solid #3333339a;max-width:90%;transition: all ease .8s;}
 
 input{
   border:none;

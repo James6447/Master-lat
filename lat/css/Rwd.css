@@ -1,3 +1,18 @@
+/* .noscroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.fixWindow {
+  position: fixed;
+  width: 100%;
+} */
+
+html {
+  overflow-y: scroll;
+}
+
 a:not([href]):not([tabindex]):hover {
   color: #ffffff !important;
 }
@@ -13,6 +28,7 @@ input[type="text"] {
   z-index: 99999999;
   transition: background 0.4s linear;
   background-color: #f5f5f5;
+  
 }
 
 .three-balls {

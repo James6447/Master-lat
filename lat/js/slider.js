@@ -1,9 +1,62 @@
-window.onload = function() {
-    //强制显示loading page 1s
+window.onbeforeunload = function() {
+  //刷新后页面自动回到顶部
+  document.documentElement.scrollTop = 0; //ie下
+  document.body.scrollTop = 0; //非ie
+  disableScroll();
+};
 
-    setTimeout(function(){
-    $(".page-loading").fadeOut('slow/1000/fast', function() {});//使用渐隐的方法淡出loading page
-  },1000)
+window.onload = function() {
+  //强制显示loading page 1s
+
+  disableScroll();
+  setTimeout(function() {
+    $(".page-loading").fadeOut("slow/1000/fast", function() {}); //使用渐隐的方法淡出loading page
+  }, 1000);
+
+  setTimeout(function() {
+    enableScroll();
+  }, 1500);
+
+  var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+
+  function preventDefault(e) {
+    e = e || $(".page-loading").event;
+    if (e.preventDefault) e.preventDefault();
+    e.returnValue = false;
+  }
+
+  function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+      preventDefault(e);
+      return false;
+    }
+  }
+  function disableScroll() {
+    if ($(".page-loading").addEventListener)
+      // older FF
+      $(".page-loading").addEventListener(
+        "DOMMouseScroll",
+        preventDefault,
+        false
+      );
+    $(".page-loading").onwheel = preventDefault; // modern standard
+    $(".page-loading").onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+    $(".page-loading").ontouchmove = preventDefault; // mobile
+    document.onkeydown = preventDefaultForScrollKeys;
+  }
+
+  function enableScroll() {
+    if ($(".page-loading").removeEventListener)
+      $(".page-loading").removeEventListener(
+        "DOMMouseScroll",
+        preventDefault,
+        false
+      );
+    $(".page-loading").onmousewheel = document.onmousewheel = null;
+    $(".page-loading").onwheel = null;
+    $(".page-loading").ontouchmove = null;
+    document.onkeydown = null;
+  }
 
   /*$( window ).resize(function() {
     var latFooter = $('#latFooterR1').width();
@@ -38,60 +91,77 @@ window.onload = function() {
   var items = [];
   var startItem = 1;
   var position = 0;
-  var itemCount = $('.carousel li.items').length;
+  var itemCount = $(".carousel li.items").length;
   var leftpos = itemCount;
   var resetCount = itemCount;
   var windos = $(window).width();
 
   //RWD function
-  var latFooter = $('#latFooterTitle_1').width();
-  var FootMsg_4 = $('#latFooterMsg_4').width();
+  var latFooter = $("#latFooterTitle_1").width();
+  var FootMsg_4 = $("#latFooterMsg_4").width();
   var input = $("input").width();
-  var textarea = FootMsg_4+input;
+  var textarea = FootMsg_4 + input;
 
   //slideshow style interval
-  var autoSwap = setInterval( swap,3500);
-document.getElementById("latHeaderMenu").style.opacity = "1";
+  var autoSwap = setInterval(swap, 3500);
+  document.getElementById("latHeaderMenu").style.opacity = "1";
 
   //header fixed
-//nav
+  //nav
   $("#head").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#latHeaderTitle").offset().top
-      }, 1000);
+    $("html, body").animate(
+      {
+        scrollTop: $("#latHeaderTitle").offset().top
+      },
+      1000
+    );
   });
 
   $("#main").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#latMain").offset().top
-      }, 1000);
+    $("html, body").animate(
+      {
+        scrollTop: $("#latMain").offset().top
+      },
+      1000
+    );
   });
 
   $("#project").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#latContentTitle_1").offset().top
-      }, 1000);
+    $("html, body").animate(
+      {
+        scrollTop: $("#latContentTitle_1").offset().top
+      },
+      1000
+    );
   });
 
   $("#member").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#latContentR2").offset().top
-      }, 1000);
+    $("html, body").animate(
+      {
+        scrollTop: $("#latContentR2").offset().top
+      },
+      1000
+    );
   });
 
   $("#contact").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#latFooter").offset().top
-      }, 1000);
+    $("html, body").animate(
+      {
+        scrollTop: $("#latFooter").offset().top
+      },
+      1000
+    );
   });
-
 
   $("#anchor1").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#latMain").offset().top
-      }, 1000);
+    $("html, body").animate(
+      {
+        scrollTop: $("#latMain").offset().top
+      },
+      1000
+    );
   });
-//RWD
+  //RWD
   /*var lenght = $('#latFooterMsg_3').width() + input + FootMsg_4;
   var button = latFooter - lenght;
   $('textarea').css( "width", textarea);
@@ -103,7 +173,7 @@ document.getElementById("latHeaderMenu").style.opacity = "1";
     $('#latFooterItem_8').css("margin-right",button);
     $('#latFooterMsg_8').css("text-align",'right');
   }*/
-/*  var latFooter = $('#latFooterTitle_1').width();
+  /*  var latFooter = $('#latFooterTitle_1').width();
   var FootMsg_4 = $('#latFooterMsg_4').width();
   var input = $("input").width();
   var textarea = FootMsg_4+input;
@@ -122,192 +192,192 @@ document.getElementById("latHeaderMenu").style.opacity = "1";
   }
 */
 
+  //pause slideshow and reinstantiate on mouseout
+  $(".fss ul, .fss span").hover(
+    function() {
+      clearInterval(autoSwap);
+    },
+    function() {
+      autoSwap = setInterval(swap, 3500);
+    }
+  );
 
-//pause slideshow and reinstantiate on mouseout
-$('.fss ul, .fss span').hover(
-function () {
-  clearInterval(autoSwap);
-},
-function () {
- autoSwap = setInterval( swap,3500);
-});
-
-
-//unused: gather text inside items class
-$('.fss li.items').each(function(index) {
+  //unused: gather text inside items class
+  $(".fss li.items").each(function(index) {
     items[index] = $(this).text();
-});
+  });
 
-//swap images functionsss
-function swap(action) {
-  var direction = action;
+  //swap images functionsss
+  function swap(action) {
+    var direction = action;
 
-  //moving carousel backwards
-  if(direction == 'counter-clockwise') {
-    var leftitem = $('.left-pos').attr('id') - 1;
-    if(leftitem == 0) {
-      leftitem = itemCount;
-    }
-
-    $('.right-pos').removeClass('right-pos').addClass('back-pos');
-    $('.main-pos').removeClass('main-pos').addClass('right-pos');
-    $('.left-pos').removeClass('left-pos').addClass('main-pos');
-    $('#'+leftitem+'').removeClass('back-pos').addClass('left-pos');
-
-    startItem--;
-    if(startItem < 1) {
-      startItem = itemCount;
-    }
-  }
-
-  //moving carousel forward
-  if(direction == 'clockwise' || direction == '' || direction == null ) {
-    function pos(positionvalue) {
-      if(positionvalue != 'leftposition') {
-        //increment image list id
-        position++;
-
-        //if final result is greater than image count, reset position.
-        if((startItem+position) > resetCount) {
-          position = 1-startItem;
-        }
+    //moving carousel backwards
+    if (direction == "counter-clockwise") {
+      var leftitem = $(".left-pos").attr("id") - 1;
+      if (leftitem == 0) {
+        leftitem = itemCount;
       }
 
-      //setting the left positioned item
-      if(positionvalue == 'leftposition') {
-        //left positioned image should always be one left than main positioned image.
-        position = startItem - 1;
+      $(".right-pos")
+        .removeClass("right-pos")
+        .addClass("back-pos");
+      $(".main-pos")
+        .removeClass("main-pos")
+        .addClass("right-pos");
+      $(".left-pos")
+        .removeClass("left-pos")
+        .addClass("main-pos");
+      $("#" + leftitem + "")
+        .removeClass("back-pos")
+        .addClass("left-pos");
 
-        //reset last image in list to left position if first image is in main position
-        if(position < 1) {
-          position = itemCount;
+      startItem--;
+      if (startItem < 1) {
+        startItem = itemCount;
+      }
+    }
+
+    //moving carousel forward
+    if (direction == "clockwise" || direction == "" || direction == null) {
+      function pos(positionvalue) {
+        if (positionvalue != "leftposition") {
+          //increment image list id
+          position++;
+
+          //if final result is greater than image count, reset position.
+          if (startItem + position > resetCount) {
+            position = 1 - startItem;
+          }
         }
+
+        //setting the left positioned item
+        if (positionvalue == "leftposition") {
+          //left positioned image should always be one left than main positioned image.
+          position = startItem - 1;
+
+          //reset last image in list to left position if first image is in main position
+          if (position < 1) {
+            position = itemCount;
+          }
+        }
+
+        return position;
       }
 
-      return position;
+      $("#" + startItem + "")
+        .removeClass("main-pos")
+        .addClass("left-pos");
+      $("#" + (startItem + pos()) + "")
+        .removeClass("right-pos")
+        .addClass("main-pos");
+      $("#" + (startItem + pos()) + "")
+        .removeClass("back-pos")
+        .addClass("right-pos");
+      $("#" + pos("leftposition") + "")
+        .removeClass("left-pos")
+        .addClass("back-pos");
+
+      startItem++;
+      position = 0;
+      if (startItem > itemCount) {
+        startItem = 1;
+      }
     }
+  }
 
-   $('#'+ startItem +'').removeClass('main-pos').addClass('left-pos');
-   $('#'+ (startItem+pos()) +'').removeClass('right-pos').addClass('main-pos');
-   $('#'+ (startItem+pos()) +'').removeClass('back-pos').addClass('right-pos');
-   $('#'+ pos('leftposition') +'').removeClass('left-pos').addClass('back-pos');
+  //next button click function
+  $("#next").click(function() {
+    swap("clockwise");
+  });
 
-    startItem++;
-    position=0;
-    if(startItem > itemCount) {
-      startItem = 1;
+  //prev button click function
+  $("#prev").click(function() {
+    swap("counter-clockwise");
+  });
+
+  //if any visible items are clicked
+  $("li").click(function() {
+    if ($(this).attr("class") == "items left-pos") {
+      swap("counter-clockwise");
+    } else {
+      swap("clockwise");
     }
-  }
-}
+  });
 
-//next button click function
-$('#next').click(function() {
-  swap('clockwise');
-});
-
-//prev button click function
-$('#prev').click(function() {
-  swap('counter-clockwise');
-});
-
-//if any visible items are clicked
-$('li').click(function() {
-  if($(this).attr('class') == 'items left-pos') {
-     swap('counter-clockwise');
-  }
-  else {
-    swap('clockwise');
-  }
-});
-
-
-// your standard jquery code goes here with $ prefix
-// best used inside a page with inline code,
-// or outside the document ready, enter code here
+  // your standard jquery code goes here with $ prefix
+  // best used inside a page with inline code,
+  // or outside the document ready, enter code here
 
   //YOUR JQUERY CODE
 
-
-//hamburger
-
-
-
-
+  //hamburger
 
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function() {
-  var top = window.pageYOffset;
-  var currentScrollPos = window.pageYOffset;
+    var top = window.pageYOffset;
+    var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
-
       document.getElementById("latHeaderMenu").style.top = "30px";
-
     } else {
-      if(top<10){
+      if (top < 10) {
         // document.getElementById("latHeaderMenu").style.position = "fixed";
         document.getElementById("latHeaderMenu").style.top = "30px";
-      }
-      else{
-      document.getElementById("latHeaderMenu").style.top = "-100px";
-      if($(window).width() < 880){
-        $("#test").slideUp();
-      }
-      $(window).resize(function(){
-        if($(window).width() < 880){
+      } else {
+        document.getElementById("latHeaderMenu").style.top = "-100px";
+        if ($(window).width() < 880) {
           $("#test").slideUp();
         }
-      });
-    }
+        $(window).resize(function() {
+          if ($(window).width() < 880) {
+            $("#test").slideUp();
+          }
+        });
+      }
     }
     prevScrollpos = currentScrollPos;
 
-    if (top<10){
-        document.getElementById("latHeaderMenu").style.background = "rgba(216,216,216,0.7)";
-        document.getElementById("latHeaderMenu").style.transition = "1s";
-
-    }
-    else {
+    if (top < 10) {
+      document.getElementById("latHeaderMenu").style.background =
+        "rgba(216,216,216,0.7)";
+      document.getElementById("latHeaderMenu").style.transition = "1s";
+    } else {
       document.getElementById("latHeaderMenu").style.background = "#e6e6e6";
     }
+  };
 
+  if ($(window).width() > 880) {
+    $("#test").show();
+    $(".icon").hide();
+  } else if ($(window).width() < 880) {
+    $("#test").hide();
+    $(".icon").show();
+    $("#icon__open").show();
+    $("#icon__close").hide();
   }
 
-  if($(window).width() > 880){
+  $("#icon__open").click(function() {
+    $("#test").slideDown();
+    $("#icon__open").hide();
+    $("#icon__close").show();
+  });
+
+  $("#icon__close").click(function() {
+    $("#test").slideUp();
+    $("#icon__open").show();
+    $("#icon__close").hide();
+  });
+
+  $(window).resize(function() {
+    if ($(window).width() > 880) {
       $("#test").show();
       $(".icon").hide();
-
-   }
-  else if ($(window).width() < 880){
+    } else if ($(window).width() < 890) {
       $("#test").hide();
       $(".icon").show();
       $("#icon__open").show();
       $("#icon__close").hide();
-   }
-
-    $("#icon__open").click(function() {
-      $("#test").slideDown();
-      $("#icon__open").hide();
-      $("#icon__close").show();
-    });
-
-    $("#icon__close").click(function() {
-      $("#test").slideUp();
-      $("#icon__open").show();
-      $("#icon__close").hide();
-    });
-
-    $(window).resize(function(){
-      if($(window).width() > 880){
-          $("#test").show();
-          $(".icon").hide();
-       }
-      else if ($(window).width() < 890){
-          $("#test").hide();
-          $(".icon").show();
-          $("#icon__open").show();
-          $("#icon__close").hide();
-       }
-    });
+    }
+  });
   /*$(window).resize(function(){
     if($(window).width() < 480){
       //$('section').css("margin-left","-48%");
@@ -352,8 +422,8 @@ $('li').click(function() {
     $('section').css("width","50%");
   //  $('.next1').css("left","84.5%");
 }*/
-/*function resize() {
+  /*function resize() {
        parent.document.getElementById("ifarmid").height = document.body.scrollHeight; //將子頁面高度傳到父頁面框架
    }
 resize();*/
-}
+};
