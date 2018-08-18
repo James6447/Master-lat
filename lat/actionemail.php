@@ -13,13 +13,12 @@ $text = $_GET['description'];
 
 
 $con = new mysqli($servername, $username, $password, $dbname);
-
-// mysql_query("SET NAMES 'utf8'");
+// mysql_query("$con 'utf8'");
 if (!mysqli_set_charset($con, "utf8")) {
     printf("Error loading character set utf8: %s\n", mysqli_error($con));
     exit();
 } else {
-    // printf("Current character set: %s\n", mysqli_character_set_name($con));
+    printf("Current character set: %s\n", mysqli_character_set_name($con));
     mysqli_character_set_name($con);
 }
 
@@ -29,11 +28,11 @@ if ($con->connect_error) {
  else{
      $query="INSERT INTO inbox(company1,username1,phone1,email1,description1)
              VALUES('$company','$name',$phone,'$email','$text') ";
-   $con->query($query);
+   // $con->query($query);//這裡會insert一筆
  }
 // 这里一下会喷500error
 
-if ($con->query($query) ===TRUE)
+if ($con->query($query) ===TRUE)//這裡會insert多一筆
 {
 
     //Load composer's autoloader
