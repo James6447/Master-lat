@@ -13,7 +13,13 @@ $text = $_GET['description'];
 
 
 $con = new mysqli($servername, $username, $password, $dbname);
-mysql_query("SET NAMES 'utf8'");
+// mysql_query("SET NAMES 'utf8'");
+if (!mysqli_set_charset($con, "utf8")) {
+    printf("Error loading character set utf8: %s\n", mysqli_error($con));
+    exit();
+} else {
+    printf("Current character set: %s\n", mysqli_character_set_name($con));
+}
 
 if ($con->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -25,12 +31,12 @@ if ($con->connect_error) {
     //  $query1= "SELECT * FROM inbox(company1)";
 
      
-    //  $con->query($query1);
+//    $con->query($query1);
 
  }
 
 
-if ($con->query($query1) ===TRUE)
+if ($con->query($query) ===TRUE)
 {
 
     //Load composer's autoloader
